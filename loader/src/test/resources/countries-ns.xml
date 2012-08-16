@@ -1,0 +1,1993 @@
+<?xml version="1.0" ?>
+<!--suppress CheckTagEmptyBody -->
+<countries xmlns="http://schemas.seovic.com/default" xmlns:id="http://schemas.seovic.com/id"  
+           xmlns:v="http://schemas.seovic.com/validation" xmlns:config="http://schemas.seovic.com/config">
+    <country id:code="AFG" name="Afghanistan">
+        <config:formalName>Islamic State of Afghanistan</config:formalName>
+        <config:capital>Kabul</config:capital>
+        <currencySymbol>AFN</currencySymbol>
+        <currencyName>Afghani</currencyName>
+        <v:telephonePrefix>+93</v:telephonePrefix>
+        <v:domain>.af</v:domain>
+    </country>
+    <country id:code="ALB" name="Albania">
+        <config:formalName>Republic of Albania</config:formalName>
+        <config:capital>Tirana</config:capital>
+        <currencySymbol>ALL</currencySymbol>
+        <currencyName>Lek</currencyName>
+        <v:telephonePrefix>+355</v:telephonePrefix>
+        <v:domain>.al</v:domain>
+    </country>
+    <country id:code="DZA" name="Algeria">
+        <config:formalName>People's Democratic Republic of Algeria
+        </config:formalName>
+        <config:capital>Algiers</config:capital>
+        <currencySymbol>DZD</currencySymbol>
+        <currencyName>Dinar</currencyName>
+        <v:telephonePrefix>+213</v:telephonePrefix>
+        <v:domain>.dz</v:domain>
+    </country>
+    <country id:code="AND" name="Andorra">
+        <config:formalName>Principality of Andorra</config:formalName>
+        <config:capital>Andorra la Vella</config:capital>
+        <currencySymbol>EUR</currencySymbol>
+        <currencyName>Euro</currencyName>
+        <v:telephonePrefix>+376</v:telephonePrefix>
+        <v:domain>.ad</v:domain>
+    </country>
+    <country id:code="AGO" name="Angola">
+        <config:formalName>Republic of Angola</config:formalName>
+        <config:capital>Luanda</config:capital>
+        <currencySymbol>AOA</currencySymbol>
+        <currencyName>Kwanza</currencyName>
+        <v:telephonePrefix>+244</v:telephonePrefix>
+        <v:domain>.ao</v:domain>
+    </country>
+    <country id:code="ATG" name="Antigua and Barbuda">
+        <config:formalName></config:formalName>
+        <config:capital>Saint John's</config:capital>
+        <currencySymbol>XCD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+1-268</v:telephonePrefix>
+        <v:domain>.ag</v:domain>
+    </country>
+    <country id:code="ARG" name="Argentina">
+        <config:formalName>Argentine Republic</config:formalName>
+        <config:capital>Buenos Aires</config:capital>
+        <currencySymbol>ARS</currencySymbol>
+        <currencyName>Peso</currencyName>
+        <v:telephonePrefix>+54</v:telephonePrefix>
+        <v:domain>.ar</v:domain>
+    </country>
+    <country id:code="ARM" name="Armenia">
+        <config:formalName>Republic of Armenia</config:formalName>
+        <config:capital>Yerevan</config:capital>
+        <currencySymbol>AMD</currencySymbol>
+        <currencyName>Dram</currencyName>
+        <v:telephonePrefix>+374</v:telephonePrefix>
+        <v:domain>.am</v:domain>
+    </country>
+    <country id:code="AUS" name="Australia">
+        <config:formalName>Commonwealth of Australia</config:formalName>
+        <config:capital>Canberra</config:capital>
+        <currencySymbol>AUD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+61</v:telephonePrefix>
+        <v:domain>.au</v:domain>
+    </country>
+    <country id:code="AUT" name="Austria">
+        <config:formalName>Republic of Austria</config:formalName>
+        <config:capital>Vienna</config:capital>
+        <currencySymbol>EUR</currencySymbol>
+        <currencyName>Euro</currencyName>
+        <v:telephonePrefix>+43</v:telephonePrefix>
+        <v:domain>.at</v:domain>
+    </country>
+    <country id:code="AZE" name="Azerbaijan">
+        <config:formalName>Republic of Azerbaijan</config:formalName>
+        <config:capital>Baku</config:capital>
+        <currencySymbol>AZN</currencySymbol>
+        <currencyName>Manat</currencyName>
+        <v:telephonePrefix>+994</v:telephonePrefix>
+        <v:domain>.az</v:domain>
+    </country>
+    <country id:code="BHS" name="Bahamas">
+        <config:formalName>Commonwealth of The Bahamas</config:formalName>
+        <config:capital>Nassau</config:capital>
+        <currencySymbol>BSD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+1-242</v:telephonePrefix>
+        <v:domain>.bs</v:domain>
+    </country>
+    <country id:code="BHR" name="Bahrain">
+        <config:formalName>Kingdom of Bahrain</config:formalName>
+        <config:capital>Manama</config:capital>
+        <currencySymbol>BHD</currencySymbol>
+        <currencyName>Dinar</currencyName>
+        <v:telephonePrefix>+973</v:telephonePrefix>
+        <v:domain>.bh</v:domain>
+    </country>
+    <country id:code="BGD" name="Bangladesh">
+        <config:formalName>People's Republic of Bangladesh</config:formalName>
+        <config:capital>Dhaka</config:capital>
+        <currencySymbol>BDT</currencySymbol>
+        <currencyName>Taka</currencyName>
+        <v:telephonePrefix>+880</v:telephonePrefix>
+        <v:domain>.bd</v:domain>
+    </country>
+    <country id:code="BRB" name="Barbados">
+        <config:formalName></config:formalName>
+        <config:capital>Bridgetown</config:capital>
+        <currencySymbol>BBD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+1-246</v:telephonePrefix>
+        <v:domain>.bb</v:domain>
+    </country>
+    <country id:code="BLR" name="Belarus">
+        <config:formalName>Republic of Belarus</config:formalName>
+        <config:capital>Minsk</config:capital>
+        <currencySymbol>BYR</currencySymbol>
+        <currencyName>Ruble</currencyName>
+        <v:telephonePrefix>+375</v:telephonePrefix>
+        <v:domain>.by</v:domain>
+    </country>
+    <country id:code="BEL" name="Belgium">
+        <config:formalName>Kingdom of Belgium</config:formalName>
+        <config:capital>Brussels</config:capital>
+        <currencySymbol>EUR</currencySymbol>
+        <currencyName>Euro</currencyName>
+        <v:telephonePrefix>+32</v:telephonePrefix>
+        <v:domain>.be</v:domain>
+    </country>
+    <country id:code="BLZ" name="Belize">
+        <config:formalName></config:formalName>
+        <config:capital>Belmopan</config:capital>
+        <currencySymbol>BZD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+501</v:telephonePrefix>
+        <v:domain>.bz</v:domain>
+    </country>
+    <country id:code="BEN" name="Benin">
+        <config:formalName>Republic of Benin</config:formalName>
+        <config:capital>Porto-Novo</config:capital>
+        <currencySymbol>XOF</currencySymbol>
+        <currencyName>Franc</currencyName>
+        <v:telephonePrefix>+229</v:telephonePrefix>
+        <v:domain>.bj</v:domain>
+    </country>
+    <country id:code="BTN" name="Bhutan">
+        <config:formalName>Kingdom of Bhutan</config:formalName>
+        <config:capital>Thimphu</config:capital>
+        <currencySymbol>BTN</currencySymbol>
+        <currencyName>Ngultrum</currencyName>
+        <v:telephonePrefix>+975</v:telephonePrefix>
+        <v:domain>.bt</v:domain>
+    </country>
+    <country id:code="BOL" name="Bolivia">
+        <config:formalName>Republic of Bolivia</config:formalName>
+        <config:capital>La Paz (administrative/legislative) and Sucre (judical)
+        </config:capital>
+        <currencySymbol>BOB</currencySymbol>
+        <currencyName>Boliviano</currencyName>
+        <v:telephonePrefix>+591</v:telephonePrefix>
+        <v:domain>.bo</v:domain>
+    </country>
+    <country id:code="BIH" name="Bosnia and Herzegovina">
+        <config:formalName></config:formalName>
+        <config:capital>Sarajevo</config:capital>
+        <currencySymbol>BAM</currencySymbol>
+        <currencyName>Marka</currencyName>
+        <v:telephonePrefix>+387</v:telephonePrefix>
+        <v:domain>.ba</v:domain>
+    </country>
+    <country id:code="BWA" name="Botswana">
+        <config:formalName>Republic of Botswana</config:formalName>
+        <config:capital>Gaborone</config:capital>
+        <currencySymbol>BWP</currencySymbol>
+        <currencyName>Pula</currencyName>
+        <v:telephonePrefix>+267</v:telephonePrefix>
+        <v:domain>.bw</v:domain>
+    </country>
+    <country id:code="BRA" name="Brazil">
+        <config:formalName>Federative Republic of Brazil</config:formalName>
+        <config:capital>Brasilia</config:capital>
+        <currencySymbol>BRL</currencySymbol>
+        <currencyName>Real</currencyName>
+        <v:telephonePrefix>+55</v:telephonePrefix>
+        <v:domain>.br</v:domain>
+    </country>
+    <country id:code="BRN" name="Brunei">
+        <config:formalName>Negara Brunei Darussalam</config:formalName>
+        <config:capital>Bandar Seri Begawan</config:capital>
+        <currencySymbol>BND</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+673</v:telephonePrefix>
+        <v:domain>.bn</v:domain>
+    </country>
+    <country id:code="BGR" name="Bulgaria">
+        <config:formalName>Republic of Bulgaria</config:formalName>
+        <config:capital>Sofia</config:capital>
+        <currencySymbol>BGN</currencySymbol>
+        <currencyName>Lev</currencyName>
+        <v:telephonePrefix>+359</v:telephonePrefix>
+        <v:domain>.bg</v:domain>
+    </country>
+    <country id:code="BFA" name="Burkina Faso">
+        <config:formalName></config:formalName>
+        <config:capital>Ouagadougou</config:capital>
+        <currencySymbol>XOF</currencySymbol>
+        <currencyName>Franc</currencyName>
+        <v:telephonePrefix>+226</v:telephonePrefix>
+        <v:domain>.bf</v:domain>
+    </country>
+    <country id:code="BDI" name="Burundi">
+        <config:formalName>Republic of Burundi</config:formalName>
+        <config:capital>Bujumbura</config:capital>
+        <currencySymbol>BIF</currencySymbol>
+        <currencyName>Franc</currencyName>
+        <v:telephonePrefix>+257</v:telephonePrefix>
+        <v:domain>.bi</v:domain>
+    </country>
+    <country id:code="KHM" name="Cambodia">
+        <config:formalName>Kingdom of Cambodia</config:formalName>
+        <config:capital>Phnom Penh</config:capital>
+        <currencySymbol>KHR</currencySymbol>
+        <currencyName>Riels</currencyName>
+        <v:telephonePrefix>+855</v:telephonePrefix>
+        <v:domain>.kh</v:domain>
+    </country>
+    <country id:code="CMR" name="Cameroon">
+        <config:formalName>Republic of Cameroon</config:formalName>
+        <config:capital>Yaounde</config:capital>
+        <currencySymbol>XAF</currencySymbol>
+        <currencyName>Franc</currencyName>
+        <v:telephonePrefix>+237</v:telephonePrefix>
+        <v:domain>.cm</v:domain>
+    </country>
+    <country id:code="CAN" name="Canada">
+        <config:formalName></config:formalName>
+        <config:capital>Ottawa</config:capital>
+        <currencySymbol>CAD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+1</v:telephonePrefix>
+        <v:domain>.ca</v:domain>
+    </country>
+    <country id:code="CPV" name="Cape Verde">
+        <config:formalName>Republic of Cape Verde</config:formalName>
+        <config:capital>Praia</config:capital>
+        <currencySymbol>CVE</currencySymbol>
+        <currencyName>Escudo</currencyName>
+        <v:telephonePrefix>+238</v:telephonePrefix>
+        <v:domain>.cv</v:domain>
+    </country>
+    <country id:code="CAF" name="Central African Republic">
+        <config:formalName></config:formalName>
+        <config:capital>Bangui</config:capital>
+        <currencySymbol>XAF</currencySymbol>
+        <currencyName>Franc</currencyName>
+        <v:telephonePrefix>+236</v:telephonePrefix>
+        <v:domain>.cf</v:domain>
+    </country>
+    <country id:code="TCD" name="Chad">
+        <config:formalName>Republic of Chad</config:formalName>
+        <config:capital>N'Djamena</config:capital>
+        <currencySymbol>XAF</currencySymbol>
+        <currencyName>Franc</currencyName>
+        <v:telephonePrefix>+235</v:telephonePrefix>
+        <v:domain>.td</v:domain>
+    </country>
+    <country id:code="CHL" name="Chile">
+        <config:formalName>Republic of Chile</config:formalName>
+        <config:capital>Santiago (administrative/judical) and Valparaiso
+            (legislative)
+        </config:capital>
+        <currencySymbol>CLP</currencySymbol>
+        <currencyName>Peso</currencyName>
+        <v:telephonePrefix>+56</v:telephonePrefix>
+        <v:domain>.cl</v:domain>
+    </country>
+    <country id:code="CHN" name="China">
+        <config:formalName>People's Republic of China</config:formalName>
+        <config:capital>Beijing</config:capital>
+        <currencySymbol>CNY</currencySymbol>
+        <currencyName>Yuan Renminbi</currencyName>
+        <v:telephonePrefix>+86</v:telephonePrefix>
+        <v:domain>.cn</v:domain>
+    </country>
+    <country id:code="COL" name="Colombia">
+        <config:formalName>Republic of Colombia</config:formalName>
+        <config:capital>Bogota</config:capital>
+        <currencySymbol>COP</currencySymbol>
+        <currencyName>Peso</currencyName>
+        <v:telephonePrefix>+57</v:telephonePrefix>
+        <v:domain>.co</v:domain>
+    </country>
+    <country id:code="COM" name="Comoros">
+        <config:formalName>Union of Comoros</config:formalName>
+        <config:capital>Moroni</config:capital>
+        <currencySymbol>KMF</currencySymbol>
+        <currencyName>Franc</currencyName>
+        <v:telephonePrefix>+269</v:telephonePrefix>
+        <v:domain>.km</v:domain>
+    </country>
+    <country id:code="COD" name="Congo (Congo � Kinshasa)">
+        <config:formalName>Democratic Republic of the Congo</config:formalName>
+        <config:capital>Kinshasa</config:capital>
+        <currencySymbol>CDF</currencySymbol>
+        <currencyName>Franc</currencyName>
+        <v:telephonePrefix>+243</v:telephonePrefix>
+        <v:domain>.cd</v:domain>
+    </country>
+    <country id:code="COG" name="Congo (Congo � Brazzaville)">
+        <config:formalName>Republic of the Congo</config:formalName>
+        <config:capital>Brazzaville</config:capital>
+        <currencySymbol>XAF</currencySymbol>
+        <currencyName>Franc</currencyName>
+        <v:telephonePrefix>+242</v:telephonePrefix>
+        <v:domain>.cg</v:domain>
+    </country>
+    <country id:code="CRI" name="Costa Rica">
+        <config:formalName>Republic of Costa Rica</config:formalName>
+        <config:capital>San Jose</config:capital>
+        <currencySymbol>CRC</currencySymbol>
+        <currencyName>Colon</currencyName>
+        <v:telephonePrefix>+506</v:telephonePrefix>
+        <v:domain>.cr</v:domain>
+    </country>
+    <country id:code="CIV" name="Cote d'Ivoire (Ivory Coast)">
+        <config:formalName>Republic of Cote d'Ivoire</config:formalName>
+        <config:capital>Yamoussoukro</config:capital>
+        <currencySymbol>XOF</currencySymbol>
+        <currencyName>Franc</currencyName>
+        <v:telephonePrefix>+225</v:telephonePrefix>
+        <v:domain>.ci</v:domain>
+    </country>
+    <country id:code="HRV" name="Croatia">
+        <config:formalName>Republic of Croatia</config:formalName>
+        <config:capital>Zagreb</config:capital>
+        <currencySymbol>HRK</currencySymbol>
+        <currencyName>Kuna</currencyName>
+        <v:telephonePrefix>+385</v:telephonePrefix>
+        <v:domain>.hr</v:domain>
+    </country>
+    <country id:code="CUB" name="Cuba">
+        <config:formalName>Republic of Cuba</config:formalName>
+        <config:capital>Havana</config:capital>
+        <currencySymbol>CUP</currencySymbol>
+        <currencyName>Peso</currencyName>
+        <v:telephonePrefix>+53</v:telephonePrefix>
+        <v:domain>.cu</v:domain>
+    </country>
+    <country id:code="CYP" name="Cyprus">
+        <config:formalName>Republic of Cyprus</config:formalName>
+        <config:capital>Nicosia</config:capital>
+        <currencySymbol>CYP</currencySymbol>
+        <currencyName>Pound</currencyName>
+        <v:telephonePrefix>+357</v:telephonePrefix>
+        <v:domain>.cy</v:domain>
+    </country>
+    <country id:code="CZE" name="Czech Republic">
+        <config:formalName></config:formalName>
+        <config:capital>Prague</config:capital>
+        <currencySymbol>CZK</currencySymbol>
+        <currencyName>Koruna</currencyName>
+        <v:telephonePrefix>+420</v:telephonePrefix>
+        <v:domain>.cz</v:domain>
+    </country>
+    <country id:code="DNK" name="Denmark">
+        <config:formalName>Kingdom of Denmark</config:formalName>
+        <config:capital>Copenhagen</config:capital>
+        <currencySymbol>DKK</currencySymbol>
+        <currencyName>Krone</currencyName>
+        <v:telephonePrefix>+45</v:telephonePrefix>
+        <v:domain>.dk</v:domain>
+    </country>
+    <country id:code="DJI" name="Djibouti">
+        <config:formalName>Republic of Djibouti</config:formalName>
+        <config:capital>Djibouti</config:capital>
+        <currencySymbol>DJF</currencySymbol>
+        <currencyName>Franc</currencyName>
+        <v:telephonePrefix>+253</v:telephonePrefix>
+        <v:domain>.dj</v:domain>
+    </country>
+    <country id:code="DMA" name="Dominica">
+        <config:formalName>Commonwealth of Dominica</config:formalName>
+        <config:capital>Roseau</config:capital>
+        <currencySymbol>XCD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+1-767</v:telephonePrefix>
+        <v:domain>.dm</v:domain>
+    </country>
+    <country id:code="DOM" name="Dominican Republic">
+        <config:formalName></config:formalName>
+        <config:capital>Santo Domingo</config:capital>
+        <currencySymbol>DOP</currencySymbol>
+        <currencyName>Peso</currencyName>
+        <v:telephonePrefix>+1-809 and 1-829</v:telephonePrefix>
+        <v:domain>.do</v:domain>
+    </country>
+    <country id:code="ECU" name="Ecuador">
+        <config:formalName>Republic of Ecuador</config:formalName>
+        <config:capital>Quito</config:capital>
+        <currencySymbol>USD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+593</v:telephonePrefix>
+        <v:domain>.ec</v:domain>
+    </country>
+    <country id:code="EGY" name="Egypt">
+        <config:formalName>Arab Republic of Egypt</config:formalName>
+        <config:capital>Cairo</config:capital>
+        <currencySymbol>EGP</currencySymbol>
+        <currencyName>Pound</currencyName>
+        <v:telephonePrefix>+20</v:telephonePrefix>
+        <v:domain>.eg</v:domain>
+    </country>
+    <country id:code="SLV" name="El Salvador">
+        <config:formalName>Republic of El Salvador</config:formalName>
+        <config:capital>San Salvador</config:capital>
+        <currencySymbol>USD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+503</v:telephonePrefix>
+        <v:domain>.sv</v:domain>
+    </country>
+    <country id:code="GNQ" name="Equatorial Guinea">
+        <config:formalName>Republic of Equatorial Guinea</config:formalName>
+        <config:capital>Malabo</config:capital>
+        <currencySymbol>XAF</currencySymbol>
+        <currencyName>Franc</currencyName>
+        <v:telephonePrefix>+240</v:telephonePrefix>
+        <v:domain>.gq</v:domain>
+    </country>
+    <country id:code="ERI" name="Eritrea">
+        <config:formalName>State of Eritrea</config:formalName>
+        <config:capital>Asmara</config:capital>
+        <currencySymbol>ERN</currencySymbol>
+        <currencyName>Nakfa</currencyName>
+        <v:telephonePrefix>+291</v:telephonePrefix>
+        <v:domain>.er</v:domain>
+    </country>
+    <country id:code="EST" name="Estonia">
+        <config:formalName>Republic of Estonia</config:formalName>
+        <config:capital>Tallinn</config:capital>
+        <currencySymbol>EEK</currencySymbol>
+        <currencyName>Kroon</currencyName>
+        <v:telephonePrefix>+372</v:telephonePrefix>
+        <v:domain>.ee</v:domain>
+    </country>
+    <country id:code="ETH" name="Ethiopia">
+        <config:formalName>Federal Democratic Republic of Ethiopia
+        </config:formalName>
+        <config:capital>Addis Ababa</config:capital>
+        <currencySymbol>ETB</currencySymbol>
+        <currencyName>Birr</currencyName>
+        <v:telephonePrefix>+251</v:telephonePrefix>
+        <v:domain>.et</v:domain>
+    </country>
+    <country id:code="FJI" name="Fiji">
+        <config:formalName>Republic of the Fiji Islands</config:formalName>
+        <config:capital>Suva</config:capital>
+        <currencySymbol>FJD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+679</v:telephonePrefix>
+        <v:domain>.fj</v:domain>
+    </country>
+    <country id:code="FIN" name="Finland">
+        <config:formalName>Republic of Finland</config:formalName>
+        <config:capital>Helsinki</config:capital>
+        <currencySymbol>EUR</currencySymbol>
+        <currencyName>Euro</currencyName>
+        <v:telephonePrefix>+358</v:telephonePrefix>
+        <v:domain>.fi</v:domain>
+    </country>
+    <country id:code="FRA" name="France">
+        <config:formalName>French Republic</config:formalName>
+        <config:capital>Paris</config:capital>
+        <currencySymbol>EUR</currencySymbol>
+        <currencyName>Euro</currencyName>
+        <v:telephonePrefix>+33</v:telephonePrefix>
+        <v:domain>.fr</v:domain>
+    </country>
+    <country id:code="GAB" name="Gabon">
+        <config:formalName>Gabonese Republic</config:formalName>
+        <config:capital>Libreville</config:capital>
+        <currencySymbol>XAF</currencySymbol>
+        <currencyName>Franc</currencyName>
+        <v:telephonePrefix>+241</v:telephonePrefix>
+        <v:domain>.ga</v:domain>
+    </country>
+    <country id:code="GMB" name="Gambia">
+        <config:formalName>Republic of The Gambia</config:formalName>
+        <config:capital>Banjul</config:capital>
+        <currencySymbol>GMD</currencySymbol>
+        <currencyName>Dalasi</currencyName>
+        <v:telephonePrefix>+220</v:telephonePrefix>
+        <v:domain>.gm</v:domain>
+    </country>
+    <country id:code="GEO" name="Georgia">
+        <config:formalName>Republic of Georgia</config:formalName>
+        <config:capital>Tbilisi</config:capital>
+        <currencySymbol>GEL</currencySymbol>
+        <currencyName>Lari</currencyName>
+        <v:telephonePrefix>+995</v:telephonePrefix>
+        <v:domain>.ge</v:domain>
+    </country>
+    <country id:code="DEU" name="Germany">
+        <config:formalName>Federal Republic of Germany</config:formalName>
+        <config:capital>Berlin</config:capital>
+        <currencySymbol>EUR</currencySymbol>
+        <currencyName>Euro</currencyName>
+        <v:telephonePrefix>+49</v:telephonePrefix>
+        <v:domain>.de</v:domain>
+    </country>
+    <country id:code="GHA" name="Ghana">
+        <config:formalName>Republic of Ghana</config:formalName>
+        <config:capital>Accra</config:capital>
+        <currencySymbol>GHS</currencySymbol>
+        <currencyName>Cedi</currencyName>
+        <v:telephonePrefix>+233</v:telephonePrefix>
+        <v:domain>.gh</v:domain>
+    </country>
+    <country id:code="GRC" name="Greece">
+        <config:formalName>Hellenic Republic</config:formalName>
+        <config:capital>Athens</config:capital>
+        <currencySymbol>EUR</currencySymbol>
+        <currencyName>Euro</currencyName>
+        <v:telephonePrefix>+30</v:telephonePrefix>
+        <v:domain>.gr</v:domain>
+    </country>
+    <country id:code="GRD" name="Grenada">
+        <config:formalName></config:formalName>
+        <config:capital>Saint George's</config:capital>
+        <currencySymbol>XCD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+1-473</v:telephonePrefix>
+        <v:domain>.gd</v:domain>
+    </country>
+    <country id:code="GTM" name="Guatemala">
+        <config:formalName>Republic of Guatemala</config:formalName>
+        <config:capital>Guatemala</config:capital>
+        <currencySymbol>GTQ</currencySymbol>
+        <currencyName>Quetzal</currencyName>
+        <v:telephonePrefix>+502</v:telephonePrefix>
+        <v:domain>.gt</v:domain>
+    </country>
+    <country id:code="GIN" name="Guinea">
+        <config:formalName>Republic of Guinea</config:formalName>
+        <config:capital>Conakry</config:capital>
+        <currencySymbol>GNF</currencySymbol>
+        <currencyName>Franc</currencyName>
+        <v:telephonePrefix>+224</v:telephonePrefix>
+        <v:domain>.gn</v:domain>
+    </country>
+    <country id:code="GNB" name="Guinea-Bissau">
+        <config:formalName>Republic of Guinea-Bissau</config:formalName>
+        <config:capital>Bissau</config:capital>
+        <currencySymbol>XOF</currencySymbol>
+        <currencyName>Franc</currencyName>
+        <v:telephonePrefix>+245</v:telephonePrefix>
+        <v:domain>.gw</v:domain>
+    </country>
+    <country id:code="GUY" name="Guyana">
+        <config:formalName>Co-operative Republic of Guyana</config:formalName>
+        <config:capital>Georgetown</config:capital>
+        <currencySymbol>GYD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+592</v:telephonePrefix>
+        <v:domain>.gy</v:domain>
+    </country>
+    <country id:code="HTI" name="Haiti">
+        <config:formalName>Republic of Haiti</config:formalName>
+        <config:capital>Port-au-Prince</config:capital>
+        <currencySymbol>HTG</currencySymbol>
+        <currencyName>Gourde</currencyName>
+        <v:telephonePrefix>+509</v:telephonePrefix>
+        <v:domain>.ht</v:domain>
+    </country>
+    <country id:code="HND" name="Honduras">
+        <config:formalName>Republic of Honduras</config:formalName>
+        <config:capital>Tegucigalpa</config:capital>
+        <currencySymbol>HNL</currencySymbol>
+        <currencyName>Lempira</currencyName>
+        <v:telephonePrefix>+504</v:telephonePrefix>
+        <v:domain>.hn</v:domain>
+    </country>
+    <country id:code="HUN" name="Hungary">
+        <config:formalName>Republic of Hungary</config:formalName>
+        <config:capital>Budapest</config:capital>
+        <currencySymbol>HUF</currencySymbol>
+        <currencyName>Forint</currencyName>
+        <v:telephonePrefix>+36</v:telephonePrefix>
+        <v:domain>.hu</v:domain>
+    </country>
+    <country id:code="ISL" name="Iceland">
+        <config:formalName>Republic of Iceland</config:formalName>
+        <config:capital>Reykjavik</config:capital>
+        <currencySymbol>ISK</currencySymbol>
+        <currencyName>Krona</currencyName>
+        <v:telephonePrefix>+354</v:telephonePrefix>
+        <v:domain>.is</v:domain>
+    </country>
+    <country id:code="IND" name="India">
+        <config:formalName>Republic of India</config:formalName>
+        <config:capital>New Delhi</config:capital>
+        <currencySymbol>INR</currencySymbol>
+        <currencyName>Rupee</currencyName>
+        <v:telephonePrefix>+91</v:telephonePrefix>
+        <v:domain>.in</v:domain>
+    </country>
+    <country id:code="IDN" name="Indonesia">
+        <config:formalName>Republic of Indonesia</config:formalName>
+        <config:capital>Jakarta</config:capital>
+        <currencySymbol>IDR</currencySymbol>
+        <currencyName>Rupiah</currencyName>
+        <v:telephonePrefix>+62</v:telephonePrefix>
+        <v:domain>.id</v:domain>
+    </country>
+    <country id:code="IRN" name="Iran">
+        <config:formalName>Islamic Republic of Iran</config:formalName>
+        <config:capital>Tehran</config:capital>
+        <currencySymbol>IRR</currencySymbol>
+        <currencyName>Rial</currencyName>
+        <v:telephonePrefix>+98</v:telephonePrefix>
+        <v:domain>.ir</v:domain>
+    </country>
+    <country id:code="IRQ" name="Iraq">
+        <config:formalName>Republic of Iraq</config:formalName>
+        <config:capital>Baghdad</config:capital>
+        <currencySymbol>IQD</currencySymbol>
+        <currencyName>Dinar</currencyName>
+        <v:telephonePrefix>+964</v:telephonePrefix>
+        <v:domain>.iq</v:domain>
+    </country>
+    <country id:code="IRL" name="Ireland">
+        <config:formalName></config:formalName>
+        <config:capital>Dublin</config:capital>
+        <currencySymbol>EUR</currencySymbol>
+        <currencyName>Euro</currencyName>
+        <v:telephonePrefix>+353</v:telephonePrefix>
+        <v:domain>.ie</v:domain>
+    </country>
+    <country id:code="ISR" name="Israel">
+        <config:formalName>State of Israel</config:formalName>
+        <config:capital>Jerusalem</config:capital>
+        <currencySymbol>ILS</currencySymbol>
+        <currencyName>Shekel</currencyName>
+        <v:telephonePrefix>+972</v:telephonePrefix>
+        <v:domain>.il</v:domain>
+    </country>
+    <country id:code="ITA" name="Italy">
+        <config:formalName>Italian Republic</config:formalName>
+        <config:capital>Rome</config:capital>
+        <currencySymbol>EUR</currencySymbol>
+        <currencyName>Euro</currencyName>
+        <v:telephonePrefix>+39</v:telephonePrefix>
+        <v:domain>.it</v:domain>
+    </country>
+    <country id:code="JAM" name="Jamaica">
+        <config:formalName></config:formalName>
+        <config:capital>Kingston</config:capital>
+        <currencySymbol>JMD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+1-876</v:telephonePrefix>
+        <v:domain>.jm</v:domain>
+    </country>
+    <country id:code="JPN" name="Japan">
+        <config:formalName></config:formalName>
+        <config:capital>Tokyo</config:capital>
+        <currencySymbol>JPY</currencySymbol>
+        <currencyName>Yen</currencyName>
+        <v:telephonePrefix>+81</v:telephonePrefix>
+        <v:domain>.jp</v:domain>
+    </country>
+    <country id:code="JOR" name="Jordan">
+        <config:formalName>Hashemite Kingdom of Jordan</config:formalName>
+        <config:capital>Amman</config:capital>
+        <currencySymbol>JOD</currencySymbol>
+        <currencyName>Dinar</currencyName>
+        <v:telephonePrefix>+962</v:telephonePrefix>
+        <v:domain>.jo</v:domain>
+    </country>
+    <country id:code="KAZ" name="Kazakhstan">
+        <config:formalName>Republic of Kazakhstan</config:formalName>
+        <config:capital>Astana</config:capital>
+        <currencySymbol>KZT</currencySymbol>
+        <currencyName>Tenge</currencyName>
+        <v:telephonePrefix>+7</v:telephonePrefix>
+        <v:domain>.kz</v:domain>
+    </country>
+    <country id:code="KEN" name="Kenya">
+        <config:formalName>Republic of Kenya</config:formalName>
+        <config:capital>Nairobi</config:capital>
+        <currencySymbol>KES</currencySymbol>
+        <currencyName>Shilling</currencyName>
+        <v:telephonePrefix>+254</v:telephonePrefix>
+        <v:domain>.ke</v:domain>
+    </country>
+    <country id:code="KIR" name="Kiribati">
+        <config:formalName>Republic of Kiribati</config:formalName>
+        <config:capital>Tarawa</config:capital>
+        <currencySymbol>AUD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+686</v:telephonePrefix>
+        <v:domain>.ki</v:domain>
+    </country>
+    <country id:code="PRK" name="North Korea">
+        <config:formalName>Democratic People's Republic of Korea
+        </config:formalName>
+        <config:capital>Pyongyang</config:capital>
+        <currencySymbol>KPW</currencySymbol>
+        <currencyName>Won</currencyName>
+        <v:telephonePrefix>+850</v:telephonePrefix>
+        <v:domain>.kp</v:domain>
+    </country>
+    <country id:code="KOR" name="South Korea">
+        <config:formalName>Republic of Korea</config:formalName>
+        <config:capital>Seoul</config:capital>
+        <currencySymbol>KRW</currencySymbol>
+        <currencyName>Won</currencyName>
+        <v:telephonePrefix>+82</v:telephonePrefix>
+        <v:domain>.kr</v:domain>
+    </country>
+    <country id:code="KWT" name="Kuwait">
+        <config:formalName>State of Kuwait</config:formalName>
+        <config:capital>Kuwait</config:capital>
+        <currencySymbol>KWD</currencySymbol>
+        <currencyName>Dinar</currencyName>
+        <v:telephonePrefix>+965</v:telephonePrefix>
+        <v:domain>.kw</v:domain>
+    </country>
+    <country id:code="KGZ" name="Kyrgyzstan">
+        <config:formalName>Kyrgyz Republic</config:formalName>
+        <config:capital>Bishkek</config:capital>
+        <currencySymbol>KGS</currencySymbol>
+        <currencyName>Som</currencyName>
+        <v:telephonePrefix>+996</v:telephonePrefix>
+        <v:domain>.kg</v:domain>
+    </country>
+    <country id:code="LAO" name="Laos">
+        <config:formalName>Lao People's Democratic Republic</config:formalName>
+        <config:capital>Vientiane</config:capital>
+        <currencySymbol>LAK</currencySymbol>
+        <currencyName>Kip</currencyName>
+        <v:telephonePrefix>+856</v:telephonePrefix>
+        <v:domain>.la</v:domain>
+    </country>
+    <country id:code="LVA" name="Latvia">
+        <config:formalName>Republic of Latvia</config:formalName>
+        <config:capital>Riga</config:capital>
+        <currencySymbol>LVL</currencySymbol>
+        <currencyName>Lat</currencyName>
+        <v:telephonePrefix>+371</v:telephonePrefix>
+        <v:domain>.lv</v:domain>
+    </country>
+    <country id:code="LBN" name="Lebanon">
+        <config:formalName>Lebanese Republic</config:formalName>
+        <config:capital>Beirut</config:capital>
+        <currencySymbol>LBP</currencySymbol>
+        <currencyName>Pound</currencyName>
+        <v:telephonePrefix>+961</v:telephonePrefix>
+        <v:domain>.lb</v:domain>
+    </country>
+    <country id:code="LSO" name="Lesotho">
+        <config:formalName>Kingdom of Lesotho</config:formalName>
+        <config:capital>Maseru</config:capital>
+        <currencySymbol>LSL</currencySymbol>
+        <currencyName>Loti</currencyName>
+        <v:telephonePrefix>+266</v:telephonePrefix>
+        <v:domain>.ls</v:domain>
+    </country>
+    <country id:code="LBR" name="Liberia">
+        <config:formalName>Republic of Liberia</config:formalName>
+        <config:capital>Monrovia</config:capital>
+        <currencySymbol>LRD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+231</v:telephonePrefix>
+        <v:domain>.lr</v:domain>
+    </country>
+    <country id:code="LBY" name="Libya">
+        <config:formalName>Great Socialist People's Libyan Arab Jamahiriya
+        </config:formalName>
+        <config:capital>Tripoli</config:capital>
+        <currencySymbol>LYD</currencySymbol>
+        <currencyName>Dinar</currencyName>
+        <v:telephonePrefix>+218</v:telephonePrefix>
+        <v:domain>.ly</v:domain>
+    </country>
+    <country id:code="LIE" name="Liechtenstein">
+        <config:formalName>Principality of Liechtenstein</config:formalName>
+        <config:capital>Vaduz</config:capital>
+        <currencySymbol>CHF</currencySymbol>
+        <currencyName>Franc</currencyName>
+        <v:telephonePrefix>+423</v:telephonePrefix>
+        <v:domain>.li</v:domain>
+    </country>
+    <country id:code="LTU" name="Lithuania">
+        <config:formalName>Republic of Lithuania</config:formalName>
+        <config:capital>Vilnius</config:capital>
+        <currencySymbol>LTL</currencySymbol>
+        <currencyName>Litas</currencyName>
+        <v:telephonePrefix>+370</v:telephonePrefix>
+        <v:domain>.lt</v:domain>
+    </country>
+    <country id:code="LUX" name="Luxembourg">
+        <config:formalName>Grand Duchy of Luxembourg</config:formalName>
+        <config:capital>Luxembourg</config:capital>
+        <currencySymbol>EUR</currencySymbol>
+        <currencyName>Euro</currencyName>
+        <v:telephonePrefix>+352</v:telephonePrefix>
+        <v:domain>.lu</v:domain>
+    </country>
+    <country id:code="MKD" name="Macedonia">
+        <config:formalName>Republic of Macedonia</config:formalName>
+        <config:capital>Skopje</config:capital>
+        <currencySymbol>MKD</currencySymbol>
+        <currencyName>Denar</currencyName>
+        <v:telephonePrefix>+389</v:telephonePrefix>
+        <v:domain>.mk</v:domain>
+    </country>
+    <country id:code="MDG" name="Madagascar">
+        <config:formalName>Republic of Madagascar</config:formalName>
+        <config:capital>Antananarivo</config:capital>
+        <currencySymbol>MGA</currencySymbol>
+        <currencyName>Ariary</currencyName>
+        <v:telephonePrefix>+261</v:telephonePrefix>
+        <v:domain>.mg</v:domain>
+    </country>
+    <country id:code="MWI" name="Malawi">
+        <config:formalName>Republic of Malawi</config:formalName>
+        <config:capital>Lilongwe</config:capital>
+        <currencySymbol>MWK</currencySymbol>
+        <currencyName>Kwacha</currencyName>
+        <v:telephonePrefix>+265</v:telephonePrefix>
+        <v:domain>.mw</v:domain>
+    </country>
+    <country id:code="MYS" name="Malaysia">
+        <config:formalName></config:formalName>
+        <config:capital>Kuala Lumpur (legislative/judical) and Putrajaya
+            (administrative)
+        </config:capital>
+        <currencySymbol>MYR</currencySymbol>
+        <currencyName>Ringgit</currencyName>
+        <v:telephonePrefix>+60</v:telephonePrefix>
+        <v:domain>.my</v:domain>
+    </country>
+    <country id:code="MDV" name="Maldives">
+        <config:formalName>Republic of Maldives</config:formalName>
+        <config:capital>Male</config:capital>
+        <currencySymbol>MVR</currencySymbol>
+        <currencyName>Rufiyaa</currencyName>
+        <v:telephonePrefix>+960</v:telephonePrefix>
+        <v:domain>.mv</v:domain>
+    </country>
+    <country id:code="MLI" name="Mali">
+        <config:formalName>Republic of Mali</config:formalName>
+        <config:capital>Bamako</config:capital>
+        <currencySymbol>XOF</currencySymbol>
+        <currencyName>Franc</currencyName>
+        <v:telephonePrefix>+223</v:telephonePrefix>
+        <v:domain>.ml</v:domain>
+    </country>
+    <country id:code="MLT" name="Malta">
+        <config:formalName>Republic of Malta</config:formalName>
+        <config:capital>Valletta</config:capital>
+        <currencySymbol>MTL</currencySymbol>
+        <currencyName>Lira</currencyName>
+        <v:telephonePrefix>+356</v:telephonePrefix>
+        <v:domain>.mt</v:domain>
+    </country>
+    <country id:code="MHL" name="Marshall Islands">
+        <config:formalName>Republic of the Marshall Islands</config:formalName>
+        <config:capital>Majuro</config:capital>
+        <currencySymbol>USD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+692</v:telephonePrefix>
+        <v:domain>.mh</v:domain>
+    </country>
+    <country id:code="MRT" name="Mauritania">
+        <config:formalName>Islamic Republic of Mauritania</config:formalName>
+        <config:capital>Nouakchott</config:capital>
+        <currencySymbol>MRO</currencySymbol>
+        <currencyName>Ouguiya</currencyName>
+        <v:telephonePrefix>+222</v:telephonePrefix>
+        <v:domain>.mr</v:domain>
+    </country>
+    <country id:code="MUS" name="Mauritius">
+        <config:formalName>Republic of Mauritius</config:formalName>
+        <config:capital>Port Louis</config:capital>
+        <currencySymbol>MUR</currencySymbol>
+        <currencyName>Rupee</currencyName>
+        <v:telephonePrefix>+230</v:telephonePrefix>
+        <v:domain>.mu</v:domain>
+    </country>
+    <country id:code="MEX" name="Mexico">
+        <config:formalName>United Mexican States</config:formalName>
+        <config:capital>Mexico</config:capital>
+        <currencySymbol>MXN</currencySymbol>
+        <currencyName>Peso</currencyName>
+        <v:telephonePrefix>+52</v:telephonePrefix>
+        <v:domain>.mx</v:domain>
+    </country>
+    <country id:code="FSM" name="Micronesia">
+        <config:formalName>Federated States of Micronesia</config:formalName>
+        <config:capital>Palikir</config:capital>
+        <currencySymbol>USD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+691</v:telephonePrefix>
+        <v:domain>.fm</v:domain>
+    </country>
+    <country id:code="MDA" name="Moldova">
+        <config:formalName>Republic of Moldova</config:formalName>
+        <config:capital>Chisinau</config:capital>
+        <currencySymbol>MDL</currencySymbol>
+        <currencyName>Leu</currencyName>
+        <v:telephonePrefix>+373</v:telephonePrefix>
+        <v:domain>.md</v:domain>
+    </country>
+    <country id:code="MCO" name="Monaco">
+        <config:formalName>Principality of Monaco</config:formalName>
+        <config:capital>Monaco</config:capital>
+        <currencySymbol>EUR</currencySymbol>
+        <currencyName>Euro</currencyName>
+        <v:telephonePrefix>+377</v:telephonePrefix>
+        <v:domain>.mc</v:domain>
+    </country>
+    <country id:code="MNG" name="Mongolia">
+        <config:formalName></config:formalName>
+        <config:capital>Ulaanbaatar</config:capital>
+        <currencySymbol>MNT</currencySymbol>
+        <currencyName>Tugrik</currencyName>
+        <v:telephonePrefix>+976</v:telephonePrefix>
+        <v:domain>.mn</v:domain>
+    </country>
+    <country id:code="MNE" name="Montenegro">
+        <config:formalName>Republic of Montenegro</config:formalName>
+        <config:capital>Podgorica</config:capital>
+        <currencySymbol>EUR</currencySymbol>
+        <currencyName>Euro</currencyName>
+        <v:telephonePrefix>+382</v:telephonePrefix>
+        <v:domain>.me and .yu</v:domain>
+    </country>
+    <country id:code="MAR" name="Morocco">
+        <config:formalName>Kingdom of Morocco</config:formalName>
+        <config:capital>Rabat</config:capital>
+        <currencySymbol>MAD</currencySymbol>
+        <currencyName>Dirham</currencyName>
+        <v:telephonePrefix>+212</v:telephonePrefix>
+        <v:domain>.ma</v:domain>
+    </country>
+    <country id:code="MOZ" name="Mozambique">
+        <config:formalName>Republic of Mozambique</config:formalName>
+        <config:capital>Maputo</config:capital>
+        <currencySymbol>MZM</currencySymbol>
+        <currencyName>Meticail</currencyName>
+        <v:telephonePrefix>+258</v:telephonePrefix>
+        <v:domain>.mz</v:domain>
+    </country>
+    <country id:code="MMR" name="Myanmar (Burma)">
+        <config:formalName>Union of Myanmar</config:formalName>
+        <config:capital>Naypyidaw</config:capital>
+        <currencySymbol>MMK</currencySymbol>
+        <currencyName>Kyat</currencyName>
+        <v:telephonePrefix>+95</v:telephonePrefix>
+        <v:domain>.mm</v:domain>
+    </country>
+    <country id:code="NAM" name="Namibia">
+        <config:formalName>Republic of Namibia</config:formalName>
+        <config:capital>Windhoek</config:capital>
+        <currencySymbol>NAD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+264</v:telephonePrefix>
+        <v:domain>.na</v:domain>
+    </country>
+    <country id:code="NRU" name="Nauru">
+        <config:formalName>Republic of Nauru</config:formalName>
+        <config:capital>Yaren</config:capital>
+        <currencySymbol>AUD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+674</v:telephonePrefix>
+        <v:domain>.nr</v:domain>
+    </country>
+    <country id:code="NPL" name="Nepal">
+        <config:formalName></config:formalName>
+        <config:capital>Kathmandu</config:capital>
+        <currencySymbol>NPR</currencySymbol>
+        <currencyName>Rupee</currencyName>
+        <v:telephonePrefix>+977</v:telephonePrefix>
+        <v:domain>.np</v:domain>
+    </country>
+    <country id:code="NLD" name="Netherlands">
+        <config:formalName>Kingdom of the Netherlands</config:formalName>
+        <config:capital>Amsterdam (administrative) and The Hague
+            (legislative/judical)
+        </config:capital>
+        <currencySymbol>EUR</currencySymbol>
+        <currencyName>Euro</currencyName>
+        <v:telephonePrefix>+31</v:telephonePrefix>
+        <v:domain>.nl</v:domain>
+    </country>
+    <country id:code="NZL" name="New Zealand">
+        <config:formalName></config:formalName>
+        <config:capital>Wellington</config:capital>
+        <currencySymbol>NZD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+64</v:telephonePrefix>
+        <v:domain>.nz</v:domain>
+    </country>
+    <country id:code="NIC" name="Nicaragua">
+        <config:formalName>Republic of Nicaragua</config:formalName>
+        <config:capital>Managua</config:capital>
+        <currencySymbol>NIO</currencySymbol>
+        <currencyName>Cordoba</currencyName>
+        <v:telephonePrefix>+505</v:telephonePrefix>
+        <v:domain>.ni</v:domain>
+    </country>
+    <country id:code="NER" name="Niger">
+        <config:formalName>Republic of Niger</config:formalName>
+        <config:capital>Niamey</config:capital>
+        <currencySymbol>XOF</currencySymbol>
+        <currencyName>Franc</currencyName>
+        <v:telephonePrefix>+227</v:telephonePrefix>
+        <v:domain>.ne</v:domain>
+    </country>
+    <country id:code="NGA" name="Nigeria">
+        <config:formalName>Federal Republic of Nigeria</config:formalName>
+        <config:capital>Abuja</config:capital>
+        <currencySymbol>NGN</currencySymbol>
+        <currencyName>Naira</currencyName>
+        <v:telephonePrefix>+234</v:telephonePrefix>
+        <v:domain>.ng</v:domain>
+    </country>
+    <country id:code="NOR" name="Norway">
+        <config:formalName>Kingdom of Norway</config:formalName>
+        <config:capital>Oslo</config:capital>
+        <currencySymbol>NOK</currencySymbol>
+        <currencyName>Krone</currencyName>
+        <v:telephonePrefix>+47</v:telephonePrefix>
+        <v:domain>.no</v:domain>
+    </country>
+    <country id:code="OMN" name="Oman">
+        <config:formalName>Sultanate of Oman</config:formalName>
+        <config:capital>Muscat</config:capital>
+        <currencySymbol>OMR</currencySymbol>
+        <currencyName>Rial</currencyName>
+        <v:telephonePrefix>+968</v:telephonePrefix>
+        <v:domain>.om</v:domain>
+    </country>
+    <country id:code="PAK" name="Pakistan">
+        <config:formalName>Islamic Republic of Pakistan</config:formalName>
+        <config:capital>Islamabad</config:capital>
+        <currencySymbol>PKR</currencySymbol>
+        <currencyName>Rupee</currencyName>
+        <v:telephonePrefix>+92</v:telephonePrefix>
+        <v:domain>.pk</v:domain>
+    </country>
+    <country id:code="PLW" name="Palau">
+        <config:formalName>Republic of Palau</config:formalName>
+        <config:capital>Melekeok</config:capital>
+        <currencySymbol>USD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+680</v:telephonePrefix>
+        <v:domain>.pw</v:domain>
+    </country>
+    <country id:code="PAN" name="Panama">
+        <config:formalName>Republic of Panama</config:formalName>
+        <config:capital>Panama</config:capital>
+        <currencySymbol>PAB</currencySymbol>
+        <currencyName>Balboa</currencyName>
+        <v:telephonePrefix>+507</v:telephonePrefix>
+        <v:domain>.pa</v:domain>
+    </country>
+    <country id:code="PNG" name="Papua New Guinea">
+        <config:formalName>Independent State of Papua New Guinea
+        </config:formalName>
+        <config:capital>Port Moresby</config:capital>
+        <currencySymbol>PGK</currencySymbol>
+        <currencyName>Kina</currencyName>
+        <v:telephonePrefix>+675</v:telephonePrefix>
+        <v:domain>.pg</v:domain>
+    </country>
+    <country id:code="PRY" name="Paraguay">
+        <config:formalName>Republic of Paraguay</config:formalName>
+        <config:capital>Asuncion</config:capital>
+        <currencySymbol>PYG</currencySymbol>
+        <currencyName>Guarani</currencyName>
+        <v:telephonePrefix>+595</v:telephonePrefix>
+        <v:domain>.py</v:domain>
+    </country>
+    <country id:code="PER" name="Peru">
+        <config:formalName>Republic of Peru</config:formalName>
+        <config:capital>Lima</config:capital>
+        <currencySymbol>PEN</currencySymbol>
+        <currencyName>Sol</currencyName>
+        <v:telephonePrefix>+51</v:telephonePrefix>
+        <v:domain>.pe</v:domain>
+    </country>
+    <country id:code="PHL" name="Philippines">
+        <config:formalName>Republic of the Philippines</config:formalName>
+        <config:capital>Manila</config:capital>
+        <currencySymbol>PHP</currencySymbol>
+        <currencyName>Peso</currencyName>
+        <v:telephonePrefix>+63</v:telephonePrefix>
+        <v:domain>.ph</v:domain>
+    </country>
+    <country id:code="POL" name="Poland">
+        <config:formalName>Republic of Poland</config:formalName>
+        <config:capital>Warsaw</config:capital>
+        <currencySymbol>PLN</currencySymbol>
+        <currencyName>Zloty</currencyName>
+        <v:telephonePrefix>+48</v:telephonePrefix>
+        <v:domain>.pl</v:domain>
+    </country>
+    <country id:code="PRT" name="Portugal">
+        <config:formalName>Portuguese Republic</config:formalName>
+        <config:capital>Lisbon</config:capital>
+        <currencySymbol>EUR</currencySymbol>
+        <currencyName>Euro</currencyName>
+        <v:telephonePrefix>+351</v:telephonePrefix>
+        <v:domain>.pt</v:domain>
+    </country>
+    <country id:code="QAT" name="Qatar">
+        <config:formalName>State of Qatar</config:formalName>
+        <config:capital>Doha</config:capital>
+        <currencySymbol>QAR</currencySymbol>
+        <currencyName>Rial</currencyName>
+        <v:telephonePrefix>+974</v:telephonePrefix>
+        <v:domain>.qa</v:domain>
+    </country>
+    <country id:code="ROU" name="Romania">
+        <config:formalName></config:formalName>
+        <config:capital>Bucharest</config:capital>
+        <currencySymbol>RON</currencySymbol>
+        <currencyName>Leu</currencyName>
+        <v:telephonePrefix>+40</v:telephonePrefix>
+        <v:domain>.ro</v:domain>
+    </country>
+    <country id:code="RUS" name="Russia">
+        <config:formalName>Russian Federation</config:formalName>
+        <config:capital>Moscow</config:capital>
+        <currencySymbol>RUB</currencySymbol>
+        <currencyName>Ruble</currencyName>
+        <v:telephonePrefix>+7</v:telephonePrefix>
+        <v:domain>.ru and .su</v:domain>
+    </country>
+    <country id:code="RWA" name="Rwanda">
+        <config:formalName>Republic of Rwanda</config:formalName>
+        <config:capital>Kigali</config:capital>
+        <currencySymbol>RWF</currencySymbol>
+        <currencyName>Franc</currencyName>
+        <v:telephonePrefix>+250</v:telephonePrefix>
+        <v:domain>.rw</v:domain>
+    </country>
+    <country id:code="KNA" name="Saint Kitts and Nevis">
+        <config:formalName>Federation of Saint Kitts and Nevis
+        </config:formalName>
+        <config:capital>Basseterre</config:capital>
+        <currencySymbol>XCD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+1-869</v:telephonePrefix>
+        <v:domain>.kn</v:domain>
+    </country>
+    <country id:code="LCA" name="Saint Lucia">
+        <config:formalName></config:formalName>
+        <config:capital>Castries</config:capital>
+        <currencySymbol>XCD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+1-758</v:telephonePrefix>
+        <v:domain>.lc</v:domain>
+    </country>
+    <country id:code="VCT" name="Saint Vincent and the Grenadines">
+        <config:formalName></config:formalName>
+        <config:capital>Kingstown</config:capital>
+        <currencySymbol>XCD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+1-784</v:telephonePrefix>
+        <v:domain>.vc</v:domain>
+    </country>
+    <country id:code="WSM" name="Samoa">
+        <config:formalName>Independent State of Samoa</config:formalName>
+        <config:capital>Apia</config:capital>
+        <currencySymbol>WST</currencySymbol>
+        <currencyName>Tala</currencyName>
+        <v:telephonePrefix>+685</v:telephonePrefix>
+        <v:domain>.ws</v:domain>
+    </country>
+    <country id:code="SMR" name="San Marino">
+        <config:formalName>Republic of San Marino</config:formalName>
+        <config:capital>San Marino</config:capital>
+        <currencySymbol>EUR</currencySymbol>
+        <currencyName>Euro</currencyName>
+        <v:telephonePrefix>+378</v:telephonePrefix>
+        <v:domain>.sm</v:domain>
+    </country>
+    <country id:code="STP" name="Sao Tome and Principe">
+        <config:formalName>Democratic Republic of Sao Tome and Principe
+        </config:formalName>
+        <config:capital>Sao Tome</config:capital>
+        <currencySymbol>STD</currencySymbol>
+        <currencyName>Dobra</currencyName>
+        <v:telephonePrefix>+239</v:telephonePrefix>
+        <v:domain>.st</v:domain>
+    </country>
+    <country id:code="SAU" name="Saudi Arabia">
+        <config:formalName>Kingdom of Saudi Arabia</config:formalName>
+        <config:capital>Riyadh</config:capital>
+        <currencySymbol>SAR</currencySymbol>
+        <currencyName>Rial</currencyName>
+        <v:telephonePrefix>+966</v:telephonePrefix>
+        <v:domain>.sa</v:domain>
+    </country>
+    <country id:code="SEN" name="Senegal">
+        <config:formalName>Republic of Senegal</config:formalName>
+        <config:capital>Dakar</config:capital>
+        <currencySymbol>XOF</currencySymbol>
+        <currencyName>Franc</currencyName>
+        <v:telephonePrefix>+221</v:telephonePrefix>
+        <v:domain>.sn</v:domain>
+    </country>
+    <country id:code="SRB" name="Serbia">
+        <config:formalName>Republic of Serbia</config:formalName>
+        <config:capital>Belgrade</config:capital>
+        <currencySymbol>RSD</currencySymbol>
+        <currencyName>Dinar</currencyName>
+        <v:telephonePrefix>+381</v:telephonePrefix>
+        <v:domain>.rs and .yu</v:domain>
+    </country>
+    <country id:code="SYC" name="Seychelles">
+        <config:formalName>Republic of Seychelles</config:formalName>
+        <config:capital>Victoria</config:capital>
+        <currencySymbol>SCR</currencySymbol>
+        <currencyName>Rupee</currencyName>
+        <v:telephonePrefix>+248</v:telephonePrefix>
+        <v:domain>.sc</v:domain>
+    </country>
+    <country id:code="SLE" name="Sierra Leone">
+        <config:formalName>Republic of Sierra Leone</config:formalName>
+        <config:capital>Freetown</config:capital>
+        <currencySymbol>SLL</currencySymbol>
+        <currencyName>Leone</currencyName>
+        <v:telephonePrefix>+232</v:telephonePrefix>
+        <v:domain>.sl</v:domain>
+    </country>
+    <country id:code="SGP" name="Singapore">
+        <config:formalName>Republic of Singapore</config:formalName>
+        <config:capital>Singapore</config:capital>
+        <currencySymbol>SGD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+65</v:telephonePrefix>
+        <v:domain>.sg</v:domain>
+    </country>
+    <country id:code="SVK" name="Slovakia">
+        <config:formalName>Slovak Republic</config:formalName>
+        <config:capital>Bratislava</config:capital>
+        <currencySymbol>SKK</currencySymbol>
+        <currencyName>Koruna</currencyName>
+        <v:telephonePrefix>+421</v:telephonePrefix>
+        <v:domain>.sk</v:domain>
+    </country>
+    <country id:code="SVN" name="Slovenia">
+        <config:formalName>Republic of Slovenia</config:formalName>
+        <config:capital>Ljubljana</config:capital>
+        <currencySymbol>EUR</currencySymbol>
+        <currencyName>Euro</currencyName>
+        <v:telephonePrefix>+386</v:telephonePrefix>
+        <v:domain>.si</v:domain>
+    </country>
+    <country id:code="SLB" name="Solomon Islands">
+        <config:formalName></config:formalName>
+        <config:capital>Honiara</config:capital>
+        <currencySymbol>SBD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+677</v:telephonePrefix>
+        <v:domain>.sb</v:domain>
+    </country>
+    <country id:code="SOM" name="Somalia">
+        <config:formalName></config:formalName>
+        <config:capital>Mogadishu</config:capital>
+        <currencySymbol>SOS</currencySymbol>
+        <currencyName>Shilling</currencyName>
+        <v:telephonePrefix>+252</v:telephonePrefix>
+        <v:domain>.so</v:domain>
+    </country>
+    <country id:code="ZAF" name="South Africa">
+        <config:formalName>Republic of South Africa</config:formalName>
+        <config:capital>Pretoria (administrative)/Cape Town
+            (legislative)/Bloemfontein (judical)
+        </config:capital>
+        <currencySymbol>ZAR</currencySymbol>
+        <currencyName>Rand</currencyName>
+        <v:telephonePrefix>+27</v:telephonePrefix>
+        <v:domain>.za</v:domain>
+    </country>
+    <country id:code="ESP" name="Spain">
+        <config:formalName>Kingdom of Spain</config:formalName>
+        <config:capital>Madrid</config:capital>
+        <currencySymbol>EUR</currencySymbol>
+        <currencyName>Euro</currencyName>
+        <v:telephonePrefix>+34</v:telephonePrefix>
+        <v:domain>.es</v:domain>
+    </country>
+    <country id:code="LKA" name="Sri Lanka">
+        <config:formalName>Democratic Socialist Republic of Sri Lanka
+        </config:formalName>
+        <config:capital>Colombo (administrative/judical) and Sri Jayewardenepura
+            Kotte (legislative)
+        </config:capital>
+        <currencySymbol>LKR</currencySymbol>
+        <currencyName>Rupee</currencyName>
+        <v:telephonePrefix>+94</v:telephonePrefix>
+        <v:domain>.lk</v:domain>
+    </country>
+    <country id:code="SDN" name="Sudan">
+        <config:formalName>Republic of the Sudan</config:formalName>
+        <config:capital>Khartoum</config:capital>
+        <currencySymbol>SDG</currencySymbol>
+        <currencyName>Pound</currencyName>
+        <v:telephonePrefix>+249</v:telephonePrefix>
+        <v:domain>.sd</v:domain>
+    </country>
+    <country id:code="SUR" name="Suriname">
+        <config:formalName>Republic of Suriname</config:formalName>
+        <config:capital>Paramaribo</config:capital>
+        <currencySymbol>SRD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+597</v:telephonePrefix>
+        <v:domain>.sr</v:domain>
+    </country>
+    <country id:code="SWZ" name="Swaziland">
+        <config:formalName>Kingdom of Swaziland</config:formalName>
+        <config:capital>Mbabane (administrative) and Lobamba (legislative)
+        </config:capital>
+        <currencySymbol>SZL</currencySymbol>
+        <currencyName>Lilangeni</currencyName>
+        <v:telephonePrefix>+268</v:telephonePrefix>
+        <v:domain>.sz</v:domain>
+    </country>
+    <country id:code="SWE" name="Sweden">
+        <config:formalName>Kingdom of Sweden</config:formalName>
+        <config:capital>Stockholm</config:capital>
+        <currencySymbol>SEK</currencySymbol>
+        <currencyName>Kronoa</currencyName>
+        <v:telephonePrefix>+46</v:telephonePrefix>
+        <v:domain>.se</v:domain>
+    </country>
+    <country id:code="CHE" name="Switzerland">
+        <config:formalName>Swiss Confederation</config:formalName>
+        <config:capital>Bern</config:capital>
+        <currencySymbol>CHF</currencySymbol>
+        <currencyName>Franc</currencyName>
+        <v:telephonePrefix>+41</v:telephonePrefix>
+        <v:domain>.ch</v:domain>
+    </country>
+    <country id:code="SYR" name="Syria">
+        <config:formalName>Syrian Arab Republic</config:formalName>
+        <config:capital>Damascus</config:capital>
+        <currencySymbol>SYP</currencySymbol>
+        <currencyName>Pound</currencyName>
+        <v:telephonePrefix>+963</v:telephonePrefix>
+        <v:domain>.sy</v:domain>
+    </country>
+    <country id:code="TJK" name="Tajikistan">
+        <config:formalName>Republic of Tajikistan</config:formalName>
+        <config:capital>Dushanbe</config:capital>
+        <currencySymbol>TJS</currencySymbol>
+        <currencyName>Somoni</currencyName>
+        <v:telephonePrefix>+992</v:telephonePrefix>
+        <v:domain>.tj</v:domain>
+    </country>
+    <country id:code="TZA" name="Tanzania">
+        <config:formalName>United Republic of Tanzania</config:formalName>
+        <config:capital>Dar es Salaam (administrative/judical) and Dodoma
+            (legislative)
+        </config:capital>
+        <currencySymbol>TZS</currencySymbol>
+        <currencyName>Shilling</currencyName>
+        <v:telephonePrefix>+255</v:telephonePrefix>
+        <v:domain>.tz</v:domain>
+    </country>
+    <country id:code="THA" name="Thailand">
+        <config:formalName>Kingdom of Thailand</config:formalName>
+        <config:capital>Bangkok</config:capital>
+        <currencySymbol>THB</currencySymbol>
+        <currencyName>Baht</currencyName>
+        <v:telephonePrefix>+66</v:telephonePrefix>
+        <v:domain>.th</v:domain>
+    </country>
+    <country id:code="TLS" name="Timor-Leste (East Timor)">
+        <config:formalName>Democratic Republic of Timor-Leste
+        </config:formalName>
+        <config:capital>Dili</config:capital>
+        <currencySymbol>USD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+670</v:telephonePrefix>
+        <v:domain>.tp and .tl</v:domain>
+    </country>
+    <country id:code="TGO" name="Togo">
+        <config:formalName>Togolese Republic</config:formalName>
+        <config:capital>Lome</config:capital>
+        <currencySymbol>XOF</currencySymbol>
+        <currencyName>Franc</currencyName>
+        <v:telephonePrefix>+228</v:telephonePrefix>
+        <v:domain>.tg</v:domain>
+    </country>
+    <country id:code="TON" name="Tonga">
+        <config:formalName>Kingdom of Tonga</config:formalName>
+        <config:capital>Nuku'alofa</config:capital>
+        <currencySymbol>TOP</currencySymbol>
+        <currencyName>Pa'anga</currencyName>
+        <v:telephonePrefix>+676</v:telephonePrefix>
+        <v:domain>.to</v:domain>
+    </country>
+    <country id:code="TTO" name="Trinidad and Tobago">
+        <config:formalName>Republic of Trinidad and Tobago</config:formalName>
+        <config:capital>Port-of-Spain</config:capital>
+        <currencySymbol>TTD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+1-868</v:telephonePrefix>
+        <v:domain>.tt</v:domain>
+    </country>
+    <country id:code="TUN" name="Tunisia">
+        <config:formalName>Tunisian Republic</config:formalName>
+        <config:capital>Tunis</config:capital>
+        <currencySymbol>TND</currencySymbol>
+        <currencyName>Dinar</currencyName>
+        <v:telephonePrefix>+216</v:telephonePrefix>
+        <v:domain>.tn</v:domain>
+    </country>
+    <country id:code="TUR" name="Turkey">
+        <config:formalName>Republic of Turkey</config:formalName>
+        <config:capital>Ankara</config:capital>
+        <currencySymbol>TRY</currencySymbol>
+        <currencyName>Lira</currencyName>
+        <v:telephonePrefix>+90</v:telephonePrefix>
+        <v:domain>.tr</v:domain>
+    </country>
+    <country id:code="TKM" name="Turkmenistan">
+        <config:formalName></config:formalName>
+        <config:capital>Ashgabat</config:capital>
+        <currencySymbol>TMM</currencySymbol>
+        <currencyName>Manat</currencyName>
+        <v:telephonePrefix>+993</v:telephonePrefix>
+        <v:domain>.tm</v:domain>
+    </country>
+    <country id:code="TUV" name="Tuvalu">
+        <config:formalName></config:formalName>
+        <config:capital>Funafuti</config:capital>
+        <currencySymbol>AUD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+688</v:telephonePrefix>
+        <v:domain>.tv</v:domain>
+    </country>
+    <country id:code="UGA" name="Uganda">
+        <config:formalName>Republic of Uganda</config:formalName>
+        <config:capital>Kampala</config:capital>
+        <currencySymbol>UGX</currencySymbol>
+        <currencyName>Shilling</currencyName>
+        <v:telephonePrefix>+256</v:telephonePrefix>
+        <v:domain>.ug</v:domain>
+    </country>
+    <country id:code="UKR" name="Ukraine">
+        <config:formalName></config:formalName>
+        <config:capital>Kiev</config:capital>
+        <currencySymbol>UAH</currencySymbol>
+        <currencyName>Hryvnia</currencyName>
+        <v:telephonePrefix>+380</v:telephonePrefix>
+        <v:domain>.ua</v:domain>
+    </country>
+    <country id:code="ARE" name="United Arab Emirates">
+        <config:formalName>United Arab Emirates</config:formalName>
+        <config:capital>Abu Dhabi</config:capital>
+        <currencySymbol>AED</currencySymbol>
+        <currencyName>Dirham</currencyName>
+        <v:telephonePrefix>+971</v:telephonePrefix>
+        <v:domain>.ae</v:domain>
+    </country>
+    <country id:code="GBR" name="United Kingdom">
+        <config:formalName>United Kingdom of Great Britain and Northern Ireland
+        </config:formalName>
+        <config:capital>London</config:capital>
+        <currencySymbol>GBP</currencySymbol>
+        <currencyName>Pound</currencyName>
+        <v:telephonePrefix>+44</v:telephonePrefix>
+        <v:domain>.uk</v:domain>
+    </country>
+    <country id:code="USA" name="United States">
+        <config:formalName>United States of America</config:formalName>
+        <config:capital>Washington</config:capital>
+        <currencySymbol>USD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+1</v:telephonePrefix>
+        <v:domain>.us</v:domain>
+    </country>
+    <country id:code="URY" name="Uruguay">
+        <config:formalName>Oriental Republic of Uruguay</config:formalName>
+        <config:capital>Montevideo</config:capital>
+        <currencySymbol>UYU</currencySymbol>
+        <currencyName>Peso</currencyName>
+        <v:telephonePrefix>+598</v:telephonePrefix>
+        <v:domain>.uy</v:domain>
+    </country>
+    <country id:code="UZB" name="Uzbekistan">
+        <config:formalName>Republic of Uzbekistan</config:formalName>
+        <config:capital>Tashkent</config:capital>
+        <currencySymbol>UZS</currencySymbol>
+        <currencyName>Som</currencyName>
+        <v:telephonePrefix>+998</v:telephonePrefix>
+        <v:domain>.uz</v:domain>
+    </country>
+    <country id:code="VUT" name="Vanuatu">
+        <config:formalName>Republic of Vanuatu</config:formalName>
+        <config:capital>Port-Vila</config:capital>
+        <currencySymbol>VUV</currencySymbol>
+        <currencyName>Vatu</currencyName>
+        <v:telephonePrefix>+678</v:telephonePrefix>
+        <v:domain>.vu</v:domain>
+    </country>
+    <country id:code="VAT" name="Vatican City">
+        <config:formalName>State of the Vatican City</config:formalName>
+        <config:capital>Vatican City</config:capital>
+        <currencySymbol>EUR</currencySymbol>
+        <currencyName>Euro</currencyName>
+        <v:telephonePrefix>+379</v:telephonePrefix>
+        <v:domain>.va</v:domain>
+    </country>
+    <country id:code="VEN" name="Venezuela">
+        <config:formalName>Bolivarian Republic of Venezuela</config:formalName>
+        <config:capital>Caracas</config:capital>
+        <currencySymbol>VEB</currencySymbol>
+        <currencyName>Bolivar</currencyName>
+        <v:telephonePrefix>+58</v:telephonePrefix>
+        <v:domain>.ve</v:domain>
+    </country>
+    <country id:code="VNM" name="Vietnam">
+        <config:formalName>Socialist Republic of Vietnam</config:formalName>
+        <config:capital>Hanoi</config:capital>
+        <currencySymbol>VND</currencySymbol>
+        <currencyName>Dong</currencyName>
+        <v:telephonePrefix>+84</v:telephonePrefix>
+        <v:domain>.vn</v:domain>
+    </country>
+    <country id:code="YEM" name="Yemen">
+        <config:formalName>Republic of Yemen</config:formalName>
+        <config:capital>Sanaa</config:capital>
+        <currencySymbol>YER</currencySymbol>
+        <currencyName>Rial</currencyName>
+        <v:telephonePrefix>+967</v:telephonePrefix>
+        <v:domain>.ye</v:domain>
+    </country>
+    <country id:code="ZMB" name="Zambia">
+        <config:formalName>Republic of Zambia</config:formalName>
+        <config:capital>Lusaka</config:capital>
+        <currencySymbol>ZMK</currencySymbol>
+        <currencyName>Kwacha</currencyName>
+        <v:telephonePrefix>+260</v:telephonePrefix>
+        <v:domain>.zm</v:domain>
+    </country>
+    <country id:code="ZWE" name="Zimbabwe">
+        <config:formalName>Republic of Zimbabwe</config:formalName>
+        <config:capital>Harare</config:capital>
+        <currencySymbol>ZWD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+263</v:telephonePrefix>
+        <v:domain>.zw</v:domain>
+    </country>
+    <country id:code="TWN" name="Taiwan">
+        <config:formalName>Republic of China</config:formalName>
+        <config:capital>Taipei</config:capital>
+        <currencySymbol>TWD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+886</v:telephonePrefix>
+        <v:domain>.tw</v:domain>
+    </country>
+    <country id:code="CXR" name="Christmas Island">
+        <config:formalName>Territory of Christmas Island</config:formalName>
+        <config:capital>The Settlement (Flying Fish Cove)</config:capital>
+        <currencySymbol>AUD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+61</v:telephonePrefix>
+        <v:domain>.cx</v:domain>
+    </country>
+    <country id:code="CCK" name="Cocos (Keeling) Islands">
+        <config:formalName>Territory of Cocos (Keeling) Islands
+        </config:formalName>
+        <config:capital>West Island</config:capital>
+        <currencySymbol>AUD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+61</v:telephonePrefix>
+        <v:domain>.cc</v:domain>
+    </country>
+    <country id:code="HMD" name="Heard Island and McDonald Islands">
+        <config:formalName>Territory of Heard Island and McDonald Islands
+        </config:formalName>
+        <config:capital></config:capital>
+        <currencySymbol></currencySymbol>
+        <currencyName></currencyName>
+        <v:telephonePrefix></v:telephonePrefix>
+        <v:domain>.hm</v:domain>
+    </country>
+    <country id:code="NFK" name="Norfolk Island">
+        <config:formalName>Territory of Norfolk Island</config:formalName>
+        <config:capital>Kingston</config:capital>
+        <currencySymbol>AUD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+672</v:telephonePrefix>
+        <v:domain>.nf</v:domain>
+    </country>
+    <country id:code="NCL" name="New Caledonia">
+        <config:formalName></config:formalName>
+        <config:capital>Noumea</config:capital>
+        <currencySymbol>XPF</currencySymbol>
+        <currencyName>Franc</currencyName>
+        <v:telephonePrefix>+687</v:telephonePrefix>
+        <v:domain>.nc</v:domain>
+    </country>
+    <country id:code="PYF" name="French Polynesia">
+        <config:formalName>Overseas Country of French Polynesia
+        </config:formalName>
+        <config:capital>Papeete</config:capital>
+        <currencySymbol>XPF</currencySymbol>
+        <currencyName>Franc</currencyName>
+        <v:telephonePrefix>+689</v:telephonePrefix>
+        <v:domain>.pf</v:domain>
+    </country>
+    <country id:code="MYT" name="Mayotte">
+        <config:formalName>Departmental Collectivity of Mayotte
+        </config:formalName>
+        <config:capital>Mamoudzou</config:capital>
+        <currencySymbol>EUR</currencySymbol>
+        <currencyName>Euro</currencyName>
+        <v:telephonePrefix>+262</v:telephonePrefix>
+        <v:domain>.yt</v:domain>
+    </country>
+    <country id:code="SPM" name="Saint Pierre and Miquelon">
+        <config:formalName>Territorial Collectivity of Saint Pierre and Miquelon
+        </config:formalName>
+        <config:capital>Saint-Pierre</config:capital>
+        <currencySymbol>EUR</currencySymbol>
+        <currencyName>Euro</currencyName>
+        <v:telephonePrefix>+508</v:telephonePrefix>
+        <v:domain>.pm</v:domain>
+    </country>
+    <country id:code="WLF" name="Wallis and Futuna">
+        <config:formalName>Collectivity of the Wallis and Futuna Islands
+        </config:formalName>
+        <config:capital>Mata'utu</config:capital>
+        <currencySymbol>XPF</currencySymbol>
+        <currencyName>Franc</currencyName>
+        <v:telephonePrefix>+681</v:telephonePrefix>
+        <v:domain>.wf</v:domain>
+    </country>
+    <country id:code="ATF" name="French Southern and Antarctic Lands">
+        <config:formalName>Territory of the French Southern and Antarctic Lands
+        </config:formalName>
+        <config:capital>Martin-de-Vivi�s</config:capital>
+        <currencySymbol></currencySymbol>
+        <currencyName></currencyName>
+        <v:telephonePrefix></v:telephonePrefix>
+        <v:domain>.tf</v:domain>
+    </country>
+    <country id:code="BVT" name="Bouvet Island">
+        <config:formalName></config:formalName>
+        <config:capital></config:capital>
+        <currencySymbol></currencySymbol>
+        <currencyName></currencyName>
+        <v:telephonePrefix></v:telephonePrefix>
+        <v:domain>.bv</v:domain>
+    </country>
+    <country id:code="COK" name="Cook Islands">
+        <config:formalName></config:formalName>
+        <config:capital>Avarua</config:capital>
+        <currencySymbol>NZD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+682</v:telephonePrefix>
+        <v:domain>.ck</v:domain>
+    </country>
+    <country id:code="NIU" name="Niue">
+        <config:formalName></config:formalName>
+        <config:capital>Alofi</config:capital>
+        <currencySymbol>NZD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+683</v:telephonePrefix>
+        <v:domain>.nu</v:domain>
+    </country>
+    <country id:code="TKL" name="Tokelau">
+        <config:formalName></config:formalName>
+        <config:capital></config:capital>
+        <currencySymbol>NZD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+690</v:telephonePrefix>
+        <v:domain>.tk</v:domain>
+    </country>
+    <country id:code="GGY" name="Guernsey">
+        <config:formalName>Bailiwick of Guernsey</config:formalName>
+        <config:capital>Saint Peter Port</config:capital>
+        <currencySymbol>GGP</currencySymbol>
+        <currencyName>Pound</currencyName>
+        <v:telephonePrefix>+44</v:telephonePrefix>
+        <v:domain>.gg</v:domain>
+    </country>
+    <country id:code="IMN" name="Isle of Man">
+        <config:formalName></config:formalName>
+        <config:capital>Douglas</config:capital>
+        <currencySymbol>IMP</currencySymbol>
+        <currencyName>Pound</currencyName>
+        <v:telephonePrefix>+44</v:telephonePrefix>
+        <v:domain>.im</v:domain>
+    </country>
+    <country id:code="JEY" name="Jersey">
+        <config:formalName>Bailiwick of Jersey</config:formalName>
+        <config:capital>Saint Helier</config:capital>
+        <currencySymbol>JEP</currencySymbol>
+        <currencyName>Pound</currencyName>
+        <v:telephonePrefix>+44</v:telephonePrefix>
+        <v:domain>.je</v:domain>
+    </country>
+    <country id:code="AIA" name="Anguilla">
+        <config:formalName></config:formalName>
+        <config:capital>The Valley</config:capital>
+        <currencySymbol>XCD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+1-264</v:telephonePrefix>
+        <v:domain>.ai</v:domain>
+    </country>
+    <country id:code="BMU" name="Bermuda">
+        <config:formalName></config:formalName>
+        <config:capital>Hamilton</config:capital>
+        <currencySymbol>BMD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+1-441</v:telephonePrefix>
+        <v:domain>.bm</v:domain>
+    </country>
+    <country id:code="IOT" name="British Indian Ocean Territory">
+        <config:formalName></config:formalName>
+        <config:capital></config:capital>
+        <currencySymbol></currencySymbol>
+        <currencyName></currencyName>
+        <v:telephonePrefix>+246</v:telephonePrefix>
+        <v:domain>.io</v:domain>
+    </country>
+    <country id:code="VGB" name="British Virgin Islands">
+        <config:formalName></config:formalName>
+        <config:capital>Road Town</config:capital>
+        <currencySymbol>USD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+1-284</v:telephonePrefix>
+        <v:domain>.vg</v:domain>
+    </country>
+    <country id:code="CYM" name="Cayman Islands">
+        <config:formalName></config:formalName>
+        <config:capital>George Town</config:capital>
+        <currencySymbol>KYD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+1-345</v:telephonePrefix>
+        <v:domain>.ky</v:domain>
+    </country>
+    <country id:code="FLK" name="Falkland Islands (Islas Malvinas)">
+        <config:formalName></config:formalName>
+        <config:capital>Stanley</config:capital>
+        <currencySymbol>FKP</currencySymbol>
+        <currencyName>Pound</currencyName>
+        <v:telephonePrefix>+500</v:telephonePrefix>
+        <v:domain>.fk</v:domain>
+    </country>
+    <country id:code="GIB" name="Gibraltar">
+        <config:formalName></config:formalName>
+        <config:capital>Gibraltar</config:capital>
+        <currencySymbol>GIP</currencySymbol>
+        <currencyName>Pound</currencyName>
+        <v:telephonePrefix>+350</v:telephonePrefix>
+        <v:domain>.gi</v:domain>
+    </country>
+    <country id:code="MSR" name="Montserrat">
+        <config:formalName></config:formalName>
+        <config:capital>Plymouth</config:capital>
+        <currencySymbol>XCD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+1-664</v:telephonePrefix>
+        <v:domain>.ms</v:domain>
+    </country>
+    <country id:code="PCN" name="Pitcairn Islands">
+        <config:formalName></config:formalName>
+        <config:capital>Adamstown</config:capital>
+        <currencySymbol>NZD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix></v:telephonePrefix>
+        <v:domain>.pn</v:domain>
+    </country>
+    <country id:code="SHN" name="Saint Helena">
+        <config:formalName></config:formalName>
+        <config:capital>Jamestown</config:capital>
+        <currencySymbol>SHP</currencySymbol>
+        <currencyName>Pound</currencyName>
+        <v:telephonePrefix>+290</v:telephonePrefix>
+        <v:domain>.sh</v:domain>
+    </country>
+    <country id:code="SGS" name="South Georgia and the South Sandwich Islands">
+        <config:formalName></config:formalName>
+        <config:capital></config:capital>
+        <currencySymbol></currencySymbol>
+        <currencyName></currencyName>
+        <v:telephonePrefix></v:telephonePrefix>
+        <v:domain>.gs</v:domain>
+    </country>
+    <country id:code="TCA" name="Turks and Caicos Islands">
+        <config:formalName></config:formalName>
+        <config:capital>Grand Turk</config:capital>
+        <currencySymbol>USD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+1-649</v:telephonePrefix>
+        <v:domain>.tc</v:domain>
+    </country>
+    <country id:code="MNP" name="Northern Mariana Islands">
+        <config:formalName>Commonwealth of The Northern Mariana Islands
+        </config:formalName>
+        <config:capital>Saipan</config:capital>
+        <currencySymbol>USD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+1-670</v:telephonePrefix>
+        <v:domain>.mp</v:domain>
+    </country>
+    <country id:code="PRI" name="Puerto Rico">
+        <config:formalName>Commonwealth of Puerto Rico</config:formalName>
+        <config:capital>San Juan</config:capital>
+        <currencySymbol>USD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+1-787 and 1-939</v:telephonePrefix>
+        <v:domain>.pr</v:domain>
+    </country>
+    <country id:code="ASM" name="American Samoa">
+        <config:formalName>Territory of American Samoa</config:formalName>
+        <config:capital>Pago Pago</config:capital>
+        <currencySymbol>USD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+1-684</v:telephonePrefix>
+        <v:domain>.as</v:domain>
+    </country>
+    <country id:code="GUM" name="Guam">
+        <config:formalName>Territory of Guam</config:formalName>
+        <config:capital>Hagatna</config:capital>
+        <currencySymbol>USD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+1-671</v:telephonePrefix>
+        <v:domain>.gu</v:domain>
+    </country>
+    <country id:code="VIR" name="U.S. Virgin Islands">
+        <config:formalName>United States Virgin Islands</config:formalName>
+        <config:capital>Charlotte Amalie</config:capital>
+        <currencySymbol>USD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+1-340</v:telephonePrefix>
+        <v:domain>.vi</v:domain>
+    </country>
+    <country id:code="HKG" name="Hong Kong">
+        <config:formalName>Hong Kong Special Administrative Region
+        </config:formalName>
+        <config:capital></config:capital>
+        <currencySymbol>HKD</currencySymbol>
+        <currencyName>Dollar</currencyName>
+        <v:telephonePrefix>+852</v:telephonePrefix>
+        <v:domain>.hk</v:domain>
+    </country>
+    <country id:code="MAC" name="Macau">
+        <config:formalName>Macau Special Administrative Region
+        </config:formalName>
+        <config:capital>Macau</config:capital>
+        <currencySymbol>MOP</currencySymbol>
+        <currencyName>Pataca</currencyName>
+        <v:telephonePrefix>+853</v:telephonePrefix>
+        <v:domain>.mo</v:domain>
+    </country>
+    <country id:code="FRO" name="Faroe Islands">
+        <config:formalName></config:formalName>
+        <config:capital>Torshavn</config:capital>
+        <currencySymbol>DKK</currencySymbol>
+        <currencyName>Krone</currencyName>
+        <v:telephonePrefix>+298</v:telephonePrefix>
+        <v:domain>.fo</v:domain>
+    </country>
+    <country id:code="GRL" name="Greenland">
+        <config:formalName></config:formalName>
+        <config:capital>Nuuk (Godthab)</config:capital>
+        <currencySymbol>DKK</currencySymbol>
+        <currencyName>Krone</currencyName>
+        <v:telephonePrefix>+299</v:telephonePrefix>
+        <v:domain>.gl</v:domain>
+    </country>
+    <country id:code="GUF" name="French Guiana">
+        <config:formalName>Overseas Region of Guiana</config:formalName>
+        <config:capital>Cayenne</config:capital>
+        <currencySymbol>EUR</currencySymbol>
+        <currencyName>Euro</currencyName>
+        <v:telephonePrefix>+594</v:telephonePrefix>
+        <v:domain>.gf</v:domain>
+    </country>
+    <country id:code="GLP" name="Guadeloupe">
+        <config:formalName>Overseas Region of Guadeloupe</config:formalName>
+        <config:capital>Basse-Terre</config:capital>
+        <currencySymbol>EUR</currencySymbol>
+        <currencyName>Euro</currencyName>
+        <v:telephonePrefix>+590</v:telephonePrefix>
+        <v:domain>.gp</v:domain>
+    </country>
+    <country id:code="MTQ" name="Martinique">
+        <config:formalName>Overseas Region of Martinique</config:formalName>
+        <config:capital>Fort-de-France</config:capital>
+        <currencySymbol>EUR</currencySymbol>
+        <currencyName>Euro</currencyName>
+        <v:telephonePrefix>+596</v:telephonePrefix>
+        <v:domain>.mq</v:domain>
+    </country>
+    <country id:code="REU" name="Reunion">
+        <config:formalName>Overseas Region of Reunion</config:formalName>
+        <config:capital>Saint-Denis</config:capital>
+        <currencySymbol>EUR</currencySymbol>
+        <currencyName>Euro</currencyName>
+        <v:telephonePrefix>+262</v:telephonePrefix>
+        <v:domain>.re</v:domain>
+    </country>
+    <country id:code="ALA" name="Aland">
+        <config:formalName></config:formalName>
+        <config:capital>Mariehamn</config:capital>
+        <currencySymbol>EUR</currencySymbol>
+        <currencyName>Euro</currencyName>
+        <v:telephonePrefix>+358-18</v:telephonePrefix>
+        <v:domain>.ax</v:domain>
+    </country>
+    <country id:code="ABW" name="Aruba">
+        <config:formalName></config:formalName>
+        <config:capital>Oranjestad</config:capital>
+        <currencySymbol>AWG</currencySymbol>
+        <currencyName>Guilder</currencyName>
+        <v:telephonePrefix>+297</v:telephonePrefix>
+        <v:domain>.aw</v:domain>
+    </country>
+    <country id:code="ANT" name="Netherlands Antilles">
+        <config:formalName></config:formalName>
+        <config:capital>Willemstad</config:capital>
+        <currencySymbol>ANG</currencySymbol>
+        <currencyName>Guilder</currencyName>
+        <v:telephonePrefix>+599</v:telephonePrefix>
+        <v:domain>.an</v:domain>
+    </country>
+    <country id:code="SJM" name="Svalbard">
+        <config:formalName></config:formalName>
+        <config:capital>Longyearbyen</config:capital>
+        <currencySymbol>NOK</currencySymbol>
+        <currencyName>Krone</currencyName>
+        <v:telephonePrefix>+47</v:telephonePrefix>
+        <v:domain>.sj</v:domain>
+    </country>
+    <country id:code="ASC" name="Ascension">
+        <config:formalName></config:formalName>
+        <config:capital>Georgetown</config:capital>
+        <currencySymbol>SHP</currencySymbol>
+        <currencyName>Pound</currencyName>
+        <v:telephonePrefix>+247</v:telephonePrefix>
+        <v:domain>.ac</v:domain>
+    </country>
+    <country id:code="SCG" name="Kosovo">
+        <config:formalName></config:formalName>
+        <config:capital>Pristina</config:capital>
+        <currencySymbol>CSD and EUR</currencySymbol>
+        <currencyName>Dinar and Euro</currencyName>
+        <v:telephonePrefix>+381</v:telephonePrefix>
+        <v:domain>.cs and .yu</v:domain>
+    </country>
+    <country id:code="PSE"
+             name="Palestinian Territories (Gaza Strip and West Bank)">
+        <config:formalName></config:formalName>
+        <config:capital>Gaza City (Gaza Strip) and Ramallah (West Bank)
+        </config:capital>
+        <currencySymbol>ILS</currencySymbol>
+        <currencyName>Shekel</currencyName>
+        <v:telephonePrefix>+970</v:telephonePrefix>
+        <v:domain>.ps</v:domain>
+    </country>
+    <country id:code="ESH" name="Western Sahara">
+        <config:formalName></config:formalName>
+        <config:capital>El-Aaiun</config:capital>
+        <currencySymbol>MAD</currencySymbol>
+        <currencyName>Dirham</currencyName>
+        <v:telephonePrefix>+212</v:telephonePrefix>
+        <v:domain>.eh</v:domain>
+    </country>
+</countries>

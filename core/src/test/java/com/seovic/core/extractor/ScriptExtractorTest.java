@@ -1,0 +1,56 @@
+/*
+ * Copyright 2009 Aleksandar Seovic
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package com.seovic.core.extractor;
+
+
+import com.seovic.core.Extractor;
+import com.seovic.core.expression.MvelExpression;
+import org.junit.Ignore;
+
+
+/**
+ * Tests for {@link ExpressionExtractor} in combination with {@link
+ * MvelExpression}.
+ *
+ * @author Aleksandar Seovic  2009.09.18
+ */
+public class ScriptExtractorTest
+        extends AbstractExtractorTest {
+    @Override
+    protected Extractor createExtractor(String expression) {
+        return new ScriptExtractor(translateExpression(expression));
+    }
+
+    @Override
+    protected String getName() {
+        return "ScriptExtractor";
+    }
+
+    private String translateExpression(String expression) {
+        if ("name".equals(expression)) expression = "target.name";
+        if ("address.city".equals(expression)) {
+            expression = "target.address.city";
+        }
+
+        return expression;
+    }
+
+    @Ignore
+    @Override
+    public void testPerformance() {
+    }
+}

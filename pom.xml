@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ~ Copyright 2012 Aleksandar Seovic
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.sonatype.oss</groupId>
+    <artifactId>oss-parent</artifactId>
+    <version>7</version>
+  </parent>
+
+  <groupId>com.seovic.coherence</groupId>
+  <artifactId>coherence-tools</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>Coherence Tools</name>
+  <description>
+    Various extensions and utilities for Oracle Coherence in-memory data grid
+  </description>
+  <url>https://github.com/aseovic/coherence-tools</url>
+
+  <properties>
+    <core.version>${project.version}</core.version>
+    <identity.version>${project.version}</identity.version>
+    <loader.version>${project.version}</loader.version>
+    <scheduler.version>${project.version}</scheduler.version>
+
+    <coherence.version>3.7.1.3</coherence.version>
+    <spring.version>3.1.2.RELEASE</spring.version>
+  </properties>
+
+  <modules>
+    <module>core</module>
+    <module>identity</module>
+    <module>loader</module>
+  </modules>
+
+  <build>
+    <finalName>${project.groupId}.${project.artifactId}-${project.version}
+    </finalName>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.3.2</version>
+        <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.8.2</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <dependencyManagement>
+    <dependencies>
+      <!-- internal dependencies -->
+      <dependency>
+        <groupId>com.seovic.coherence</groupId>
+        <artifactId>core</artifactId>
+        <version>${core.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.seovic.coherence</groupId>
+        <artifactId>identity</artifactId>
+        <version>${identity.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.seovic.coherence</groupId>
+        <artifactId>loader</artifactId>
+        <version>${loader.version}</version>
+      </dependency>
+
+      <!-- external dependencies -->
+      <dependency>
+        <groupId>com.h2database</groupId>
+        <artifactId>h2</artifactId>
+        <version>1.3.168</version>
+      </dependency>
+      <dependency>
+        <groupId>com.oracle.coherence</groupId>
+        <artifactId>coherence</artifactId>
+        <version>${coherence.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.eclipse.persistence</groupId>
+        <artifactId>eclipselink</artifactId>
+        <version>2.3.3</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-beans</artifactId>
+        <version>${spring.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-core</artifactId>
+        <version>${spring.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>${spring.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-expression</artifactId>
+        <version>${spring.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-jdbc</artifactId>
+        <version>${spring.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.codehaus.groovy</groupId>
+        <artifactId>groovy</artifactId>
+        <version>2.0.0</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-io</groupId>
+        <artifactId>commons-io</artifactId>
+        <version>2.4</version>
+      </dependency>
+      <dependency>
+        <groupId>org.mvel</groupId>
+        <artifactId>mvel2</artifactId>
+        <version>2.0.19</version>
+      </dependency>
+      <dependency>
+        <groupId>ognl</groupId>
+        <artifactId>ognl</artifactId>
+        <version>2.6.9</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.persistence</groupId>
+        <artifactId>persistence-api</artifactId>
+        <version>2.0</version>
+      </dependency>
+      <dependency>
+        <groupId>net.sf.supercsv</groupId>
+        <artifactId>super-csv</artifactId>
+        <version>1.52</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <developers>
+    <developer>
+      <id>aseovic</id>
+      <name>Aleksandar Seovic</name>
+      <email>aleks@seovic.com</email>
+      <url>http://www.seovic.com</url>
+      <organization>Solutions for Human Capital, Inc.</organization>
+      <organizationUrl>http://www.s4hc.com</organizationUrl>
+      <roles>
+        <role>Project Founder and Lead</role>
+      </roles>
+    </developer>
+  </developers>
+
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <scm>
+    <url>https://github.com/aseovic/coherence-tools</url>
+    <connection>scm:git:git@github.com:aseovic/coherence-tools.git</connection>
+    <developerConnection>scm:git:git@github.com:aseovic/coherence-tools.git</developerConnection>
+  </scm>
+
+</project>

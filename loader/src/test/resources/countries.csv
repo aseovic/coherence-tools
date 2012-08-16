@@ -1,0 +1,245 @@
+code,name,formalName,capital,currencySymbol,currencyName,telephonePrefix,domain
+AFG,Afghanistan,Islamic State of Afghanistan,Kabul,AFN,Afghani,+93,.af
+ALB,Albania,Republic of Albania,Tirana,ALL,Lek,+355,.al
+DZA,Algeria,People's Democratic Republic of Algeria,Algiers,DZD,Dinar,+213,.dz
+AND,Andorra,Principality of Andorra,Andorra la Vella,EUR,Euro,+376,.ad
+AGO,Angola,Republic of Angola,Luanda,AOA,Kwanza,+244,.ao
+ATG,Antigua and Barbuda,,Saint John's,XCD,Dollar,+1-268,.ag
+ARG,Argentina,Argentine Republic,Buenos Aires,ARS,Peso,+54,.ar
+ARM,Armenia,Republic of Armenia,Yerevan,AMD,Dram,+374,.am
+AUS,Australia,Commonwealth of Australia,Canberra,AUD,Dollar,+61,.au
+AUT,Austria,Republic of Austria,Vienna,EUR,Euro,+43,.at
+AZE,Azerbaijan,Republic of Azerbaijan,Baku,AZN,Manat,+994,.az
+BHS,Bahamas,Commonwealth of The Bahamas,Nassau,BSD,Dollar,+1-242,.bs
+BHR,Bahrain,Kingdom of Bahrain,Manama,BHD,Dinar,+973,.bh
+BGD,Bangladesh,People's Republic of Bangladesh,Dhaka,BDT,Taka,+880,.bd
+BRB,Barbados,,Bridgetown,BBD,Dollar,+1-246,.bb
+BLR,Belarus,Republic of Belarus,Minsk,BYR,Ruble,+375,.by
+BEL,Belgium,Kingdom of Belgium,Brussels,EUR,Euro,+32,.be
+BLZ,Belize,,Belmopan,BZD,Dollar,+501,.bz
+BEN,Benin,Republic of Benin,Porto-Novo,XOF,Franc,+229,.bj
+BTN,Bhutan,Kingdom of Bhutan,Thimphu,BTN,Ngultrum,+975,.bt
+BOL,Bolivia,Republic of Bolivia,La Paz (administrative/legislative) and Sucre (judical),BOB,Boliviano,+591,.bo
+BIH,Bosnia and Herzegovina,,Sarajevo,BAM,Marka,+387,.ba
+BWA,Botswana,Republic of Botswana,Gaborone,BWP,Pula,+267,.bw
+BRA,Brazil,Federative Republic of Brazil,Brasilia,BRL,Real,+55,.br
+BRN,Brunei,Negara Brunei Darussalam,Bandar Seri Begawan,BND,Dollar,+673,.bn
+BGR,Bulgaria,Republic of Bulgaria,Sofia,BGN,Lev,+359,.bg
+BFA,Burkina Faso,,Ouagadougou,XOF,Franc,+226,.bf
+BDI,Burundi,Republic of Burundi,Bujumbura,BIF,Franc,+257,.bi
+KHM,Cambodia,Kingdom of Cambodia,Phnom Penh,KHR,Riels,+855,.kh
+CMR,Cameroon,Republic of Cameroon,Yaounde,XAF,Franc,+237,.cm
+CAN,Canada,,Ottawa,CAD,Dollar,+1,.ca
+CPV,Cape Verde,Republic of Cape Verde,Praia,CVE,Escudo,+238,.cv
+CAF,Central African Republic,,Bangui,XAF,Franc,+236,.cf
+TCD,Chad,Republic of Chad,N'Djamena,XAF,Franc,+235,.td
+CHL,Chile,Republic of Chile,Santiago (administrative/judical) and Valparaiso (legislative),CLP,Peso,+56,.cl
+CHN,China,People's Republic of China,Beijing,CNY,Yuan Renminbi,+86,.cn
+COL,Colombia,Republic of Colombia,Bogota,COP,Peso,+57,.co
+COM,Comoros,Union of Comoros,Moroni,KMF,Franc,+269,.km
+COD,Congo (Congo – Kinshasa),Democratic Republic of the Congo,Kinshasa,CDF,Franc,+243,.cd
+COG,Congo (Congo – Brazzaville),Republic of the Congo,Brazzaville,XAF,Franc,+242,.cg
+CRI,Costa Rica,Republic of Costa Rica,San Jose,CRC,Colon,+506,.cr
+CIV,Cote d'Ivoire (Ivory Coast),Republic of Cote d'Ivoire,Yamoussoukro,XOF,Franc,+225,.ci
+HRV,Croatia,Republic of Croatia,Zagreb,HRK,Kuna,+385,.hr
+CUB,Cuba,Republic of Cuba,Havana,CUP,Peso,+53,.cu
+CYP,Cyprus,Republic of Cyprus,Nicosia,CYP,Pound,+357,.cy
+CZE,Czech Republic,,Prague,CZK,Koruna,+420,.cz
+DNK,Denmark,Kingdom of Denmark,Copenhagen,DKK,Krone,+45,.dk
+DJI,Djibouti,Republic of Djibouti,Djibouti,DJF,Franc,+253,.dj
+DMA,Dominica,Commonwealth of Dominica,Roseau,XCD,Dollar,+1-767,.dm
+DOM,Dominican Republic,,Santo Domingo,DOP,Peso,+1-809 and 1-829,.do
+ECU,Ecuador,Republic of Ecuador,Quito,USD,Dollar,+593,.ec
+EGY,Egypt,Arab Republic of Egypt,Cairo,EGP,Pound,+20,.eg
+SLV,El Salvador,Republic of El Salvador,San Salvador,USD,Dollar,+503,.sv
+GNQ,Equatorial Guinea,Republic of Equatorial Guinea,Malabo,XAF,Franc,+240,.gq
+ERI,Eritrea,State of Eritrea,Asmara,ERN,Nakfa,+291,.er
+EST,Estonia,Republic of Estonia,Tallinn,EEK,Kroon,+372,.ee
+ETH,Ethiopia,Federal Democratic Republic of Ethiopia,Addis Ababa,ETB,Birr,+251,.et
+FJI,Fiji,Republic of the Fiji Islands,Suva,FJD,Dollar,+679,.fj
+FIN,Finland,Republic of Finland,Helsinki,EUR,Euro,+358,.fi
+FRA,France,French Republic,Paris,EUR,Euro,+33,.fr
+GAB,Gabon,Gabonese Republic,Libreville,XAF,Franc,+241,.ga
+GMB,Gambia,Republic of The Gambia,Banjul,GMD,Dalasi,+220,.gm
+GEO,Georgia,Republic of Georgia,Tbilisi,GEL,Lari,+995,.ge
+DEU,Germany,Federal Republic of Germany,Berlin,EUR,Euro,+49,.de
+GHA,Ghana,Republic of Ghana,Accra,GHS,Cedi,+233,.gh
+GRC,Greece,Hellenic Republic,Athens,EUR,Euro,+30,.gr
+GRD,Grenada,,Saint George's,XCD,Dollar,+1-473,.gd
+GTM,Guatemala,Republic of Guatemala,Guatemala,GTQ,Quetzal,+502,.gt
+GIN,Guinea,Republic of Guinea,Conakry,GNF,Franc,+224,.gn
+GNB,Guinea-Bissau,Republic of Guinea-Bissau,Bissau,XOF,Franc,+245,.gw
+GUY,Guyana,Co-operative Republic of Guyana,Georgetown,GYD,Dollar,+592,.gy
+HTI,Haiti,Republic of Haiti,Port-au-Prince,HTG,Gourde,+509,.ht
+HND,Honduras,Republic of Honduras,Tegucigalpa,HNL,Lempira,+504,.hn
+HUN,Hungary,Republic of Hungary,Budapest,HUF,Forint,+36,.hu
+ISL,Iceland,Republic of Iceland,Reykjavik,ISK,Krona,+354,.is
+IND,India,Republic of India,New Delhi,INR,Rupee,+91,.in
+IDN,Indonesia,Republic of Indonesia,Jakarta,IDR,Rupiah,+62,.id
+IRN,Iran,Islamic Republic of Iran,Tehran,IRR,Rial,+98,.ir
+IRQ,Iraq,Republic of Iraq,Baghdad,IQD,Dinar,+964,.iq
+IRL,Ireland,,Dublin,EUR,Euro,+353,.ie
+ISR,Israel,State of Israel,Jerusalem,ILS,Shekel,+972,.il
+ITA,Italy,Italian Republic,Rome,EUR,Euro,+39,.it
+JAM,Jamaica,,Kingston,JMD,Dollar,+1-876,.jm
+JPN,Japan,,Tokyo,JPY,Yen,+81,.jp
+JOR,Jordan,Hashemite Kingdom of Jordan,Amman,JOD,Dinar,+962,.jo
+KAZ,Kazakhstan,Republic of Kazakhstan,Astana,KZT,Tenge,+7,.kz
+KEN,Kenya,Republic of Kenya,Nairobi,KES,Shilling,+254,.ke
+KIR,Kiribati,Republic of Kiribati,Tarawa,AUD,Dollar,+686,.ki
+PRK,North Korea,Democratic People's Republic of Korea,Pyongyang,KPW,Won,+850,.kp
+KOR,South Korea,Republic of Korea,Seoul,KRW,Won,+82,.kr
+KWT,Kuwait,State of Kuwait,Kuwait,KWD,Dinar,+965,.kw
+KGZ,Kyrgyzstan,Kyrgyz Republic,Bishkek,KGS,Som,+996,.kg
+LAO,Laos,Lao People's Democratic Republic,Vientiane,LAK,Kip,+856,.la
+LVA,Latvia,Republic of Latvia,Riga,LVL,Lat,+371,.lv
+LBN,Lebanon,Lebanese Republic,Beirut,LBP,Pound,+961,.lb
+LSO,Lesotho,Kingdom of Lesotho,Maseru,LSL,Loti,+266,.ls
+LBR,Liberia,Republic of Liberia,Monrovia,LRD,Dollar,+231,.lr
+LBY,Libya,Great Socialist People's Libyan Arab Jamahiriya,Tripoli,LYD,Dinar,+218,.ly
+LIE,Liechtenstein,Principality of Liechtenstein,Vaduz,CHF,Franc,+423,.li
+LTU,Lithuania,Republic of Lithuania,Vilnius,LTL,Litas,+370,.lt
+LUX,Luxembourg,Grand Duchy of Luxembourg,Luxembourg,EUR,Euro,+352,.lu
+MKD,Macedonia,Republic of Macedonia,Skopje,MKD,Denar,+389,.mk
+MDG,Madagascar,Republic of Madagascar,Antananarivo,MGA,Ariary,+261,.mg
+MWI,Malawi,Republic of Malawi,Lilongwe,MWK,Kwacha,+265,.mw
+MYS,Malaysia,,Kuala Lumpur (legislative/judical) and Putrajaya (administrative),MYR,Ringgit,+60,.my
+MDV,Maldives,Republic of Maldives,Male,MVR,Rufiyaa,+960,.mv
+MLI,Mali,Republic of Mali,Bamako,XOF,Franc,+223,.ml
+MLT,Malta,Republic of Malta,Valletta,MTL,Lira,+356,.mt
+MHL,Marshall Islands,Republic of the Marshall Islands,Majuro,USD,Dollar,+692,.mh
+MRT,Mauritania,Islamic Republic of Mauritania,Nouakchott,MRO,Ouguiya,+222,.mr
+MUS,Mauritius,Republic of Mauritius,Port Louis,MUR,Rupee,+230,.mu
+MEX,Mexico,United Mexican States,Mexico,MXN,Peso,+52,.mx
+FSM,Micronesia,Federated States of Micronesia,Palikir,USD,Dollar,+691,.fm
+MDA,Moldova,Republic of Moldova,Chisinau,MDL,Leu,+373,.md
+MCO,Monaco,Principality of Monaco,Monaco,EUR,Euro,+377,.mc
+MNG,Mongolia,,Ulaanbaatar,MNT,Tugrik,+976,.mn
+MNE,Montenegro,Republic of Montenegro,Podgorica,EUR,Euro,+382,.me and .yu
+MAR,Morocco,Kingdom of Morocco,Rabat,MAD,Dirham,+212,.ma
+MOZ,Mozambique,Republic of Mozambique,Maputo,MZM,Meticail,+258,.mz
+MMR,Myanmar (Burma),Union of Myanmar,Naypyidaw,MMK,Kyat,+95,.mm
+NAM,Namibia,Republic of Namibia,Windhoek,NAD,Dollar,+264,.na
+NRU,Nauru,Republic of Nauru,Yaren,AUD,Dollar,+674,.nr
+NPL,Nepal,,Kathmandu,NPR,Rupee,+977,.np
+NLD,Netherlands,Kingdom of the Netherlands,Amsterdam (administrative) and The Hague (legislative/judical),EUR,Euro,+31,.nl
+NZL,New Zealand,,Wellington,NZD,Dollar,+64,.nz
+NIC,Nicaragua,Republic of Nicaragua,Managua,NIO,Cordoba,+505,.ni
+NER,Niger,Republic of Niger,Niamey,XOF,Franc,+227,.ne
+NGA,Nigeria,Federal Republic of Nigeria,Abuja,NGN,Naira,+234,.ng
+NOR,Norway,Kingdom of Norway,Oslo,NOK,Krone,+47,.no
+OMN,Oman,Sultanate of Oman,Muscat,OMR,Rial,+968,.om
+PAK,Pakistan,Islamic Republic of Pakistan,Islamabad,PKR,Rupee,+92,.pk
+PLW,Palau,Republic of Palau,Melekeok,USD,Dollar,+680,.pw
+PAN,Panama,Republic of Panama,Panama,PAB,Balboa,+507,.pa
+PNG,Papua New Guinea,Independent State of Papua New Guinea,Port Moresby,PGK,Kina,+675,.pg
+PRY,Paraguay,Republic of Paraguay,Asuncion,PYG,Guarani,+595,.py
+PER,Peru,Republic of Peru,Lima,PEN,Sol,+51,.pe
+PHL,Philippines,Republic of the Philippines,Manila,PHP,Peso,+63,.ph
+POL,Poland,Republic of Poland,Warsaw,PLN,Zloty,+48,.pl
+PRT,Portugal,Portuguese Republic,Lisbon,EUR,Euro,+351,.pt
+QAT,Qatar,State of Qatar,Doha,QAR,Rial,+974,.qa
+ROU,Romania,,Bucharest,RON,Leu,+40,.ro
+RUS,Russia,Russian Federation,Moscow,RUB,Ruble,+7,.ru and .su
+RWA,Rwanda,Republic of Rwanda,Kigali,RWF,Franc,+250,.rw
+KNA,Saint Kitts and Nevis,Federation of Saint Kitts and Nevis,Basseterre,XCD,Dollar,+1-869,.kn
+LCA,Saint Lucia,,Castries,XCD,Dollar,+1-758,.lc
+VCT,Saint Vincent and the Grenadines,,Kingstown,XCD,Dollar,+1-784,.vc
+WSM,Samoa,Independent State of Samoa,Apia,WST,Tala,+685,.ws
+SMR,San Marino,Republic of San Marino,San Marino,EUR,Euro,+378,.sm
+STP,Sao Tome and Principe,Democratic Republic of Sao Tome and Principe,Sao Tome,STD,Dobra,+239,.st
+SAU,Saudi Arabia,Kingdom of Saudi Arabia,Riyadh,SAR,Rial,+966,.sa
+SEN,Senegal,Republic of Senegal,Dakar,XOF,Franc,+221,.sn
+SRB,Serbia,Republic of Serbia,Belgrade,RSD,Dinar,+381,.rs and .yu
+SYC,Seychelles,Republic of Seychelles,Victoria,SCR,Rupee,+248,.sc
+SLE,Sierra Leone,Republic of Sierra Leone,Freetown,SLL,Leone,+232,.sl
+SGP,Singapore,Republic of Singapore,Singapore,SGD,Dollar,+65,.sg
+SVK,Slovakia,Slovak Republic,Bratislava,SKK,Koruna,+421,.sk
+SVN,Slovenia,Republic of Slovenia,Ljubljana,EUR,Euro,+386,.si
+SLB,Solomon Islands,,Honiara,SBD,Dollar,+677,.sb
+SOM,Somalia,,Mogadishu,SOS,Shilling,+252,.so
+ZAF,South Africa,Republic of South Africa,Pretoria (administrative)/Cape Town (legislative)/Bloemfontein (judical),ZAR,Rand,+27,.za
+ESP,Spain,Kingdom of Spain,Madrid,EUR,Euro,+34,.es
+LKA,Sri Lanka,Democratic Socialist Republic of Sri Lanka,Colombo (administrative/judical) and Sri Jayewardenepura Kotte (legislative),LKR,Rupee,+94,.lk
+SDN,Sudan,Republic of the Sudan,Khartoum,SDG,Pound,+249,.sd
+SUR,Suriname,Republic of Suriname,Paramaribo,SRD,Dollar,+597,.sr
+SWZ,Swaziland,Kingdom of Swaziland,Mbabane (administrative) and Lobamba (legislative),SZL,Lilangeni,+268,.sz
+SWE,Sweden,Kingdom of Sweden,Stockholm,SEK,Kronoa,+46,.se
+CHE,Switzerland,Swiss Confederation,Bern,CHF,Franc,+41,.ch
+SYR,Syria,Syrian Arab Republic,Damascus,SYP,Pound,+963,.sy
+TJK,Tajikistan,Republic of Tajikistan,Dushanbe,TJS,Somoni,+992,.tj
+TZA,Tanzania,United Republic of Tanzania,Dar es Salaam (administrative/judical) and Dodoma (legislative),TZS,Shilling,+255,.tz
+THA,Thailand,Kingdom of Thailand,Bangkok,THB,Baht,+66,.th
+TLS,Timor-Leste (East Timor),Democratic Republic of Timor-Leste,Dili,USD,Dollar,+670,.tp and .tl
+TGO,Togo,Togolese Republic,Lome,XOF,Franc,+228,.tg
+TON,Tonga,Kingdom of Tonga,Nuku'alofa,TOP,Pa'anga,+676,.to
+TTO,Trinidad and Tobago,Republic of Trinidad and Tobago,Port-of-Spain,TTD,Dollar,+1-868,.tt
+TUN,Tunisia,Tunisian Republic,Tunis,TND,Dinar,+216,.tn
+TUR,Turkey,Republic of Turkey,Ankara,TRY,Lira,+90,.tr
+TKM,Turkmenistan,,Ashgabat,TMM,Manat,+993,.tm
+TUV,Tuvalu,,Funafuti,AUD,Dollar,+688,.tv
+UGA,Uganda,Republic of Uganda,Kampala,UGX,Shilling,+256,.ug
+UKR,Ukraine,,Kiev,UAH,Hryvnia,+380,.ua
+ARE,United Arab Emirates,United Arab Emirates,Abu Dhabi,AED,Dirham,+971,.ae
+GBR,United Kingdom,United Kingdom of Great Britain and Northern Ireland,London,GBP,Pound,+44,.uk
+USA,United States,United States of America,Washington,USD,Dollar,+1,.us
+URY,Uruguay,Oriental Republic of Uruguay,Montevideo,UYU,Peso,+598,.uy
+UZB,Uzbekistan,Republic of Uzbekistan,Tashkent,UZS,Som,+998,.uz
+VUT,Vanuatu,Republic of Vanuatu,Port-Vila,VUV,Vatu,+678,.vu
+VAT,Vatican City,State of the Vatican City,Vatican City,EUR,Euro,+379,.va
+VEN,Venezuela,Bolivarian Republic of Venezuela,Caracas,VEB,Bolivar,+58,.ve
+VNM,Vietnam,Socialist Republic of Vietnam,Hanoi,VND,Dong,+84,.vn
+YEM,Yemen,Republic of Yemen,Sanaa,YER,Rial,+967,.ye
+ZMB,Zambia,Republic of Zambia,Lusaka,ZMK,Kwacha,+260,.zm
+ZWE,Zimbabwe,Republic of Zimbabwe,Harare,ZWD,Dollar,+263,.zw
+TWN,Taiwan,Republic of China,Taipei,TWD,Dollar,+886,.tw
+CXR,Christmas Island,Territory of Christmas Island,The Settlement (Flying Fish Cove),AUD,Dollar,+61,.cx
+CCK,Cocos (Keeling) Islands,Territory of Cocos (Keeling) Islands,West Island,AUD,Dollar,+61,.cc
+HMD,Heard Island and McDonald Islands,Territory of Heard Island and McDonald Islands,,,,,.hm
+NFK,Norfolk Island,Territory of Norfolk Island,Kingston,AUD,Dollar,+672,.nf
+NCL,New Caledonia,,Noumea,XPF,Franc,+687,.nc
+PYF,French Polynesia,Overseas Country of French Polynesia,Papeete,XPF,Franc,+689,.pf
+MYT,Mayotte,Departmental Collectivity of Mayotte,Mamoudzou,EUR,Euro,+262,.yt
+SPM,Saint Pierre and Miquelon,Territorial Collectivity of Saint Pierre and Miquelon,Saint-Pierre,EUR,Euro,+508,.pm
+WLF,Wallis and Futuna,Collectivity of the Wallis and Futuna Islands,Mata'utu,XPF,Franc,+681,.wf
+ATF,French Southern and Antarctic Lands,Territory of the French Southern and Antarctic Lands,Martin-de-Viviès,,,,.tf
+BVT,Bouvet Island,,,,,,.bv
+COK,Cook Islands,,Avarua,NZD,Dollar,+682,.ck
+NIU,Niue,,Alofi,NZD,Dollar,+683,.nu
+TKL,Tokelau,,,NZD,Dollar,+690,.tk
+GGY,Guernsey,Bailiwick of Guernsey,Saint Peter Port,GGP,Pound,+44,.gg
+IMN,Isle of Man,,Douglas,IMP,Pound,+44,.im
+JEY,Jersey,Bailiwick of Jersey,Saint Helier,JEP,Pound,+44,.je
+AIA,Anguilla,,The Valley,XCD,Dollar,+1-264,.ai
+BMU,Bermuda,,Hamilton,BMD,Dollar,+1-441,.bm
+IOT,British Indian Ocean Territory,,,,,+246,.io
+VGB,British Virgin Islands,,Road Town,USD,Dollar,+1-284,.vg
+CYM,Cayman Islands,,George Town,KYD,Dollar,+1-345,.ky
+FLK,Falkland Islands (Islas Malvinas),,Stanley,FKP,Pound,+500,.fk
+GIB,Gibraltar,,Gibraltar,GIP,Pound,+350,.gi
+MSR,Montserrat,,Plymouth,XCD,Dollar,+1-664,.ms
+PCN,Pitcairn Islands,,Adamstown,NZD,Dollar,,.pn
+SHN,Saint Helena,,Jamestown,SHP,Pound,+290,.sh
+SGS,South Georgia and the South Sandwich Islands,,,,,,.gs
+TCA,Turks and Caicos Islands,,Grand Turk,USD,Dollar,+1-649,.tc
+MNP,Northern Mariana Islands,Commonwealth of The Northern Mariana Islands,Saipan,USD,Dollar,+1-670,.mp
+PRI,Puerto Rico,Commonwealth of Puerto Rico,San Juan,USD,Dollar,+1-787 and 1-939,.pr
+ASM,American Samoa,Territory of American Samoa,Pago Pago,USD,Dollar,+1-684,.as
+GUM,Guam,Territory of Guam,Hagatna,USD,Dollar,+1-671,.gu
+VIR,U.S. Virgin Islands,United States Virgin Islands,Charlotte Amalie,USD,Dollar,+1-340,.vi
+HKG,Hong Kong,Hong Kong Special Administrative Region,,HKD,Dollar,+852,.hk
+MAC,Macau,Macau Special Administrative Region,Macau,MOP,Pataca,+853,.mo
+FRO,Faroe Islands,,Torshavn,DKK,Krone,+298,.fo
+GRL,Greenland,,Nuuk (Godthab),DKK,Krone,+299,.gl
+GUF,French Guiana,Overseas Region of Guiana,Cayenne,EUR,Euro,+594,.gf
+GLP,Guadeloupe,Overseas Region of Guadeloupe,Basse-Terre,EUR,Euro,+590,.gp
+MTQ,Martinique,Overseas Region of Martinique,Fort-de-France,EUR,Euro,+596,.mq
+REU,Reunion,Overseas Region of Reunion,Saint-Denis,EUR,Euro,+262,.re
+ALA,Aland,,Mariehamn,EUR,Euro,+358-18,.ax
+ABW,Aruba,,Oranjestad,AWG,Guilder,+297,.aw
+ANT,Netherlands Antilles,,Willemstad,ANG,Guilder,+599,.an
+SJM,Svalbard,,Longyearbyen,NOK,Krone,+47,.sj
+ASC,Ascension,,Georgetown,SHP,Pound,+247,.ac
+SCG,Kosovo,,Pristina,CSD and EUR,Dinar and Euro,+381,.cs and .yu
+PSE,Palestinian Territories (Gaza Strip and West Bank),,Gaza City (Gaza Strip) and Ramallah (West Bank),ILS,Shekel,+970,.ps
+ESH,Western Sahara,,El-Aaiun,MAD,Dirham,+212,.eh

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ Copyright 2009 Aleksandar Seovic
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_1_0.xsd"
+             xmlns="http://java.sun.com/xml/ns/persistence" version="1.0">
+
+    <persistence-unit name="com.seovic.loader" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+              
+    <class>com.seovic.test.objects.Country</class>
+
+    <properties>
+      <!-- MySQL
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/coh-tools-db"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+      -->
+      <!-- Derby
+      <property name="javax.persistence.jdbc.url" value="jdbc:derby:coh-tools-db;create=true"/>
+      <property name="javax.persistence.jdbc.user" value=""/>
+      <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+      -->
+      <!-- H2 -->
+      <property name="javax.persistence.jdbc.url" value="jdbc:h2:mem:coh-tools-db"/>
+      <property name="javax.persistence.jdbc.user" value="sa"/>
+      <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+
+      <property name="eclipselink.ddl-generation" value="drop-and-create-tables" />
+      <property name="eclipselink.ddl-generation.output-mode" value="database" />
+      <property name="eclipselink.logging.level" value="FINE" />
+      <property name="jpa.showSql" value="true"/>
+
+    </properties>
+  </persistence-unit>
+</persistence>

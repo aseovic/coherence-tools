@@ -1,0 +1,805 @@
+<?xml version="1.0" ?>
+<!--
+  ~ Copyright 2009 Aleksandar Seovic
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<countries>
+    <country currencyName="Rand" currencySymbol="ZAR"
+             name="ZAF:zaf:south africa" domain=".za" code="ZAF"
+             capital="Pretoria (administrative)/Cape Town (legislative)/Bloemfontein (judical)"
+             telephonePrefix="+27" formalName="Republic of South Africa"/>
+    <country currencyName="Rial" currencySymbol="YER" name="YEM:yem:yemen"
+             domain=".ye" code="YEM" capital="Sanaa" telephonePrefix="+967"
+             formalName="Republic of Yemen"/>
+    <country currencyName="Dalasi" currencySymbol="GMD" name="GMB:gmb:gambia"
+             domain=".gm" code="GMB" capital="Banjul" telephonePrefix="+220"
+             formalName="Republic of The Gambia"/>
+    <country currencyName="Guarani" currencySymbol="PYG" name="PRY:pry:paraguay"
+             domain=".py" code="PRY" capital="Asuncion" telephonePrefix="+595"
+             formalName="Republic of Paraguay"/>
+    <country currencyName="Euro" currencySymbol="EUR" name="MNE:mne:montenegro"
+             domain=".me and .yu" code="MNE" capital="Podgorica"
+             telephonePrefix="+382" formalName="Republic of Montenegro"/>
+    <country currencyName="Franc" currencySymbol="XAF"
+             name="GNQ:gnq:equatorial guinea" domain=".gq" code="GNQ"
+             capital="Malabo" telephonePrefix="+240"
+             formalName="Republic of Equatorial Guinea"/>
+    <country currencyName="Pound" currencySymbol="IMP"
+             name="IMN:imn:isle of man" domain=".im" code="IMN"
+             capital="Douglas" telephonePrefix="+44" formalName=""/>
+    <country currencyName="Dinar" currencySymbol="JOD" name="JOR:jor:jordan"
+             domain=".jo" code="JOR" capital="Amman" telephonePrefix="+962"
+             formalName="Hashemite Kingdom of Jordan"/>
+    <country currencyName="Dollar" currencySymbol="GYD" name="GUY:guy:guyana"
+             domain=".gy" code="GUY" capital="Georgetown" telephonePrefix="+592"
+             formalName="Co-operative Republic of Guyana"/>
+    <country currencyName="Krone" currencySymbol="NOK" name="NOR:nor:norway"
+             domain=".no" code="NOR" capital="Oslo" telephonePrefix="+47"
+             formalName="Kingdom of Norway"/>
+    <country currencyName="Dinar" currencySymbol="KWD" name="KWT:kwt:kuwait"
+             domain=".kw" code="KWT" capital="Kuwait" telephonePrefix="+965"
+             formalName="State of Kuwait"/>
+    <country currencyName="Euro" currencySymbol="EUR" name="MYT:myt:mayotte"
+             domain=".yt" code="MYT" capital="Mamoudzou" telephonePrefix="+262"
+             formalName="Departmental Collectivity of Mayotte"/>
+    <country currencyName="Dinar" currencySymbol="LYD" name="LBY:lby:libya"
+             domain=".ly" code="LBY" capital="Tripoli" telephonePrefix="+218"
+             formalName="Great Socialist People's Libyan Arab Jamahiriya"/>
+    <country currencyName="Dollar" currencySymbol="AUD" name="NRU:nru:nauru"
+             domain=".nr" code="NRU" capital="Yaren" telephonePrefix="+674"
+             formalName="Republic of Nauru"/>
+    <country currencyName="Dollar" currencySymbol="XCD"
+             name="LCA:lca:saint lucia" domain=".lc" code="LCA"
+             capital="Castries" telephonePrefix="+1-758" formalName=""/>
+    <country currencyName="Dollar" currencySymbol="SBD"
+             name="SLB:slb:solomon islands" domain=".sb" code="SLB"
+             capital="Honiara" telephonePrefix="+677" formalName=""/>
+    <country currencyName="Rupee" currencySymbol="MUR" name="MUS:mus:mauritius"
+             domain=".mu" code="MUS" capital="Port Louis" telephonePrefix="+230"
+             formalName="Republic of Mauritius"/>
+    <country currencyName="Dollar" currencySymbol="USD"
+             name="MHL:mhl:marshall islands" domain=".mh" code="MHL"
+             capital="Majuro" telephonePrefix="+692"
+             formalName="Republic of the Marshall Islands"/>
+    <country currencyName="Dollar" currencySymbol="AUD" name="TUV:tuv:tuvalu"
+             domain=".tv" code="TUV" capital="Funafuti" telephonePrefix="+688"
+             formalName=""/>
+    <country currencyName="Dollar" currencySymbol="AUD" name="AUS:aus:australia"
+             domain=".au" code="AUS" capital="Canberra" telephonePrefix="+61"
+             formalName="Commonwealth of Australia"/>
+    <country currencyName="Dinar" currencySymbol="TND" name="TUN:tun:tunisia"
+             domain=".tn" code="TUN" capital="Tunis" telephonePrefix="+216"
+             formalName="Tunisian Republic"/>
+    <country currencyName="Dollar" currencySymbol="USD"
+             name="FSM:fsm:micronesia" domain=".fm" code="FSM" capital="Palikir"
+             telephonePrefix="+691"
+             formalName="Federated States of Micronesia"/>
+    <country currencyName="Boliviano" currencySymbol="BOB"
+             name="BOL:bol:bolivia" domain=".bo" code="BOL"
+             capital="La Paz (administrative/legislative) and Sucre (judical)"
+             telephonePrefix="+591" formalName="Republic of Bolivia"/>
+    <country currencyName="Forint" currencySymbol="HUF" name="HUN:hun:hungary"
+             domain=".hu" code="HUN" capital="Budapest" telephonePrefix="+36"
+             formalName="Republic of Hungary"/>
+    <country currencyName="Dollar" currencySymbol="USD"
+             name="TLS:tls:timor-leste (east timor)" domain=".tp and .tl"
+             code="TLS" capital="Dili" telephonePrefix="+670"
+             formalName="Democratic Republic of Timor-Leste"/>
+    <country currencyName="Cordoba" currencySymbol="NIO"
+             name="NIC:nic:nicaragua" domain=".ni" code="NIC" capital="Managua"
+             telephonePrefix="+505" formalName="Republic of Nicaragua"/>
+    <country currencyName="Krone" currencySymbol="NOK" name="SJM:sjm:svalbard"
+             domain=".sj" code="SJM" capital="Longyearbyen"
+             telephonePrefix="+47" formalName=""/>
+    <country currencyName="Dollar" currencySymbol="USD"
+             name="TCA:tca:turks and caicos islands" domain=".tc" code="TCA"
+             capital="Grand Turk" telephonePrefix="+1-649" formalName=""/>
+    <country currencyName="Ruble" currencySymbol="BYR" name="BLR:blr:belarus"
+             domain=".by" code="BLR" capital="Minsk" telephonePrefix="+375"
+             formalName="Republic of Belarus"/>
+    <country currencyName="Riels" currencySymbol="KHR" name="KHM:khm:cambodia"
+             domain=".kh" code="KHM" capital="Phnom Penh" telephonePrefix="+855"
+             formalName="Kingdom of Cambodia"/>
+    <country currencyName="Dollar" currencySymbol="LRD" name="LBR:lbr:liberia"
+             domain=".lr" code="LBR" capital="Monrovia" telephonePrefix="+231"
+             formalName="Republic of Liberia"/>
+    <country currencyName="Dollar" currencySymbol="USD"
+             name="VGB:vgb:british virgin islands" domain=".vg" code="VGB"
+             capital="Road Town" telephonePrefix="+1-284" formalName=""/>
+    <country currencyName="Dollar" currencySymbol="TWD" name="TWN:twn:taiwan"
+             domain=".tw" code="TWN" capital="Taipei" telephonePrefix="+886"
+             formalName="Republic of China"/>
+    <country currencyName="Krone" currencySymbol="DKK" name="DNK:dnk:denmark"
+             domain=".dk" code="DNK" capital="Copenhagen" telephonePrefix="+45"
+             formalName="Kingdom of Denmark"/>
+    <country currencyName="Peso" currencySymbol="DOP"
+             name="DOM:dom:dominican republic" domain=".do" code="DOM"
+             capital="Santo Domingo" telephonePrefix="+1-809 and 1-829"
+             formalName=""/>
+    <country currencyName="Dollar" currencySymbol="NAD" name="NAM:nam:namibia"
+             domain=".na" code="NAM" capital="Windhoek" telephonePrefix="+264"
+             formalName="Republic of Namibia"/>
+    <country currencyName="Dollar" currencySymbol="JMD" name="JAM:jam:jamaica"
+             domain=".jm" code="JAM" capital="Kingston" telephonePrefix="+1-876"
+             formalName=""/>
+    <country currencyName="Franc" currencySymbol="BIF" name="BDI:bdi:burundi"
+             domain=".bi" code="BDI" capital="Bujumbura" telephonePrefix="+257"
+             formalName="Republic of Burundi"/>
+    <country currencyName="Guilder" currencySymbol="AWG" name="ABW:abw:aruba"
+             domain=".aw" code="ABW" capital="Oranjestad" telephonePrefix="+297"
+             formalName=""/>
+    <country currencyName="Franc" currencySymbol="CDF"
+             name="COD:cod:congo (congo � kinshasa)" domain=".cd" code="COD"
+             capital="Kinshasa" telephonePrefix="+243"
+             formalName="Democratic Republic of the Congo"/>
+    <country currencyName="Hryvnia" currencySymbol="UAH" name="UKR:ukr:ukraine"
+             domain=".ua" code="UKR" capital="Kiev" telephonePrefix="+380"
+             formalName=""/>
+    <country currencyName="Dollar" currencySymbol="SRD" name="SUR:sur:suriname"
+             domain=".sr" code="SUR" capital="Paramaribo" telephonePrefix="+597"
+             formalName="Republic of Suriname"/>
+    <country currencyName="Euro" currencySymbol="EUR" name="GRC:grc:greece"
+             domain=".gr" code="GRC" capital="Athens" telephonePrefix="+30"
+             formalName="Hellenic Republic"/>
+    <country currencyName="Franc" currencySymbol="XOF"
+             name="GNB:gnb:guinea-bissau" domain=".gw" code="GNB"
+             capital="Bissau" telephonePrefix="+245"
+             formalName="Republic of Guinea-Bissau"/>
+    <country currencyName="Franc" currencySymbol="DJF" name="DJI:dji:djibouti"
+             domain=".dj" code="DJI" capital="Djibouti" telephonePrefix="+253"
+             formalName="Republic of Djibouti"/>
+    <country currencyName="Euro" currencySymbol="EUR" name="FIN:fin:finland"
+             domain=".fi" code="FIN" capital="Helsinki" telephonePrefix="+358"
+             formalName="Republic of Finland"/>
+    <country currencyName="Escudo" currencySymbol="CVE"
+             name="CPV:cpv:cape verde" domain=".cv" code="CPV" capital="Praia"
+             telephonePrefix="+238" formalName="Republic of Cape Verde"/>
+    <country currencyName="Euro" currencySymbol="EUR" name="MCO:mco:monaco"
+             domain=".mc" code="MCO" capital="Monaco" telephonePrefix="+377"
+             formalName="Principality of Monaco"/>
+    <country currencyName="Euro" currencySymbol="EUR" name="PRT:prt:portugal"
+             domain=".pt" code="PRT" capital="Lisbon" telephonePrefix="+351"
+             formalName="Portuguese Republic"/>
+    <country currencyName="Dollar" currencySymbol="CAD" name="CAN:can:canada"
+             domain=".ca" code="CAN" capital="Ottawa" telephonePrefix="+1"
+             formalName=""/>
+    <country currencyName="Marka" currencySymbol="BAM"
+             name="BIH:bih:bosnia and herzegovina" domain=".ba" code="BIH"
+             capital="Sarajevo" telephonePrefix="+387" formalName=""/>
+    <country currencyName="Dinar" currencySymbol="IQD" name="IRQ:irq:iraq"
+             domain=".iq" code="IRQ" capital="Baghdad" telephonePrefix="+964"
+             formalName="Republic of Iraq"/>
+    <country currencyName="Nakfa" currencySymbol="ERN" name="ERI:eri:eritrea"
+             domain=".er" code="ERI" capital="Asmara" telephonePrefix="+291"
+             formalName="State of Eritrea"/>
+    <country currencyName="Dollar" currencySymbol="USD"
+             name="MNP:mnp:northern mariana islands" domain=".mp" code="MNP"
+             capital="Saipan" telephonePrefix="+1-670"
+             formalName="Commonwealth of The Northern Mariana Islands"/>
+    <country currencyName="Taka" currencySymbol="BDT" name="BGD:bgd:bangladesh"
+             domain=".bd" code="BGD" capital="Dhaka" telephonePrefix="+880"
+             formalName="People's Republic of Bangladesh"/>
+    <country currencyName="" currencySymbol=""
+             name="ATF:atf:french southern and antarctic lands" domain=".tf"
+             code="ATF" capital="Martin-de-Vivi�s" telephonePrefix=""
+             formalName="Territory of the French Southern and Antarctic Lands"/>
+    <country currencyName="Pound" currencySymbol="GGP" name="GGY:ggy:guernsey"
+             domain=".gg" code="GGY" capital="Saint Peter Port"
+             telephonePrefix="+44" formalName="Bailiwick of Guernsey"/>
+    <country currencyName="Dollar" currencySymbol="XCD" name="AIA:aia:anguilla"
+             domain=".ai" code="AIA" capital="The Valley"
+             telephonePrefix="+1-264" formalName=""/>
+    <country currencyName="Dollar" currencySymbol="KYD"
+             name="CYM:cym:cayman islands" domain=".ky" code="CYM"
+             capital="George Town" telephonePrefix="+1-345" formalName=""/>
+    <country currencyName="Peso" currencySymbol="MXN" name="MEX:mex:mexico"
+             domain=".mx" code="MEX" capital="Mexico" telephonePrefix="+52"
+             formalName="United Mexican States"/>
+    <country currencyName="Euro" currencySymbol="EUR" name="REU:reu:reunion"
+             domain=".re" code="REU" capital="Saint-Denis"
+             telephonePrefix="+262" formalName="Overseas Region of Reunion"/>
+    <country currencyName="Dinar and Euro" currencySymbol="CSD and EUR"
+             name="SCG:scg:kosovo" domain=".cs and .yu" code="SCG"
+             capital="Pristina" telephonePrefix="+381" formalName=""/>
+    <country currencyName="Kwacha" currencySymbol="MWK" name="MWI:mwi:malawi"
+             domain=".mw" code="MWI" capital="Lilongwe" telephonePrefix="+265"
+             formalName="Republic of Malawi"/>
+    <country currencyName="Manat" currencySymbol="TMM"
+             name="TKM:tkm:turkmenistan" domain=".tm" code="TKM"
+             capital="Ashgabat" telephonePrefix="+993" formalName=""/>
+    <country currencyName="Somoni" currencySymbol="TJS"
+             name="TJK:tjk:tajikistan" domain=".tj" code="TJK"
+             capital="Dushanbe" telephonePrefix="+992"
+             formalName="Republic of Tajikistan"/>
+    <country currencyName="Euro" currencySymbol="EUR" name="ALA:ala:aland"
+             domain=".ax" code="ALA" capital="Mariehamn"
+             telephonePrefix="+358-18" formalName=""/>
+    <country currencyName="Guilder" currencySymbol="ANG"
+             name="ANT:ant:netherlands antilles" domain=".an" code="ANT"
+             capital="Willemstad" telephonePrefix="+599" formalName=""/>
+    <country currencyName="Dollar" currencySymbol="NZD"
+             name="PCN:pcn:pitcairn islands" domain=".pn" code="PCN"
+             capital="Adamstown" telephonePrefix="" formalName=""/>
+    <country currencyName="Dram" currencySymbol="AMD" name="ARM:arm:armenia"
+             domain=".am" code="ARM" capital="Yerevan" telephonePrefix="+374"
+             formalName="Republic of Armenia"/>
+    <country currencyName="Dinar" currencySymbol="BHD" name="BHR:bhr:bahrain"
+             domain=".bh" code="BHR" capital="Manama" telephonePrefix="+973"
+             formalName="Kingdom of Bahrain"/>
+    <country currencyName="Kronoa" currencySymbol="SEK" name="SWE:swe:sweden"
+             domain=".se" code="SWE" capital="Stockholm" telephonePrefix="+46"
+             formalName="Kingdom of Sweden"/>
+    <country currencyName="Pound" currencySymbol="SDG" name="SDN:sdn:sudan"
+             domain=".sd" code="SDN" capital="Khartoum" telephonePrefix="+249"
+             formalName="Republic of the Sudan"/>
+    <country currencyName="Dollar" currencySymbol="USD" name="ECU:ecu:ecuador"
+             domain=".ec" code="ECU" capital="Quito" telephonePrefix="+593"
+             formalName="Republic of Ecuador"/>
+    <country currencyName="Franc" currencySymbol="XOF" name="SEN:sen:senegal"
+             domain=".sn" code="SEN" capital="Dakar" telephonePrefix="+221"
+             formalName="Republic of Senegal"/>
+    <country currencyName="" currencySymbol=""
+             name="IOT:iot:british indian ocean territory" domain=".io"
+             code="IOT" capital="" telephonePrefix="+246" formalName=""/>
+    <country currencyName="Dollar" currencySymbol="USD"
+             name="ASM:asm:american samoa" domain=".as" code="ASM"
+             capital="Pago Pago" telephonePrefix="+1-684"
+             formalName="Territory of American Samoa"/>
+    <country currencyName="Dobra" currencySymbol="STD"
+             name="STP:stp:sao tome and principe" domain=".st" code="STP"
+             capital="Sao Tome" telephonePrefix="+239"
+             formalName="Democratic Republic of Sao Tome and Principe"/>
+    <country currencyName="Franc" currencySymbol="XPF"
+             name="PYF:pyf:french polynesia" domain=".pf" code="PYF"
+             capital="Papeete" telephonePrefix="+689"
+             formalName="Overseas Country of French Polynesia"/>
+    <country currencyName="Kwanza" currencySymbol="AOA" name="AGO:ago:angola"
+             domain=".ao" code="AGO" capital="Luanda" telephonePrefix="+244"
+             formalName="Republic of Angola"/>
+    <country currencyName="" currencySymbol=""
+             name="HMD:hmd:heard island and mcdonald islands" domain=".hm"
+             code="HMD" capital="" telephonePrefix=""
+             formalName="Territory of Heard Island and McDonald Islands"/>
+    <country currencyName="Pound" currencySymbol="LBP" name="LBN:lbn:lebanon"
+             domain=".lb" code="LBN" capital="Beirut" telephonePrefix="+961"
+             formalName="Lebanese Republic"/>
+    <country currencyName="Shilling" currencySymbol="KES" name="KEN:ken:kenya"
+             domain=".ke" code="KEN" capital="Nairobi" telephonePrefix="+254"
+             formalName="Republic of Kenya"/>
+    <country currencyName="Kuna" currencySymbol="HRK" name="HRV:hrv:croatia"
+             domain=".hr" code="HRV" capital="Zagreb" telephonePrefix="+385"
+             formalName="Republic of Croatia"/>
+    <country currencyName="Dollar" currencySymbol="BBD" name="BRB:brb:barbados"
+             domain=".bb" code="BRB" capital="Bridgetown"
+             telephonePrefix="+1-246" formalName=""/>
+    <country currencyName="Dollar" currencySymbol="USD"
+             name="VIR:vir:u.s. virgin islands" domain=".vi" code="VIR"
+             capital="Charlotte Amalie" telephonePrefix="+1-340"
+             formalName="United States Virgin Islands"/>
+    <country currencyName="Ruble" currencySymbol="RUB" name="RUS:rus:russia"
+             domain=".ru and .su" code="RUS" capital="Moscow"
+             telephonePrefix="+7" formalName="Russian Federation"/>
+    <country currencyName="Shekel" currencySymbol="ILS"
+             name="PSE:pse:palestinian territories (gaza strip and west bank)"
+             domain=".ps" code="PSE"
+             capital="Gaza City (Gaza Strip) and Ramallah (West Bank)"
+             telephonePrefix="+970" formalName=""/>
+    <country currencyName="Dollar" currencySymbol="USD" name="PLW:plw:palau"
+             domain=".pw" code="PLW" capital="Melekeok" telephonePrefix="+680"
+             formalName="Republic of Palau"/>
+    <country currencyName="Tugrik" currencySymbol="MNT" name="MNG:mng:mongolia"
+             domain=".mn" code="MNG" capital="Ulaanbaatar"
+             telephonePrefix="+976" formalName=""/>
+    <country currencyName="Franc" currencySymbol="KMF" name="COM:com:comoros"
+             domain=".km" code="COM" capital="Moroni" telephonePrefix="+269"
+             formalName="Union of Comoros"/>
+    <country currencyName="Pound" currencySymbol="GBP"
+             name="GBR:gbr:united kingdom" domain=".uk" code="GBR"
+             capital="London" telephonePrefix="+44"
+             formalName="United Kingdom of Great Britain and Northern Ireland"/>
+    <country currencyName="Dollar" currencySymbol="NZD"
+             name="NZL:nzl:new zealand" domain=".nz" code="NZL"
+             capital="Wellington" telephonePrefix="+64" formalName=""/>
+    <country currencyName="Lat" currencySymbol="LVL" name="LVA:lva:latvia"
+             domain=".lv" code="LVA" capital="Riga" telephonePrefix="+371"
+             formalName="Republic of Latvia"/>
+    <country currencyName="Euro" currencySymbol="EUR" name="MTQ:mtq:martinique"
+             domain=".mq" code="MTQ" capital="Fort-de-France"
+             telephonePrefix="+596" formalName="Overseas Region of Martinique"/>
+    <country currencyName="Shilling" currencySymbol="SOS" name="SOM:som:somalia"
+             domain=".so" code="SOM" capital="Mogadishu" telephonePrefix="+252"
+             formalName=""/>
+    <country currencyName="Pound" currencySymbol="GIP" name="GIB:gib:gibraltar"
+             domain=".gi" code="GIB" capital="Gibraltar" telephonePrefix="+350"
+             formalName=""/>
+    <country currencyName="Krone" currencySymbol="DKK"
+             name="FRO:fro:faroe islands" domain=".fo" code="FRO"
+             capital="Torshavn" telephonePrefix="+298" formalName=""/>
+    <country currencyName="Franc" currencySymbol="XPF"
+             name="WLF:wlf:wallis and futuna" domain=".wf" code="WLF"
+             capital="Mata'utu" telephonePrefix="+681"
+             formalName="Collectivity of the Wallis and Futuna Islands"/>
+    <country currencyName="Lira" currencySymbol="TRY" name="TUR:tur:turkey"
+             domain=".tr" code="TUR" capital="Ankara" telephonePrefix="+90"
+             formalName="Republic of Turkey"/>
+    <country currencyName="Manat" currencySymbol="AZN" name="AZE:aze:azerbaijan"
+             domain=".az" code="AZE" capital="Baku" telephonePrefix="+994"
+             formalName="Republic of Azerbaijan"/>
+    <country currencyName="Sol" currencySymbol="PEN" name="PER:per:peru"
+             domain=".pe" code="PER" capital="Lima" telephonePrefix="+51"
+             formalName="Republic of Peru"/>
+    <country currencyName="Lempira" currencySymbol="HNL" name="HND:hnd:honduras"
+             domain=".hn" code="HND" capital="Tegucigalpa"
+             telephonePrefix="+504" formalName="Republic of Honduras"/>
+    <country currencyName="Dollar" currencySymbol="SGD" name="SGP:sgp:singapore"
+             domain=".sg" code="SGP" capital="Singapore" telephonePrefix="+65"
+             formalName="Republic of Singapore"/>
+    <country currencyName="Dollar" currencySymbol="AUD"
+             name="NFK:nfk:norfolk island" domain=".nf" code="NFK"
+             capital="Kingston" telephonePrefix="+672"
+             formalName="Territory of Norfolk Island"/>
+    <country currencyName="Euro" currencySymbol="EUR" name="SVN:svn:slovenia"
+             domain=".si" code="SVN" capital="Ljubljana" telephonePrefix="+386"
+             formalName="Republic of Slovenia"/>
+    <country currencyName="Balboa" currencySymbol="PAB" name="PAN:pan:panama"
+             domain=".pa" code="PAN" capital="Panama" telephonePrefix="+507"
+             formalName="Republic of Panama"/>
+    <country currencyName="Dollar" currencySymbol="NZD"
+             name="COK:cok:cook islands" domain=".ck" code="COK"
+             capital="Avarua" telephonePrefix="+682" formalName=""/>
+    <country currencyName="Lira" currencySymbol="MTL" name="MLT:mlt:malta"
+             domain=".mt" code="MLT" capital="Valletta" telephonePrefix="+356"
+             formalName="Republic of Malta"/>
+    <country currencyName="Kyat" currencySymbol="MMK"
+             name="MMR:mmr:myanmar (burma)" domain=".mm" code="MMR"
+             capital="Naypyidaw" telephonePrefix="+95"
+             formalName="Union of Myanmar"/>
+    <country currencyName="Krone" currencySymbol="DKK" name="GRL:grl:greenland"
+             domain=".gl" code="GRL" capital="Nuuk (Godthab)"
+             telephonePrefix="+299" formalName=""/>
+    <country currencyName="Euro" currencySymbol="EUR" name="GLP:glp:guadeloupe"
+             domain=".gp" code="GLP" capital="Basse-Terre"
+             telephonePrefix="+590" formalName="Overseas Region of Guadeloupe"/>
+    <country currencyName="Dollar" currencySymbol="XCD" name="GRD:grd:grenada"
+             domain=".gd" code="GRD" capital="Saint George's"
+             telephonePrefix="+1-473" formalName=""/>
+    <country currencyName="Rial" currencySymbol="OMR" name="OMN:omn:oman"
+             domain=".om" code="OMN" capital="Muscat" telephonePrefix="+968"
+             formalName="Sultanate of Oman"/>
+    <country currencyName="Pataca" currencySymbol="MOP" name="MAC:mac:macau"
+             domain=".mo" code="MAC" capital="Macau" telephonePrefix="+853"
+             formalName="Macau Special Administrative Region"/>
+    <country currencyName="Franc" currencySymbol="CHF"
+             name="LIE:lie:liechtenstein" domain=".li" code="LIE"
+             capital="Vaduz" telephonePrefix="+423"
+             formalName="Principality of Liechtenstein"/>
+    <country currencyName="Ngultrum" currencySymbol="BTN" name="BTN:btn:bhutan"
+             domain=".bt" code="BTN" capital="Thimphu" telephonePrefix="+975"
+             formalName="Kingdom of Bhutan"/>
+    <country currencyName="Dollar" currencySymbol="XCD"
+             name="ATG:atg:antigua and barbuda" domain=".ag" code="ATG"
+             capital="Saint John's" telephonePrefix="+1-268" formalName=""/>
+    <country currencyName="Dollar" currencySymbol="ZWD" name="ZWE:zwe:zimbabwe"
+             domain=".zw" code="ZWE" capital="Harare" telephonePrefix="+263"
+             formalName="Republic of Zimbabwe"/>
+    <country currencyName="Dollar" currencySymbol="AUD"
+             name="CXR:cxr:christmas island" domain=".cx" code="CXR"
+             capital="The Settlement (Flying Fish Cove)" telephonePrefix="+61"
+             formalName="Territory of Christmas Island"/>
+    <country currencyName="Dollar" currencySymbol="USD" name="GUM:gum:guam"
+             domain=".gu" code="GUM" capital="Hagatna" telephonePrefix="+1-671"
+             formalName="Territory of Guam"/>
+    <country currencyName="Euro" currencySymbol="EUR" name="FRA:fra:france"
+             domain=".fr" code="FRA" capital="Paris" telephonePrefix="+33"
+             formalName="French Republic"/>
+    <country currencyName="Rupee" currencySymbol="NPR" name="NPL:npl:nepal"
+             domain=".np" code="NPL" capital="Kathmandu" telephonePrefix="+977"
+             formalName=""/>
+    <country currencyName="Ariary" currencySymbol="MGA"
+             name="MDG:mdg:madagascar" domain=".mg" code="MDG"
+             capital="Antananarivo" telephonePrefix="+261"
+             formalName="Republic of Madagascar"/>
+    <country currencyName="Real" currencySymbol="BRL" name="BRA:bra:brazil"
+             domain=".br" code="BRA" capital="Brasilia" telephonePrefix="+55"
+             formalName="Federative Republic of Brazil"/>
+    <country currencyName="Dollar" currencySymbol="AUD" name="KIR:kir:kiribati"
+             domain=".ki" code="KIR" capital="Tarawa" telephonePrefix="+686"
+             formalName="Republic of Kiribati"/>
+    <country currencyName="Dollar" currencySymbol="XCD" name="DMA:dma:dominica"
+             domain=".dm" code="DMA" capital="Roseau" telephonePrefix="+1-767"
+             formalName="Commonwealth of Dominica"/>
+    <country currencyName="Franc" currencySymbol="XOF" name="TGO:tgo:togo"
+             domain=".tg" code="TGO" capital="Lome" telephonePrefix="+228"
+             formalName="Togolese Republic"/>
+    <country currencyName="Leu" currencySymbol="MDL" name="MDA:mda:moldova"
+             domain=".md" code="MDA" capital="Chisinau" telephonePrefix="+373"
+             formalName="Republic of Moldova"/>
+    <country currencyName="Euro" currencySymbol="EUR" name="ITA:ita:italy"
+             domain=".it" code="ITA" capital="Rome" telephonePrefix="+39"
+             formalName="Italian Republic"/>
+    <country currencyName="Dollar" currencySymbol="USD"
+             name="SLV:slv:el salvador" domain=".sv" code="SLV"
+             capital="San Salvador" telephonePrefix="+503"
+             formalName="Republic of El Salvador"/>
+    <country currencyName="Pound" currencySymbol="FKP"
+             name="FLK:flk:falkland islands (islas malvinas)" domain=".fk"
+             code="FLK" capital="Stanley" telephonePrefix="+500" formalName=""/>
+    <country currencyName="Peso" currencySymbol="CLP" name="CHL:chl:chile"
+             domain=".cl" code="CHL"
+             capital="Santiago (administrative/judical) and Valparaiso (legislative)"
+             telephonePrefix="+56" formalName="Republic of Chile"/>
+    <country currencyName="Bolivar" currencySymbol="VEB"
+             name="VEN:ven:venezuela" domain=".ve" code="VEN" capital="Caracas"
+             telephonePrefix="+58"
+             formalName="Bolivarian Republic of Venezuela"/>
+    <country currencyName="Quetzal" currencySymbol="GTQ"
+             name="GTM:gtm:guatemala" domain=".gt" code="GTM"
+             capital="Guatemala" telephonePrefix="+502"
+             formalName="Republic of Guatemala"/>
+    <country currencyName="Dollar" currencySymbol="BMD" name="BMU:bmu:bermuda"
+             domain=".bm" code="BMU" capital="Hamilton" telephonePrefix="+1-441"
+             formalName=""/>
+    <country currencyName="Dinar" currencySymbol="RSD" name="SRB:srb:serbia"
+             domain=".rs and .yu" code="SRB" capital="Belgrade"
+             telephonePrefix="+381" formalName="Republic of Serbia"/>
+    <country currencyName="Won" currencySymbol="KPW" name="PRK:prk:north korea"
+             domain=".kp" code="PRK" capital="Pyongyang" telephonePrefix="+850"
+             formalName="Democratic People's Republic of Korea"/>
+    <country currencyName="Lek" currencySymbol="ALL" name="ALB:alb:albania"
+             domain=".al" code="ALB" capital="Tirana" telephonePrefix="+355"
+             formalName="Republic of Albania"/>
+    <country currencyName="Rial" currencySymbol="IRR" name="IRN:irn:iran"
+             domain=".ir" code="IRN" capital="Tehran" telephonePrefix="+98"
+             formalName="Islamic Republic of Iran"/>
+    <country currencyName="Dirham" currencySymbol="MAD"
+             name="ESH:esh:western sahara" domain=".eh" code="ESH"
+             capital="El-Aaiun" telephonePrefix="+212" formalName=""/>
+    <country currencyName="Zloty" currencySymbol="PLN" name="POL:pol:poland"
+             domain=".pl" code="POL" capital="Warsaw" telephonePrefix="+48"
+             formalName="Republic of Poland"/>
+    <country currencyName="Euro" currencySymbol="EUR" name="ESP:esp:spain"
+             domain=".es" code="ESP" capital="Madrid" telephonePrefix="+34"
+             formalName="Kingdom of Spain"/>
+    <country currencyName="Euro" currencySymbol="EUR"
+             name="VAT:vat:vatican city" domain=".va" code="VAT"
+             capital="Vatican City" telephonePrefix="+379"
+             formalName="State of the Vatican City"/>
+    <country currencyName="Pound" currencySymbol="SYP" name="SYR:syr:syria"
+             domain=".sy" code="SYR" capital="Damascus" telephonePrefix="+963"
+             formalName="Syrian Arab Republic"/>
+    <country currencyName="Franc" currencySymbol="XOF" name="BEN:ben:benin"
+             domain=".bj" code="BEN" capital="Porto-Novo" telephonePrefix="+229"
+             formalName="Republic of Benin"/>
+    <country currencyName="Ringgit" currencySymbol="MYR" name="MYS:mys:malaysia"
+             domain=".my" code="MYS"
+             capital="Kuala Lumpur (legislative/judical) and Putrajaya (administrative)"
+             telephonePrefix="+60" formalName=""/>
+    <country currencyName="Franc" currencySymbol="XPF"
+             name="NCL:ncl:new caledonia" domain=".nc" code="NCL"
+             capital="Noumea" telephonePrefix="+687" formalName=""/>
+    <country currencyName="Euro" currencySymbol="EUR"
+             name="GUF:guf:french guiana" domain=".gf" code="GUF"
+             capital="Cayenne" telephonePrefix="+594"
+             formalName="Overseas Region of Guiana"/>
+    <country currencyName="Cedi" currencySymbol="GHS" name="GHA:gha:ghana"
+             domain=".gh" code="GHA" capital="Accra" telephonePrefix="+233"
+             formalName="Republic of Ghana"/>
+    <country currencyName="Kina" currencySymbol="PGK"
+             name="PNG:png:papua new guinea" domain=".pg" code="PNG"
+             capital="Port Moresby" telephonePrefix="+675"
+             formalName="Independent State of Papua New Guinea"/>
+    <country currencyName="Dollar" currencySymbol="XCD"
+             name="VCT:vct:saint vincent and the grenadines" domain=".vc"
+             code="VCT" capital="Kingstown" telephonePrefix="+1-784"
+             formalName=""/>
+    <country currencyName="Leu" currencySymbol="RON" name="ROU:rou:romania"
+             domain=".ro" code="ROU" capital="Bucharest" telephonePrefix="+40"
+             formalName=""/>
+    <country currencyName="" currencySymbol=""
+             name="SGS:sgs:south georgia and the south sandwich islands"
+             domain=".gs" code="SGS" capital="" telephonePrefix=""
+             formalName=""/>
+    <country currencyName="Dollar" currencySymbol="FJD" name="FJI:fji:fiji"
+             domain=".fj" code="FJI" capital="Suva" telephonePrefix="+679"
+             formalName="Republic of the Fiji Islands"/>
+    <country currencyName="Gourde" currencySymbol="HTG" name="HTI:hti:haiti"
+             domain=".ht" code="HTI" capital="Port-au-Prince"
+             telephonePrefix="+509" formalName="Republic of Haiti"/>
+    <country currencyName="Tenge" currencySymbol="KZT" name="KAZ:kaz:kazakhstan"
+             domain=".kz" code="KAZ" capital="Astana" telephonePrefix="+7"
+             formalName="Republic of Kazakhstan"/>
+    <country currencyName="Dirham" currencySymbol="AED"
+             name="ARE:are:united arab emirates" domain=".ae" code="ARE"
+             capital="Abu Dhabi" telephonePrefix="+971"
+             formalName="United Arab Emirates"/>
+    <country currencyName="Euro" currencySymbol="EUR" name="AND:and:andorra"
+             domain=".ad" code="AND" capital="Andorra la Vella"
+             telephonePrefix="+376" formalName="Principality of Andorra"/>
+    <country currencyName="Franc" currencySymbol="XAF" name="GAB:gab:gabon"
+             domain=".ga" code="GAB" capital="Libreville" telephonePrefix="+241"
+             formalName="Gabonese Republic"/>
+    <country currencyName="Shilling" currencySymbol="UGX" name="UGA:uga:uganda"
+             domain=".ug" code="UGA" capital="Kampala" telephonePrefix="+256"
+             formalName="Republic of Uganda"/>
+    <country currencyName="Colon" currencySymbol="CRC" name="CRI:cri:costa rica"
+             domain=".cr" code="CRI" capital="San Jose" telephonePrefix="+506"
+             formalName="Republic of Costa Rica"/>
+    <country currencyName="Franc" currencySymbol="XOF" name="MLI:mli:mali"
+             domain=".ml" code="MLI" capital="Bamako" telephonePrefix="+223"
+             formalName="Republic of Mali"/>
+    <country currencyName="Rupee" currencySymbol="PKR" name="PAK:pak:pakistan"
+             domain=".pk" code="PAK" capital="Islamabad" telephonePrefix="+92"
+             formalName="Islamic Republic of Pakistan"/>
+    <country currencyName="Koruna" currencySymbol="SKK" name="SVK:svk:slovakia"
+             domain=".sk" code="SVK" capital="Bratislava" telephonePrefix="+421"
+             formalName="Slovak Republic"/>
+    <country currencyName="Rupee" currencySymbol="INR" name="IND:ind:india"
+             domain=".in" code="IND" capital="New Delhi" telephonePrefix="+91"
+             formalName="Republic of India"/>
+    <country currencyName="Dong" currencySymbol="VND" name="VNM:vnm:vietnam"
+             domain=".vn" code="VNM" capital="Hanoi" telephonePrefix="+84"
+             formalName="Socialist Republic of Vietnam"/>
+    <country currencyName="Pound" currencySymbol="SHP" name="ASC:asc:ascension"
+             domain=".ac" code="ASC" capital="Georgetown" telephonePrefix="+247"
+             formalName=""/>
+    <country currencyName="Meticail" currencySymbol="MZM"
+             name="MOZ:moz:mozambique" domain=".mz" code="MOZ" capital="Maputo"
+             telephonePrefix="+258" formalName="Republic of Mozambique"/>
+    <country currencyName="Euro" currencySymbol="EUR" name="AUT:aut:austria"
+             domain=".at" code="AUT" capital="Vienna" telephonePrefix="+43"
+             formalName="Republic of Austria"/>
+    <country currencyName="Leone" currencySymbol="SLL"
+             name="SLE:sle:sierra leone" domain=".sl" code="SLE"
+             capital="Freetown" telephonePrefix="+232"
+             formalName="Republic of Sierra Leone"/>
+    <country currencyName="Pound" currencySymbol="EGP" name="EGY:egy:egypt"
+             domain=".eg" code="EGY" capital="Cairo" telephonePrefix="+20"
+             formalName="Arab Republic of Egypt"/>
+    <country currencyName="Afghani" currencySymbol="AFN"
+             name="AFG:afg:afghanistan" domain=".af" code="AFG" capital="Kabul"
+             telephonePrefix="+93" formalName="Islamic State of Afghanistan"/>
+    <country currencyName="Dollar" currencySymbol="TTD"
+             name="TTO:tto:trinidad and tobago" domain=".tt" code="TTO"
+             capital="Port-of-Spain" telephonePrefix="+1-868"
+             formalName="Republic of Trinidad and Tobago"/>
+    <country currencyName="Peso" currencySymbol="UYU" name="URY:ury:uruguay"
+             domain=".uy" code="URY" capital="Montevideo" telephonePrefix="+598"
+             formalName="Oriental Republic of Uruguay"/>
+    <country currencyName="Rupiah" currencySymbol="IDR" name="IDN:idn:indonesia"
+             domain=".id" code="IDN" capital="Jakarta" telephonePrefix="+62"
+             formalName="Republic of Indonesia"/>
+    <country currencyName="Euro" currencySymbol="EUR" name="NLD:nld:netherlands"
+             domain=".nl" code="NLD"
+             capital="Amsterdam (administrative) and The Hague (legislative/judical)"
+             telephonePrefix="+31" formalName="Kingdom of the Netherlands"/>
+    <country currencyName="Denar" currencySymbol="MKD" name="MKD:mkd:macedonia"
+             domain=".mk" code="MKD" capital="Skopje" telephonePrefix="+389"
+             formalName="Republic of Macedonia"/>
+    <country currencyName="Rufiyaa" currencySymbol="MVR" name="MDV:mdv:maldives"
+             domain=".mv" code="MDV" capital="Male" telephonePrefix="+960"
+             formalName="Republic of Maldives"/>
+    <country currencyName="Kip" currencySymbol="LAK" name="LAO:lao:laos"
+             domain=".la" code="LAO" capital="Vientiane" telephonePrefix="+856"
+             formalName="Lao People's Democratic Republic"/>
+    <country currencyName="Dollar" currencySymbol="AUD"
+             name="CCK:cck:cocos (keeling) islands" domain=".cc" code="CCK"
+             capital="West Island" telephonePrefix="+61"
+             formalName="Territory of Cocos (Keeling) Islands"/>
+    <country currencyName="Som" currencySymbol="UZS" name="UZB:uzb:uzbekistan"
+             domain=".uz" code="UZB" capital="Tashkent" telephonePrefix="+998"
+             formalName="Republic of Uzbekistan"/>
+    <country currencyName="Won" currencySymbol="KRW" name="KOR:kor:south korea"
+             domain=".kr" code="KOR" capital="Seoul" telephonePrefix="+82"
+             formalName="Republic of Korea"/>
+    <country currencyName="Euro" currencySymbol="EUR" name="DEU:deu:germany"
+             domain=".de" code="DEU" capital="Berlin" telephonePrefix="+49"
+             formalName="Federal Republic of Germany"/>
+    <country currencyName="Pound" currencySymbol="JEP" name="JEY:jey:jersey"
+             domain=".je" code="JEY" capital="Saint Helier"
+             telephonePrefix="+44" formalName="Bailiwick of Jersey"/>
+    <country currencyName="Rupee" currencySymbol="LKR" name="LKA:lka:sri lanka"
+             domain=".lk" code="LKA"
+             capital="Colombo (administrative/judical) and Sri Jayewardenepura Kotte (legislative)"
+             telephonePrefix="+94"
+             formalName="Democratic Socialist Republic of Sri Lanka"/>
+    <country currencyName="Franc" currencySymbol="XAF"
+             name="CAF:caf:central african republic" domain=".cf" code="CAF"
+             capital="Bangui" telephonePrefix="+236" formalName=""/>
+    <country currencyName="Dirham" currencySymbol="MAD" name="MAR:mar:morocco"
+             domain=".ma" code="MAR" capital="Rabat" telephonePrefix="+212"
+             formalName="Kingdom of Morocco"/>
+    <country currencyName="Kwacha" currencySymbol="ZMK" name="ZMB:zmb:zambia"
+             domain=".zm" code="ZMB" capital="Lusaka" telephonePrefix="+260"
+             formalName="Republic of Zambia"/>
+    <country currencyName="Franc" currencySymbol="XAF" name="TCD:tcd:chad"
+             domain=".td" code="TCD" capital="N'Djamena" telephonePrefix="+235"
+             formalName="Republic of Chad"/>
+    <country currencyName="Dinar" currencySymbol="DZD" name="DZA:dza:algeria"
+             domain=".dz" code="DZA" capital="Algiers" telephonePrefix="+213"
+             formalName="People's Democratic Republic of Algeria"/>
+    <country currencyName="Lev" currencySymbol="BGN" name="BGR:bgr:bulgaria"
+             domain=".bg" code="BGR" capital="Sofia" telephonePrefix="+359"
+             formalName="Republic of Bulgaria"/>
+    <country currencyName="Dollar" currencySymbol="HKD" name="HKG:hkg:hong kong"
+             domain=".hk" code="HKG" capital="" telephonePrefix="+852"
+             formalName="Hong Kong Special Administrative Region"/>
+    <country currencyName="Peso" currencySymbol="ARS" name="ARG:arg:argentina"
+             domain=".ar" code="ARG" capital="Buenos Aires"
+             telephonePrefix="+54" formalName="Argentine Republic"/>
+    <country currencyName="" currencySymbol="" name="BVT:bvt:bouvet island"
+             domain=".bv" code="BVT" capital="" telephonePrefix=""
+             formalName=""/>
+    <country currencyName="Litas" currencySymbol="LTL" name="LTU:ltu:lithuania"
+             domain=".lt" code="LTU" capital="Vilnius" telephonePrefix="+370"
+             formalName="Republic of Lithuania"/>
+    <country currencyName="Rupee" currencySymbol="SCR" name="SYC:syc:seychelles"
+             domain=".sc" code="SYC" capital="Victoria" telephonePrefix="+248"
+             formalName="Republic of Seychelles"/>
+    <country currencyName="Peso" currencySymbol="COP" name="COL:col:colombia"
+             domain=".co" code="COL" capital="Bogota" telephonePrefix="+57"
+             formalName="Republic of Colombia"/>
+    <country currencyName="Birr" currencySymbol="ETB" name="ETH:eth:ethiopia"
+             domain=".et" code="ETH" capital="Addis Ababa"
+             telephonePrefix="+251"
+             formalName="Federal Democratic Republic of Ethiopia"/>
+    <country currencyName="Franc" currencySymbol="CHF"
+             name="CHE:che:switzerland" domain=".ch" code="CHE" capital="Bern"
+             telephonePrefix="+41" formalName="Swiss Confederation"/>
+    <country currencyName="Shilling" currencySymbol="TZS"
+             name="TZA:tza:tanzania" domain=".tz" code="TZA"
+             capital="Dar es Salaam (administrative/judical) and Dodoma (legislative)"
+             telephonePrefix="+255" formalName="United Republic of Tanzania"/>
+    <country currencyName="Dollar" currencySymbol="USD"
+             name="USA:usa:united states" domain=".us" code="USA"
+             capital="Washington" telephonePrefix="+1"
+             formalName="United States of America"/>
+    <country currencyName="Dollar" currencySymbol="BZD" name="BLZ:blz:belize"
+             domain=".bz" code="BLZ" capital="Belmopan" telephonePrefix="+501"
+             formalName=""/>
+    <country currencyName="Dollar" currencySymbol="BND" name="BRN:brn:brunei"
+             domain=".bn" code="BRN" capital="Bandar Seri Begawan"
+             telephonePrefix="+673" formalName="Negara Brunei Darussalam"/>
+    <country currencyName="Rial" currencySymbol="QAR" name="QAT:qat:qatar"
+             domain=".qa" code="QAT" capital="Doha" telephonePrefix="+974"
+             formalName="State of Qatar"/>
+    <country currencyName="Peso" currencySymbol="PHP" name="PHL:phl:philippines"
+             domain=".ph" code="PHL" capital="Manila" telephonePrefix="+63"
+             formalName="Republic of the Philippines"/>
+    <country currencyName="Tala" currencySymbol="WST" name="WSM:wsm:samoa"
+             domain=".ws" code="WSM" capital="Apia" telephonePrefix="+685"
+             formalName="Independent State of Samoa"/>
+    <country currencyName="Peso" currencySymbol="CUP" name="CUB:cub:cuba"
+             domain=".cu" code="CUB" capital="Havana" telephonePrefix="+53"
+             formalName="Republic of Cuba"/>
+    <country currencyName="Franc" currencySymbol="XOF" name="NER:ner:niger"
+             domain=".ne" code="NER" capital="Niamey" telephonePrefix="+227"
+             formalName="Republic of Niger"/>
+    <country currencyName="Krona" currencySymbol="ISK" name="ISL:isl:iceland"
+             domain=".is" code="ISL" capital="Reykjavik" telephonePrefix="+354"
+             formalName="Republic of Iceland"/>
+    <country currencyName="Franc" currencySymbol="XOF"
+             name="BFA:bfa:burkina faso" domain=".bf" code="BFA"
+             capital="Ouagadougou" telephonePrefix="+226" formalName=""/>
+    <country currencyName="Kroon" currencySymbol="EEK" name="EST:est:estonia"
+             domain=".ee" code="EST" capital="Tallinn" telephonePrefix="+372"
+             formalName="Republic of Estonia"/>
+    <country currencyName="Lilangeni" currencySymbol="SZL"
+             name="SWZ:swz:swaziland" domain=".sz" code="SWZ"
+             capital="Mbabane (administrative) and Lobamba (legislative)"
+             telephonePrefix="+268" formalName="Kingdom of Swaziland"/>
+    <country currencyName="Som" currencySymbol="KGS" name="KGZ:kgz:kyrgyzstan"
+             domain=".kg" code="KGZ" capital="Bishkek" telephonePrefix="+996"
+             formalName="Kyrgyz Republic"/>
+    <country currencyName="Franc" currencySymbol="XOF"
+             name="CIV:civ:cote d'ivoire (ivory coast)" domain=".ci" code="CIV"
+             capital="Yamoussoukro" telephonePrefix="+225"
+             formalName="Republic of Cote d'Ivoire"/>
+    <country currencyName="Yen" currencySymbol="JPY" name="JPN:jpn:japan"
+             domain=".jp" code="JPN" capital="Tokyo" telephonePrefix="+81"
+             formalName=""/>
+    <country currencyName="Koruna" currencySymbol="CZK"
+             name="CZE:cze:czech republic" domain=".cz" code="CZE"
+             capital="Prague" telephonePrefix="+420" formalName=""/>
+    <country currencyName="Lari" currencySymbol="GEL" name="GEO:geo:georgia"
+             domain=".ge" code="GEO" capital="Tbilisi" telephonePrefix="+995"
+             formalName="Republic of Georgia"/>
+    <country currencyName="Baht" currencySymbol="THB" name="THA:tha:thailand"
+             domain=".th" code="THA" capital="Bangkok" telephonePrefix="+66"
+             formalName="Kingdom of Thailand"/>
+    <country currencyName="Rial" currencySymbol="SAR"
+             name="SAU:sau:saudi arabia" domain=".sa" code="SAU"
+             capital="Riyadh" telephonePrefix="+966"
+             formalName="Kingdom of Saudi Arabia"/>
+    <country currencyName="Franc" currencySymbol="GNF" name="GIN:gin:guinea"
+             domain=".gn" code="GIN" capital="Conakry" telephonePrefix="+224"
+             formalName="Republic of Guinea"/>
+    <country currencyName="Dollar" currencySymbol="NZD" name="TKL:tkl:tokelau"
+             domain=".tk" code="TKL" capital="" telephonePrefix="+690"
+             formalName=""/>
+    <country currencyName="Franc" currencySymbol="RWF" name="RWA:rwa:rwanda"
+             domain=".rw" code="RWA" capital="Kigali" telephonePrefix="+250"
+             formalName="Republic of Rwanda"/>
+    <country currencyName="Euro" currencySymbol="EUR"
+             name="SPM:spm:saint pierre and miquelon" domain=".pm" code="SPM"
+             capital="Saint-Pierre" telephonePrefix="+508"
+             formalName="Territorial Collectivity of Saint Pierre and Miquelon"/>
+    <country currencyName="Euro" currencySymbol="EUR" name="SMR:smr:san marino"
+             domain=".sm" code="SMR" capital="San Marino" telephonePrefix="+378"
+             formalName="Republic of San Marino"/>
+    <country currencyName="Vatu" currencySymbol="VUV" name="VUT:vut:vanuatu"
+             domain=".vu" code="VUT" capital="Port-Vila" telephonePrefix="+678"
+             formalName="Republic of Vanuatu"/>
+    <country currencyName="Loti" currencySymbol="LSL" name="LSO:lso:lesotho"
+             domain=".ls" code="LSO" capital="Maseru" telephonePrefix="+266"
+             formalName="Kingdom of Lesotho"/>
+    <country currencyName="Pound" currencySymbol="CYP" name="CYP:cyp:cyprus"
+             domain=".cy" code="CYP" capital="Nicosia" telephonePrefix="+357"
+             formalName="Republic of Cyprus"/>
+    <country currencyName="Yuan Renminbi" currencySymbol="CNY"
+             name="CHN:chn:china" domain=".cn" code="CHN" capital="Beijing"
+             telephonePrefix="+86" formalName="People's Republic of China"/>
+    <country currencyName="Franc" currencySymbol="XAF"
+             name="COG:cog:congo (congo � brazzaville)" domain=".cg" code="COG"
+             capital="Brazzaville" telephonePrefix="+242"
+             formalName="Republic of the Congo"/>
+    <country currencyName="Dollar" currencySymbol="USD"
+             name="PRI:pri:puerto rico" domain=".pr" code="PRI"
+             capital="San Juan" telephonePrefix="+1-787 and 1-939"
+             formalName="Commonwealth of Puerto Rico"/>
+    <country currencyName="Euro" currencySymbol="EUR" name="IRL:irl:ireland"
+             domain=".ie" code="IRL" capital="Dublin" telephonePrefix="+353"
+             formalName=""/>
+    <country currencyName="Shekel" currencySymbol="ILS" name="ISR:isr:israel"
+             domain=".il" code="ISR" capital="Jerusalem" telephonePrefix="+972"
+             formalName="State of Israel"/>
+    <country currencyName="Pula" currencySymbol="BWP" name="BWA:bwa:botswana"
+             domain=".bw" code="BWA" capital="Gaborone" telephonePrefix="+267"
+             formalName="Republic of Botswana"/>
+    <country currencyName="Dollar" currencySymbol="XCD"
+             name="MSR:msr:montserrat" domain=".ms" code="MSR"
+             capital="Plymouth" telephonePrefix="+1-664" formalName=""/>
+    <country currencyName="Franc" currencySymbol="XAF" name="CMR:cmr:cameroon"
+             domain=".cm" code="CMR" capital="Yaounde" telephonePrefix="+237"
+             formalName="Republic of Cameroon"/>
+    <country currencyName="Dollar" currencySymbol="XCD"
+             name="KNA:kna:saint kitts and nevis" domain=".kn" code="KNA"
+             capital="Basseterre" telephonePrefix="+1-869"
+             formalName="Federation of Saint Kitts and Nevis"/>
+    <country currencyName="Euro" currencySymbol="EUR" name="LUX:lux:luxembourg"
+             domain=".lu" code="LUX" capital="Luxembourg" telephonePrefix="+352"
+             formalName="Grand Duchy of Luxembourg"/>
+    <country currencyName="Pound" currencySymbol="SHP"
+             name="SHN:shn:saint helena" domain=".sh" code="SHN"
+             capital="Jamestown" telephonePrefix="+290" formalName=""/>
+    <country currencyName="Euro" currencySymbol="EUR" name="BEL:bel:belgium"
+             domain=".be" code="BEL" capital="Brussels" telephonePrefix="+32"
+             formalName="Kingdom of Belgium"/>
+    <country currencyName="Ouguiya" currencySymbol="MRO"
+             name="MRT:mrt:mauritania" domain=".mr" code="MRT"
+             capital="Nouakchott" telephonePrefix="+222"
+             formalName="Islamic Republic of Mauritania"/>
+    <country currencyName="Pa'anga" currencySymbol="TOP" name="TON:ton:tonga"
+             domain=".to" code="TON" capital="Nuku'alofa" telephonePrefix="+676"
+             formalName="Kingdom of Tonga"/>
+    <country currencyName="Dollar" currencySymbol="NZD" name="NIU:niu:niue"
+             domain=".nu" code="NIU" capital="Alofi" telephonePrefix="+683"
+             formalName=""/>
+    <country currencyName="Dollar" currencySymbol="BSD" name="BHS:bhs:bahamas"
+             domain=".bs" code="BHS" capital="Nassau" telephonePrefix="+1-242"
+             formalName="Commonwealth of The Bahamas"/>
+    <country currencyName="Naira" currencySymbol="NGN" name="NGA:nga:nigeria"
+             domain=".ng" code="NGA" capital="Abuja" telephonePrefix="+234"
+             formalName="Federal Republic of Nigeria"/>
+</countries>
