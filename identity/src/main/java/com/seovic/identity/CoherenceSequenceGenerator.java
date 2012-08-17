@@ -41,7 +41,7 @@ public class CoherenceSequenceGenerator
     private static final long serialVersionUID = -58602546177273660L;
 
     static final ConfigurableCacheFactory CACHE_FACTORY =
-            new DefaultConfigurableCacheFactory("com.seovic.identity-cache-config.xml");
+            new DefaultConfigurableCacheFactory("identity-cache-config.xml");
 
     static final NamedCache SEQUENCES =
             CACHE_FACTORY.ensureCache("sequences", CoherenceSequenceGenerator.class.getClassLoader());

@@ -44,6 +44,7 @@ public class ExpressionExtractorTest
         return "ExpressionExtractor";
     }
 
+    @SuppressWarnings("unchecked")
     @Test
     public void testExtractionWithVariables() {
         Person person = createTestTarget();

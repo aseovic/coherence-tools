@@ -61,6 +61,7 @@ public class BeanWrapperUpdaterTest {
         assertEquals(2504L, person.getId());
     }
 
+    @SuppressWarnings("deprecation")
     @Test
     public void testWithDateType() {
         BeanWrapperUpdater updater = new BeanWrapperUpdater("dateOfBirth");

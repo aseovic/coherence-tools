@@ -18,8 +18,9 @@ package com.seovic.core;
 
 
 import java.lang.reflect.Constructor;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 /**
@@ -29,7 +30,7 @@ import org.apache.commons.logging.LogFactory;
  */
 @SuppressWarnings("unchecked")
 public final class Defaults {
-    private static final Log LOG = LogFactory.getLog(Defaults.class);
+    private static final Logger LOG = LoggerFactory.getLogger(Defaults.class);
     private static final Defaults INSTANCE = new Defaults();
 
     // ---- data members ----------------------------------------------------

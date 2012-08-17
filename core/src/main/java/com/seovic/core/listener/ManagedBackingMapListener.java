@@ -14,28 +14,29 @@
  * limitations under the License.
  */
 
-package com.seovic.core.extractor;
+package com.seovic.core.listener;
 
 
-import com.seovic.core.Extractor;
-import com.seovic.core.expression.SpelExpression;
+import com.tangosol.net.BackingMapManagerContext;
 
 
 /**
- * Tests for {@link ExpressionExtractor} in combination with {@link
- * SpelExpression}.
+ * Base class for Spring-managed backing map listeners.
  *
- * @author Aleksandar Seovic  2009.09.30
+ * @author Aleksandar Seovic  2009.06.30
  */
-public class SpelExtractorTest
-        extends AbstractExtractorTest {
-    @Override
-    protected Extractor createExtractor(String expression) {
-        return new SpelExtractor(expression);
+public class ManagedBackingMapListener<K,V> extends AbstractBackingMapListener<K,V> {
+
+    public ManagedBackingMapListener(BackingMapManagerContext context) {
+        super(context);
     }
 
-    @Override
-    protected String getName() {
-        return "SpelExtractor";
+    /**
+     * Set backing map manager context for this listener.
+     *
+     * @param context  backing map manager context
+     */
+    public void setContext(BackingMapManagerContext context) {
+        super.setContext(context);
     }
 }

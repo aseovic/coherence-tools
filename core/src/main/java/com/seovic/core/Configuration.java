@@ -21,8 +21,9 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 /**
@@ -59,7 +60,7 @@ public final class Configuration {
     /**
      * Logger for this class.
      */
-    private static final Log LOG = LogFactory.getLog(Configuration.class);
+    private static final Logger LOG = LoggerFactory.getLogger(Configuration.class);
 
     /**
      * Singleton instance.
@@ -87,7 +88,8 @@ public final class Configuration {
         try {
             Properties config = new Properties();
             config.load(Configuration.class.getClassLoader()
-                                .getResourceAsStream("com.seovic.core.properties"));
+                                .getResourceAsStream(
+                                        "coherence-tools.properties"));
             for (String propertyName : config.stringPropertyNames()) {
                 props.put(propertyName, config.getProperty(propertyName));
             }
