@@ -36,7 +36,7 @@
           <init-params>
             <init-param>
               <param-type>java.lang.String</param-type>
-              <param-value>test-loader-pof-config.xml</param-value>
+              <param-value>test-core-pof-config.xml</param-value>
             </init-param>
           </init-params>
         </instance>
@@ -58,6 +58,12 @@
     <local-scheme>
       <scheme-name>unlimited-backing-map</scheme-name>
     </local-scheme>
+
+    <invocation-scheme>
+      <service-name>InvocationService</service-name>
+      <thread-count>5</thread-count>
+      <autostart>true</autostart>
+    </invocation-scheme>
 
   </caching-schemes>
 </cache-config>

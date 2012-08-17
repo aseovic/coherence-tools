@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ~ Copyright 2012 Aleksandar Seovic
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<pof-config xmlns="http://xmlns.oracle.com/coherence/coherence-pof-config">
+
+  <user-type-list>
+    <include>coherence-pof-config.xml</include>
+
+    <!-- com.seovic.core.aggregator.* classes -->
+    <user-type>
+      <type-id>720</type-id>
+      <class-name>com.seovic.core.aggregator.TopAggregator</class-name>
+    </user-type>
+    <user-type>
+      <type-id>721</type-id>
+      <class-name>com.seovic.core.aggregator.TopAggregator$KeyValuePair</class-name>
+    </user-type>
+    <user-type>
+      <type-id>722</type-id>
+      <class-name>com.seovic.core.aggregator.TopAggregator$KeyValuePairExtractor</class-name>
+    </user-type>
+
+    <!-- com.seovic.core.filter.* classes -->
+    <user-type>
+      <type-id>740</type-id>
+      <class-name>com.seovic.core.filter.StartsWithFilter</class-name>
+    </user-type>
+    <user-type>
+      <type-id>741</type-id>
+      <class-name>com.seovic.core.filter.FilterAdapter</class-name>
+    </user-type>
+     <user-type>
+      <type-id>742</type-id>
+      <class-name>com.seovic.core.filter.AnyWordStartsWithFilter</class-name>
+    </user-type>
+
+    <!-- com.seovic.core.processor.* classes -->
+    <user-type>
+      <type-id>750</type-id>
+      <class-name>com.seovic.core.processor.BinaryExtractorProcessor</class-name>
+    </user-type>
+    <user-type>
+      <type-id>751</type-id>
+      <class-name>com.seovic.core.processor.BinaryNumberIncrementor</class-name>
+    </user-type>
+    <user-type>
+      <type-id>752</type-id>
+      <class-name>com.seovic.core.processor.BinaryPut</class-name>
+    </user-type>
+    <user-type>
+      <type-id>753</type-id>
+      <class-name>com.seovic.core.processor.BinaryVersionedPut</class-name>
+    </user-type>
+    <user-type>
+      <type-id>754</type-id>
+      <class-name>com.seovic.core.processor.MethodInvocationProcessor</class-name>
+    </user-type>
+    <user-type>
+      <type-id>755</type-id>
+      <class-name>com.seovic.core.processor.Put</class-name>
+    </user-type>
+    <user-type>
+      <type-id>756</type-id>
+      <class-name>com.seovic.core.processor.Remove</class-name>
+    </user-type>
+    <user-type>
+      <type-id>757</type-id>
+      <class-name>com.seovic.core.processor.ConditionalGet</class-name>
+    </user-type>
+
+    <!-- com.seovic.core.collections.* classes -->
+    <user-type>
+      <type-id>760</type-id>
+      <class-name>com.seovic.core.collections.PortableList</class-name>
+    </user-type>
+    <user-type>
+      <type-id>761</type-id>
+      <class-name>com.seovic.core.collections.PortableSet</class-name>
+    </user-type>
+    <user-type>
+      <type-id>765</type-id>
+      <class-name>com.seovic.core.collections.RemoteList$RemoteListProcessor</class-name>
+    </user-type>
+    <user-type>
+      <type-id>766</type-id>
+      <class-name>com.seovic.core.collections.RemoteSet$RemoteSetProcessor</class-name>
+    </user-type>
+
+    <!-- com.seovic.core.condition.* classes -->
+  	<user-type>
+      <type-id>805</type-id>
+      <class-name>com.seovic.core.condition.ExpressionCondition</class-name>
+    </user-type>
+
+    <!-- com.seovic.core.expression.* classes -->
+    <user-type>
+      <type-id>810</type-id>
+      <class-name>com.seovic.core.expression.GroovyExpression</class-name>
+    </user-type>
+    <user-type>
+      <type-id>811</type-id>
+      <class-name>com.seovic.core.expression.MvelExpression</class-name>
+    </user-type>
+    <user-type>
+      <type-id>812</type-id>
+      <class-name>com.seovic.core.expression.OgnlExpression</class-name>
+    </user-type>
+    <user-type>
+      <type-id>813</type-id>
+      <class-name>com.seovic.core.expression.ScriptExpression</class-name>
+    </user-type>
+    <user-type>
+      <type-id>814</type-id>
+      <class-name>com.seovic.core.expression.SpelExpression</class-name>
+    </user-type>
+
+    <!-- com.seovic.core.extractor.* classes -->
+    <user-type>
+      <type-id>820</type-id>
+      <class-name>com.seovic.core.extractor.ExpressionExtractor</class-name>
+    </user-type>
+    <user-type>
+      <type-id>821</type-id>
+      <class-name>com.seovic.core.extractor.GroovyExtractor</class-name>
+    </user-type>
+    <user-type>
+      <type-id>822</type-id>
+      <class-name>com.seovic.core.extractor.MapExtractor</class-name>
+    </user-type>
+    <user-type>
+      <type-id>823</type-id>
+      <class-name>com.seovic.core.extractor.MvelExtractor</class-name>
+    </user-type>
+    <user-type>
+      <type-id>824</type-id>
+      <class-name>com.seovic.core.extractor.OgnlExtractor</class-name>
+    </user-type>
+    <user-type>
+      <type-id>825</type-id>
+      <class-name>com.seovic.core.extractor.PropertyExtractor</class-name>
+    </user-type>
+    <user-type>
+      <type-id>826</type-id>
+      <class-name>com.seovic.core.extractor.ScriptExtractor</class-name>
+    </user-type>
+    <user-type>
+      <type-id>827</type-id>
+      <class-name>com.seovic.core.extractor.SpelExtractor</class-name>
+    </user-type>
+    <user-type>
+      <type-id>828</type-id>
+      <class-name>com.seovic.core.extractor.XmlExtractor</class-name>
+    </user-type>
+
+    <!-- com.seovic.core.updater.* classes -->
+  	<user-type>
+      <type-id>830</type-id>
+      <class-name>com.seovic.core.updater.BeanWrapperUpdater</class-name>
+    </user-type>
+    <user-type>
+      <type-id>832</type-id>
+      <class-name>com.seovic.core.updater.ExpressionUpdater</class-name>
+    </user-type>
+    <user-type>
+      <type-id>833</type-id>
+      <class-name>com.seovic.core.updater.MapUpdater</class-name>
+    </user-type>
+    <user-type>
+      <type-id>834</type-id>
+      <class-name>com.seovic.core.updater.PropertyUpdater</class-name>
+    </user-type>
+
+    <!-- com.seovic.core.factory.* classes -->
+  	<user-type>
+      <type-id>840</type-id>
+      <class-name>com.seovic.core.factory.ArrayListFactory</class-name>
+    </user-type>
+    <user-type>
+      <type-id>841</type-id>
+      <class-name>com.seovic.core.factory.HashMapFactory</class-name>
+    </user-type>
+    <user-type>
+      <type-id>842</type-id>
+      <class-name>com.seovic.core.factory.HashSetFactory</class-name>
+    </user-type>
+    <user-type>
+      <type-id>843</type-id>
+      <class-name>com.seovic.core.factory.LinkedHashMapFactory</class-name>
+    </user-type>
+    <user-type>
+      <type-id>844</type-id>
+      <class-name>com.seovic.core.factory.LinkedListFactory</class-name>
+    </user-type>
+    <user-type>
+      <type-id>845</type-id>
+      <class-name>com.seovic.core.factory.ReflectionFactory</class-name>
+    </user-type>
+    <user-type>
+      <type-id>846</type-id>
+      <class-name>com.seovic.core.factory.TreeMapFactory</class-name>
+    </user-type>
+    <user-type>
+      <type-id>847</type-id>
+      <class-name>com.seovic.core.factory.TreeSetFactory</class-name>
+    </user-type>
+    <user-type>
+      <type-id>848</type-id>
+      <class-name>com.seovic.core.factory.LinkedHashSetFactory</class-name>
+    </user-type>
+
+  </user-type-list>
+
+</pof-config>
