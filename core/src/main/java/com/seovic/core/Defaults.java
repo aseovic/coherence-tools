@@ -19,7 +19,6 @@ package com.seovic.core;
 
 import java.lang.reflect.Constructor;
 
-import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 
@@ -30,7 +29,6 @@ import org.slf4j.LoggerFactory;
  */
 @SuppressWarnings("unchecked")
 public final class Defaults {
-    private static final Logger LOG = LoggerFactory.getLogger(Defaults.class);
     private static final Defaults INSTANCE = new Defaults();
 
     // ---- data members ----------------------------------------------------
@@ -57,7 +55,7 @@ public final class Defaults {
                     Configuration.getDefaultConditionType());
         }
         catch (ClassNotFoundException e) {
-            LOG.error("Unable to initialize Defaults.", e);
+            LoggerFactory.getLogger(Defaults.class).error("Unable to initialize Defaults.", e);
             throw new RuntimeException(e);
         }
     }

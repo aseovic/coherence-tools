@@ -29,7 +29,6 @@
   <packaging>jar</packaging>
 
   <name>Data Loader</name>
-  <url>http://www.seovic.com/projects/loader</url>
 
   <dependencies>
     <dependency>

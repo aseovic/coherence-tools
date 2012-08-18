@@ -25,10 +25,10 @@
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>scheduler</artifactId>
+  <artifactId>batch</artifactId>
   <packaging>jar</packaging>
 
-  <name>Job Scheduler</name>
+  <name>Clustered Batch Job Execution Framework</name>
 
   <dependencies>
     <dependency>
@@ -36,12 +36,25 @@
       <artifactId>core</artifactId>
     </dependency>
     <dependency>
+      <groupId>com.seovic.coherence</groupId>
+      <artifactId>core</artifactId>
+      <type>test-jar</type>
+      <version>${core.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.seovic.coherence</groupId>
+      <artifactId>loader</artifactId>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
       <groupId>com.oracle.coherence</groupId>
       <artifactId>coherence</artifactId>
     </dependency>
     <dependency>
-      <groupId>org.quartz-scheduler</groupId>
-      <artifactId>quartz</artifactId>
+      <groupId>org.mvel</groupId>
+      <artifactId>mvel2</artifactId>
+      <scope>test</scope>
     </dependency>
   </dependencies>
 </project>

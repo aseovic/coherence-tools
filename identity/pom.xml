@@ -13,7 +13,6 @@
   <packaging>jar</packaging>
 
   <name>Identity Generator</name>
-  <url>http://www.seovic.com/projects/identity</url>
 
   <dependencies>
     <dependency>
