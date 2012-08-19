@@ -51,8 +51,8 @@ public class RiakCacheStoreTest {
             throws IOException {
         client = PBRiakClientFactory.getInstance().newClient(
                 new PBClientConfig.Builder()
-                    .withHost("192.168.1.23")
-                    .withPort(1087)
+                    .withHost("localhost")
+                    .withPort(8087)
                     .build());
     }
 

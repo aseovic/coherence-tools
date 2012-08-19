@@ -59,11 +59,11 @@
                 </init-param>
                 <init-param>
                   <param-type>string</param-type>
-                  <param-value>192.168.1.21</param-value>
+                  <param-value>localhost</param-value>
                 </init-param>
                 <init-param>
                   <param-type>int</param-type>
-                  <param-value>1087</param-value>
+                  <param-value>8087</param-value>
                 </init-param>
               </init-params>
             </class-scheme>
