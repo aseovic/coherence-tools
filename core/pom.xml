@@ -51,11 +51,6 @@
       <optional>true</optional>
     </dependency>
     <dependency>
-      <groupId>org.mvel</groupId>
-      <artifactId>mvel2</artifactId>
-      <optional>true</optional>
-    </dependency>
-    <dependency>
       <groupId>ognl</groupId>
       <artifactId>ognl</artifactId>
       <optional>true</optional>

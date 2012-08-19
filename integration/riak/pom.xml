@@ -20,6 +20,18 @@
       <artifactId>core</artifactId>
     </dependency>
     <dependency>
+      <groupId>com.seovic.coherence</groupId>
+      <artifactId>loader</artifactId>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.seovic.coherence</groupId>
+      <artifactId>loader</artifactId>
+      <version>${loader.version}</version>
+      <type>test-jar</type>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
       <groupId>com.oracle.coherence</groupId>
       <artifactId>coherence</artifactId>
     </dependency>
@@ -28,10 +40,6 @@
       <artifactId>riak-client</artifactId>
       <version>1.0.5</version>
       <exclusions>
-        <exclusion>
-          <groupId>org.apache.httpcomponents</groupId>
-          <artifactId>httpclient</artifactId>
-        </exclusion>
         <exclusion>
           <groupId>org.codehaus.jackson</groupId>
           <artifactId>jackson-core-asl</artifactId>

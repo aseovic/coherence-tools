@@ -51,10 +51,5 @@
       <groupId>com.oracle.coherence</groupId>
       <artifactId>coherence</artifactId>
     </dependency>
-    <dependency>
-      <groupId>org.mvel</groupId>
-      <artifactId>mvel2</artifactId>
-      <scope>test</scope>
-    </dependency>
   </dependencies>
 </project>

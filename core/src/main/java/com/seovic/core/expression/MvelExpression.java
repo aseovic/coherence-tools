@@ -19,11 +19,11 @@ package com.seovic.core.expression;
 
 import com.seovic.core.Expression;
 
+import com.tangosol.coherence.mvel.MVEL;
+import com.tangosol.coherence.mvel.ParserContext;
 import java.io.Serializable;
 import java.util.Map;
 
-import org.mvel2.MVEL;
-import org.mvel2.ParserContext;
 
 
 /**
