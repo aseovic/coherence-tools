@@ -1,2 +1,5 @@
+*.iml
+*.ipr
+*.iws
 target/
 !loader/src/main/java/com/seovic/loader/target
