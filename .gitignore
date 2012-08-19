@@ -1,1 +1,2 @@
 target/
+!loader/src/main/java/com/seovic/loader/target
