@@ -78,9 +78,7 @@ Building from Source
 Coherence Tools uses [Apache Maven](http://maven.apache.org/) as a build system, so for the most part building
 the project is as simple as:
 
-```
-$ mvn clean install
-```
+    $ mvn clean install
 
 However, the fact that the project depends on a commercial product which is not available in Maven Central means
 that your first build will likely fail because of the missing dependency on `coherence.jar`.
@@ -92,15 +90,13 @@ groupId and artifactId.
 To install `coherence.jar` into a local repository change to `$COHERENCE_HOME/lib` directory and run the
 following command:
 
-```
-$ mvn install:install-file  \
-      -DgroupId=com.oracle.coherence  \
-      -DartifactId=coherence  \
-      -Dversion=3.7.1  \
-      -Dfile=coherence.jar  \
-      -Dpackaging=jar \
-      -DgeneratePom=true
-```
+    $ mvn install:install-file  \
+          -DgroupId=com.oracle.coherence  \
+          -DartifactId=coherence  \
+          -Dversion=3.7.1  \
+          -Dfile=coherence.jar  \
+          -Dpackaging=jar \
+          -DgeneratePom=true
 
 Of course, this assumes that you are installing Coherence 3.7.1 JAR file. If you want to install one of the more
 recent releases, change the version number in the command above accordingly (POM file is already configured to use
