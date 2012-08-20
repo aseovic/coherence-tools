@@ -45,7 +45,7 @@
     <pof.version>${project.version}</pof.version>
     <scheduler.version>${project.version}</scheduler.version>
 
-    <coherence.version>3.7.1.3</coherence.version>
+    <coherence.version>[3.7.1,)</coherence.version>
     <slf4j.version>1.6.6</slf4j.version>
     <spring.version>3.1.2.RELEASE</spring.version>
   </properties>
@@ -57,7 +57,6 @@
     <module>scheduler</module>
     <module>batch</module>
     <module>pof</module>
-    <module>integration</module>
   </modules>
 
   <dependencies>
