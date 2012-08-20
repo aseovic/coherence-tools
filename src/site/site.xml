@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <!--
   ~ Copyright 2009 Aleksandar Seovic
@@ -16,9 +16,9 @@
   ~ limitations under the License.
   -->
 
-<project name="Coherence Tools" xmlns="http://maven.apache.org/DECORATION/1.0.0"
+<project name="Coherence Tools" xmlns="http://maven.apache.org/DECORATION/1.1.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/DECORATION/1.0.0 http://maven.apache.org/xsd/decoration-1.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/DECORATION/1.1.0 http://maven.apache.org/xsd/decoration-1.1.0.xsd">
 
   <skin>
     <groupId>org.apache.maven.skins</groupId>
@@ -30,20 +30,13 @@
       <topBarEnabled>true</topBarEnabled>
       <topBarIcon>
         <name>Coherence Tools</name>
-        <alt>Coherence Tools</alt>
-        <src>/images/topbar-logo.png</src>
-        <href>/index.html</href>
+        <href>index.html</href>
       </topBarIcon>
       <sideBarEnabled>true</sideBarEnabled>
-      <googleSearch>
-        <sitesearch/>
-      </googleSearch>
-      <googlePlusOne/>
-      <facebookLike/>
       <twitter>
         <user>aseovic</user>
-        <showUser>true</showUser>
-        <showFollowers>true</showFollowers>
+        <showUser>false</showUser>
+        <showFollowers>false</showFollowers>
       </twitter>
       <gitHub>
         <projectId>aseovic/coherence-tools</projectId>
@@ -54,9 +47,18 @@
   </custom>
 
   <body>
+    <head>
+      <script type="text/javascript" src="./js/site.js"></script>
+    </head>
+
     <menu ref="parent" inherit="top"/>
     <menu ref="modules" inherit="top"/>
     <menu ref="reports" inherit="top"/>
+
+    <footer>
+        <div class="copyright">Copyright &#169; 2009-2012 Aleksandar Seović. All rights reserved.</div>
+        <div class="version">${project.name} ${project.version}</div>
+    </footer>
   </body>
 
 </project>

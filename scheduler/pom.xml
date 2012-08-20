@@ -29,6 +29,7 @@
   <packaging>jar</packaging>
 
   <name>Job Scheduler</name>
+  <description>Quartz-based job scheduling for Coherence</description>
 
   <dependencies>
     <dependency>

@@ -11,7 +11,8 @@
   <artifactId>pof</artifactId>
   <packaging>jar</packaging>
 
-  <name>Portable Object Format (POF) Utilities</name>
+  <name>POF</name>
+  <description>Portable Object Format (POF) Utilities</description>
 
   <dependencies>
     <dependency>

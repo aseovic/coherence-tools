@@ -1,8 +1,9 @@
 Coherence Tools
 ===============
 
-Coherence Tools project is a collection of tools and extensions for [Oracle Coherence]
-(http://www.oracle.com/technetwork/middleware/coherence/overview/index.html) in-memory data grid.
+Coherence Tools project is a collection of tools and extensions for
+[Oracle Coherence](http://www.oracle.com/technetwork/middleware/coherence/overview/index.html)
+in-memory data grid.
 
 Modules
 -------
@@ -67,8 +68,8 @@ Provides support for complex batch job execution within the cluster.
 
 Contains a number of smaller sub-modules that provide integration between Coherence and other systems:
 
-* **AWS** -- provides cache store implementations for [Amazon S3](http://aws.amazon.com/s3/), [SimpleDB]
-  (http://aws.amazon.com/simpledb/) and [DynamoDB](http://aws.amazon.com/dynamodb/)
+* **AWS** -- provides cache store implementations for [Amazon S3](http://aws.amazon.com/s3/),
+  [SimpleDB](http://aws.amazon.com/simpledb/) and [DynamoDB](http://aws.amazon.com/dynamodb/)
 
 * **Riak** -- provides cache store implementation for [Riak](http://basho.com/)
 

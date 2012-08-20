@@ -29,6 +29,7 @@
   <packaging>jar</packaging>
 
   <name>Data Loader</name>
+  <description>Framework for bulk data loading</description>
 
   <dependencies>
     <dependency>

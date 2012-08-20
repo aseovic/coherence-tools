@@ -28,7 +28,8 @@
   <artifactId>batch</artifactId>
   <packaging>jar</packaging>
 
-  <name>Clustered Batch Job Execution Framework</name>
+  <name>Batch</name>
+  <description>Clustered Batch Job Execution Framework</description>
 
   <dependencies>
     <dependency>

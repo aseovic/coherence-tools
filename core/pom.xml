@@ -11,7 +11,8 @@
   <artifactId>core</artifactId>
   <packaging>jar</packaging>
 
-  <name>Core Interfaces and Classes</name>
+  <name>Core</name>
+  <description>Core Interfaces and Classes</description>
 
   <dependencies>
     <dependency>

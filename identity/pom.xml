@@ -13,6 +13,7 @@
   <packaging>jar</packaging>
 
   <name>Identity Generator</name>
+  <description>Sequential identifier generator (autoincrement) for Coherence</description>
 
   <dependencies>
     <dependency>
