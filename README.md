@@ -48,7 +48,7 @@ including:
 
 ### Identity
 
-Provides support for sequential identifier generation (autoincrement) within Coherence cluster
+Provides support for sequential identifier generation (autoincrement) within Coherence cluster.
 
 ### Loader
 
@@ -67,10 +67,10 @@ Provides support for complex batch job execution within the cluster.
 
 Contains a number of smaller sub-modules that provide integration between Coherence and other systems:
 
-* **Riak** -- provides cache store implementation for [Riak](http://basho.com/)
-
 * **AWS** -- provides cache store implementations for [Amazon S3](http://aws.amazon.com/s3/), [SimpleDB]
-  (http://aws.amazon.com/simpledb/) and [Dynamo](http://aws.amazon.com/dynamodb/)
+  (http://aws.amazon.com/simpledb/) and [DynamoDB](http://aws.amazon.com/dynamodb/)
+
+* **Riak** -- provides cache store implementation for [Riak](http://basho.com/)
 
 Building from Source
 --------------------
@@ -115,7 +115,7 @@ Building Integrations
 By their very nature integrations depend on third party products. For example, in order to build and test Riak
 integration you will need to have Riak server running.
 
-Because of this, we have excluded integration projects for the main build and you will have to build them
+Because of this, we have excluded integration projects from the main build. You will have to build them
 separately, once you have satisfied their external dependencies (check individual projects for build prerequisites).
 
 The easiest way to do that is to run `mvn clean install` within each project's directory, but you can also
