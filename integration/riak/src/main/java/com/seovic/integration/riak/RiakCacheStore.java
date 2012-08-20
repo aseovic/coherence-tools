@@ -17,50 +17,68 @@
 package com.seovic.integration.riak;
 
 
-import com.basho.riak.client.IRiakObject;
-import com.basho.riak.client.builders.RiakObjectBuilder;
-import com.basho.riak.client.http.util.Constants;
-import com.basho.riak.client.raw.RawClient;
-import com.basho.riak.client.raw.RiakResponse;
-import com.basho.riak.client.raw.pbc.PBClientConfig;
-import com.basho.riak.client.raw.pbc.PBRiakClientFactory;
+import com.basho.riak.pbc.RiakClient;
+import com.basho.riak.pbc.RiakObject;
+
+import com.google.protobuf.ByteString;
 
 import com.seovic.core.persistence.AbstractBinaryEntryStore;
 
-import com.tangosol.net.CacheFactory;
 import com.tangosol.util.Binary;
 import com.tangosol.util.BinaryEntry;
 
 import java.io.IOException;
 
-import org.apache.commons.io.Charsets;
-
 
 /**
+ * A cache store implementation that uses <a href="http://basho.com">Riak</a> as a persistent storage.
+ *
  * @author Aleksandar Seovic  2012.08.19
  */
 public class RiakCacheStore extends AbstractBinaryEntryStore {
-    private RawClient client;
-    private String bucket;
+    public static final String DEFAULT_HOST = "localhost";
+    public static final int    DEFAULT_PORT = 8087;
 
-    public RiakCacheStore(String bucket, String host, int port)
+    private final RiakClient client;
+    private final ByteString bucket;
+
+    /**
+     * Construct RiakCacheStore instance.
+     *
+     * @param bucket  Riak bucket this instance should use
+     *
+     * @throws IOException  if unable to connect to Riak node
+     */
+    public RiakCacheStore(String bucket)
             throws IOException {
-        this.bucket = bucket;
-        this.client = PBRiakClientFactory.getInstance().newClient(
-                new PBClientConfig.Builder()
-                    .withHost(host)
-                    .withPort(port)
-                    .build());
+        this(bucket, DEFAULT_HOST, DEFAULT_PORT);
     }
 
+    /**
+     * Construct RiakCacheStore instance.
+     *
+     * @param bucket  Riak bucket this instance should use
+     * @param host    Riak host
+     * @param port    Riak Protocol Buffers port
+     *
+     * @throws IOException  if unable to connect to Riak node
+     */
+    public RiakCacheStore(String bucket, String host, int port)
+            throws IOException {
+        this.bucket = ByteString.copyFromUtf8(bucket);
+        this.client = new RiakClient(host, port);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void load(BinaryEntry entry) {
         try {
-            String key = createRiakKey(entry);
-            RiakResponse response = client.fetch(bucket, key);
-            if (response.hasValue()) {
-                IRiakObject value = response.getRiakObjects()[0];
-                entry.updateBinaryValue(new Binary(value.getValue()));
+            ByteString key = getRiakKey(entry);
+            RiakObject[] response = client.fetch(bucket, key);
+            if (response.length >= 1) {
+                entry.updateBinaryValue(new Binary(response[0].getValue().toByteArray()));
             }
         }
         catch (IOException e) {
@@ -68,26 +86,29 @@ public class RiakCacheStore extends AbstractBinaryEntryStore {
         }
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void store(BinaryEntry entry) {
         try {
-            String key = createRiakKey(entry);
-            IRiakObject value = RiakObjectBuilder.newBuilder(bucket, key)
-                    .withContentType(Constants.CTYPE_OCTET_STREAM)
-                    .withValue(entry.getBinaryValue().toByteArray())
-                    .build();
+            ByteString key = getRiakKey(entry);
+            ByteString value = ByteString.copyFrom(entry.getBinaryValue().toByteArray());
 
-            client.store(value);
+            client.store(new RiakObject(bucket, key, value));
         }
         catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void erase(BinaryEntry entry) {
         try {
-            String key = createRiakKey(entry);
+            ByteString key = getRiakKey(entry);
             client.delete(bucket, key);
         }
         catch (IOException e) {
@@ -95,7 +116,10 @@ public class RiakCacheStore extends AbstractBinaryEntryStore {
         }
     }
 
-    protected String createRiakKey(BinaryEntry entry) {
-        return entry.getKey().toString();
+    /**
+     * Convert Binary key to ProtoBuf ByteString expected by RiakClient.
+     */
+    protected ByteString getRiakKey(BinaryEntry entry) {
+        return ByteString.copyFrom(entry.getBinaryKey().toByteArray());
     }
 }

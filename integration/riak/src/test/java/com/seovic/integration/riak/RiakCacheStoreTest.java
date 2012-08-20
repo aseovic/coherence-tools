@@ -17,21 +17,27 @@
 package com.seovic.integration.riak;
 
 
-import com.basho.riak.client.raw.RawClient;
-import com.basho.riak.client.raw.pbc.PBClientConfig;
-import com.basho.riak.client.raw.pbc.PBRiakClientFactory;
+import com.basho.riak.pbc.KeySource;
+import com.basho.riak.pbc.RiakClient;
+
+import com.google.protobuf.ByteString;
+
 import com.seovic.loader.CsvToCoherence;
 import com.seovic.loader.Loader;
 import com.seovic.test.objects.Country;
 
+import com.tangosol.io.Serializer;
 import com.tangosol.net.CacheFactory;
 import com.tangosol.net.NamedCache;
-
+import com.tangosol.util.Binary;
+import com.tangosol.util.ExternalizableHelper;
 import com.tangosol.util.processor.PreloadRequest;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -44,24 +50,22 @@ import static org.junit.Assert.*;
  */
 @SuppressWarnings({"unchecked"})
 public class RiakCacheStoreTest {
-    public static final String BUCKET = "test_bucket";
-    private RawClient client;
+    public static final ByteString BUCKET = ByteString.copyFromUtf8("test_bucket");
+    private RiakClient client;
 
     public RiakCacheStoreTest()
             throws IOException {
-        client = PBRiakClientFactory.getInstance().newClient(
-                new PBClientConfig.Builder()
-                    .withHost("localhost")
-                    .withPort(8087)
-                    .build());
+        client = new RiakClient("localhost", 8087);
     }
 
+    @Before
     @After
     public void clearDB()
             throws IOException {
-        Iterable<String> keys = client.listKeys(BUCKET);
-        for (String key : keys) {
-            client.delete(BUCKET, key);
+        KeySource keys = client.listKeys(BUCKET);
+        Iterator<ByteString> it = keys.iterator();
+        while (it.hasNext()) {
+            client.delete(BUCKET, it.next());
         }
     }
 
@@ -78,7 +82,7 @@ public class RiakCacheStoreTest {
         assertEquals(244, countries1.size());
 
         start = System.currentTimeMillis();
-        List keys = getBucketKeys(client, BUCKET);
+        List keys = getBucketKeys(countries1.getCacheService().getSerializer());
         duration = System.currentTimeMillis() - start;
         System.out.println("Retrieved " + keys.size() + " bucket keys in " + duration + " ms");
 
@@ -90,13 +94,17 @@ public class RiakCacheStoreTest {
         assertEquals(244, countries2.size());
     }
 
-    private List getBucketKeys(RawClient client, String bucket)
+    private List getBucketKeys(Serializer serializer)
             throws IOException {
-        ArrayList<String> result = new ArrayList<String>(250);
-        Iterable<String> keys = client.listKeys(bucket);
-        for (String key : keys) {
-            result.add(key);
+        ArrayList keys = new ArrayList<String>(250);
+
+        KeySource keySource = client.listKeys(BUCKET);
+        Iterator<ByteString> it = keySource.iterator();
+        while (it.hasNext()) {
+            Binary binKey = new Binary(it.next().toByteArray());
+            Object key = ExternalizableHelper.fromBinary(binKey, serializer);
+            keys.add(key);
         }
-        return result;
+        return keys;
     }
 }
