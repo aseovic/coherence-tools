@@ -69,7 +69,8 @@ Contains a number of smaller sub-modules that provide integration between Cohere
 
 * **Riak** -- provides cache store implementation for [Riak](http://basho.com/)
 
-* **AWS** -- provides cache store implementations for Amazon S3, SimpleDB and Dynamo
+* **AWS** -- provides cache store implementations for [Amazon S3](http://aws.amazon.com/s3/), [SimpleDB]
+  (http://aws.amazon.com/simpledb/) and [Dynamo](http://aws.amazon.com/dynamodb/)
 
 Building from Source
 --------------------
