@@ -138,6 +138,6 @@ Coherence versions older than 3.6 are not officially supported.
 License
 -------
 
-Coherence Tools is licensed under the terms of the [Apache License, Version 2.0](/LICENSE.txt)
+Coherence Tools is licensed under the terms of the [Apache License, Version 2.0](LICENSE.txt)
 
 
