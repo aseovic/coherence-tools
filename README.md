@@ -11,39 +11,39 @@ The project consists of several modules:
 
     Contains core interfaces and classes that most of the other projects depend on, such as:
 
-    * `Expression` abstraction, which defines a common API and provides implementations for various
-      expression languages ([MVEL](http://mvel.codehaus.org/),
-      [SpEL](http://static.springsource.org/spring/docs/3.0.x/reference/expressions.html),
-      [OGNL](http://commons.apache.org/ognl/), [Groovy](http://groovy.codehaus.org/), and
-      [Java Scripting](http://docs.oracle.com/javase/6/docs/technotes/guides/scripting/programmer_guide/index.html))
+    *   `Expression` abstraction, which defines a common API and provides implementations for various
+        expression languages ([MVEL](http://mvel.codehaus.org/),
+        [SpEL](http://static.springsource.org/spring/docs/3.0.x/reference/expressions.html),
+        [OGNL](http://commons.apache.org/ognl/), [Groovy](http://groovy.codehaus.org/), and
+        [Java Scripting](http://docs.oracle.com/javase/6/docs/technotes/guides/scripting/programmer_guide/index.html))
 
-    * `Extractor` interface and many useful implementations, including `ExpressionExtractor`, which can be
-      used anywhere Coherence `ValueExtractor` is expected.
+    *   `Extractor` interface and many useful implementations, including `ExpressionExtractor`, which can be
+        used anywhere Coherence `ValueExtractor` is expected.
 
-    * `Factory` interface and a number of implementations, which can be very useful in certain situations.
-      For example, when distributing work across the cluster, your tasks might depend on some non-serializable
-      objects (database connection, for example). You can use serializable `DriverManagerDataSourceFactory`
-      in this case, which will allow you to create properly configure `DataSource` instances within the cluster.
+    *   `Factory` interface and a number of implementations, which can be very useful in certain situations.
+        For example, when distributing work across the cluster, your tasks might depend on some non-serializable
+        objects (database connection, for example). You can use serializable `DriverManagerDataSourceFactory`
+        in this case, which will allow you to create properly configure `DataSource` instances within the cluster.
 
-    * `ClusteredExecutorService`, which allows you to distribute `Callable` or `Runnable` tasks across the
-      cluster and execute them using Invocation Service.
+    *   `ClusteredExecutorService`, which allows you to distribute `Callable` or `Runnable` tasks across the
+        cluster and execute them using Invocation Service.
 
-    * Useful collection implementations, including Remote Collections, which use entry processors to manipulate
-      collections within partitioned cache without moving the whole collection across the wire.
+    *   Useful collection implementations, including Remote Collections, which use entry processors to manipulate
+        collections within partitioned cache without moving the whole collection across the wire.
 
-    * Number of base classes and useful implementations of Coherence entry processors, filters, aggregators,
-      cache stores, etc.
+    *   Number of base classes and useful implementations of Coherence entry processors, filters, aggregators,
+        cache stores, etc.
 
 2.  **POF**
 
     Provides several tools and extensions that make Portable Object Format (POF) much easier to work with,
     including:
 
-    * `PofXjcPlugin`, which implements `PortableObject` interface within classes generated from the
-      XML schema by the XJC compiler.
+    *   `PofXjcPlugin`, which implements `PortableObject` interface within classes generated from the
+        XML schema by the XJC compiler.
 
-    * `PortableTypeGenerator`, which uses bytecode instrumentation to implement POF serialization code based
-      on class and field annotations and provides full support for schema evolution within class hierarchy.
+    *   `PortableTypeGenerator`, which uses bytecode instrumentation to implement POF serialization code based
+        on class and field annotations and provides full support for schema evolution within class hierarchy.
 
 3.  **Identity**
 
@@ -66,9 +66,9 @@ The project consists of several modules:
 
     Contains a number of smaller sub-modules that provide integration between Coherence and other systems:
 
-    * **Riak** -- provides cache store implementation for [Riak](http://basho.com/)
+    *   **Riak** -- provides cache store implementation for [Riak](http://basho.com/)
 
-    * **AWS** -- provides cache store implementations for Amazon S3, SimpleDB and Dynamo
+    *   **AWS** -- provides cache store implementations for Amazon S3, SimpleDB and Dynamo
 
 Building from Source
 --------------------
@@ -91,12 +91,13 @@ To install `coherence.jar` into a local repository change to `$COHERENCE_HOME/li
 following command:
 
 ```
-mvn install:install-file -DgroupId=com.oracle.coherence  \
--DartifactId=coherence  \
--Dversion=3.7.1  \
--Dfile=coherence.jar  \
--Dpackaging=jar \
--DgeneratePom=true
+mvn install:install-file  \
+    -DgroupId=com.oracle.coherence  \
+    -DartifactId=coherence  \
+    -Dversion=3.7.1  \
+    -Dfile=coherence.jar  \
+    -Dpackaging=jar \
+    -DgeneratePom=true
 ```
 
 Of course, this assumes that you are installing Coherence 3.7.1 JAR file. If you want to install one of the more
