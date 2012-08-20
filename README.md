@@ -135,4 +135,9 @@ instead of the ones that are embedded into Coherence 3.7.1 or higher.
 
 Coherence versions older than 3.6 are not officially supported.
 
+License
+-------
+
+Coherence Tools is licensed under the terms of the [Apache License, Version 2.0](/LICENSE.txt)
+
 
