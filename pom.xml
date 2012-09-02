@@ -45,9 +45,28 @@
     <pof.version>${project.version}</pof.version>
     <scheduler.version>${project.version}</scheduler.version>
 
-    <coherence.version>[3.7.1,12.1.2]</coherence.version>
+    <coherence.version>3.7.1.3</coherence.version>
+    <commons-io.version>2.4</commons-io.version>
+    <eclipselink.version>2.3.3</eclipselink.version>
+    <groovy.version>2.0.0</groovy.version>
+    <h2.version>1.3.168</h2.version>
+    <httpclient.version>4.1</httpclient.version>
+    <jackson.version>1.9.8</jackson.version>
+    <jaxb.version>2.2.6</jaxb.version>
+    <jaxb-impl.version>2.2.6-b35</jaxb-impl.version>
+    <jaxb2-basics.version>0.6.4</jaxb2-basics.version>
+    <jaxb2-default-value.version>1.1</jaxb2-default-value.version>
+    <jaxb2-fluent-api.version>3.0</jaxb2-fluent-api.version>
+    <jaxb2-value-constructor.version>3.0</jaxb2-value-constructor.version>
+    <jersey.version>1.13</jersey.version>
+    <jpa.version>2.0</jpa.version>
+    <logback.version>1.0.6</logback.version>
+    <maven.version>3.0.4</maven.version>
+    <ognl.version>2.6.9</ognl.version>
+    <quartz.version>2.1.5</quartz.version>
     <slf4j.version>1.6.6</slf4j.version>
     <spring.version>3.1.2.RELEASE</spring.version>
+    <supercsv.version>1.52</supercsv.version>
   </properties>
 
   <modules>
@@ -128,21 +147,21 @@
       <dependency>
         <groupId>org.apache.maven</groupId>
         <artifactId>maven-plugin-api</artifactId>
-        <version>3.0.4</version>
+        <version>${maven.version}</version>
       </dependency>
 
       <!-- Logback -->
       <dependency>
         <groupId>ch.qos.logback</groupId>
         <artifactId>logback-classic</artifactId>
-        <version>1.0.6</version>
+        <version>${logback.version}</version>
       </dependency>
 
       <!-- H2 database -->
       <dependency>
         <groupId>com.h2database</groupId>
         <artifactId>h2</artifactId>
-        <version>1.3.168</version>
+        <version>${h2.version}</version>
         <scope>test</scope>
       </dependency>
 
@@ -157,53 +176,53 @@
       <dependency>
         <groupId>javax.xml.bind</groupId>
         <artifactId>jaxb-api</artifactId>
-        <version>2.2.6</version>
+        <version>${jaxb.version}</version>
       </dependency>
       <dependency>
         <groupId>com.sun.xml.bind</groupId>
         <artifactId>jaxb-impl</artifactId>
-        <version>2.2.6-b35</version>
+        <version>${jaxb-impl.version}</version>
       </dependency>
       <dependency>
         <groupId>com.sun.xml.bind</groupId>
         <artifactId>jaxb-xjc</artifactId>
-        <version>2.2.6-b35</version>
+        <version>${jaxb-impl.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jvnet.jaxb2_commons</groupId>
         <artifactId>jaxb2-basics-runtime</artifactId>
-        <version>0.6.4</version>
+        <version>${jaxb2-basics.version}</version>
       </dependency>
 
       <!-- JPA and EclipseLink -->
       <dependency>
         <groupId>javax.persistence</groupId>
         <artifactId>persistence-api</artifactId>
-        <version>2.0</version>
+        <version>${jpa.version}</version>
       </dependency>
       <dependency>
         <groupId>org.eclipse.persistence</groupId>
         <artifactId>eclipselink</artifactId>
-        <version>2.3.3</version>
+        <version>${eclipselink.version}</version>
       </dependency>
 
       <!-- Jackson -->
       <dependency>
         <groupId>org.codehaus.jackson</groupId>
         <artifactId>jackson-core-asl</artifactId>
-        <version>1.9.8</version>
+        <version>${jackson.version}</version>
       </dependency>
       <dependency>
         <groupId>org.codehaus.jackson</groupId>
         <artifactId>jackson-mapper-asl</artifactId>
-        <version>1.9.8</version>
+        <version>${jackson.version}</version>
       </dependency>
 
       <!-- Quartz -->
       <dependency>
         <groupId>org.quartz-scheduler</groupId>
         <artifactId>quartz</artifactId>
-        <version>2.1.5</version>
+        <version>${quartz.version}</version>
         <exclusions>
           <exclusion>
             <groupId>c3p0</groupId>
@@ -266,28 +285,47 @@
       <dependency>
         <groupId>org.codehaus.groovy</groupId>
         <artifactId>groovy</artifactId>
-        <version>2.0.0</version>
+        <version>${groovy.version}</version>
       </dependency>
 
       <!-- Apache Commons -->
       <dependency>
         <groupId>commons-io</groupId>
         <artifactId>commons-io</artifactId>
-        <version>2.4</version>
+        <version>${commons-io.version}</version>
+      </dependency>
+
+      <!-- Apache HTTP Client -->
+      <dependency>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>httpclient</artifactId>
+        <version>${httpclient.version}</version>
+      </dependency>
+
+      <!-- Jersey -->
+      <dependency>
+        <groupId>com.sun.jersey</groupId>
+        <artifactId>jersey-client</artifactId>
+        <version>${jersey.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.sun.jersey</groupId>
+        <artifactId>jersey-server</artifactId>
+        <version>${jersey.version}</version>
       </dependency>
 
       <!-- OGNL -->
       <dependency>
         <groupId>ognl</groupId>
         <artifactId>ognl</artifactId>
-        <version>2.6.9</version>
+        <version>${ognl.version}</version>
       </dependency>
 
       <!-- Super CSV -->
       <dependency>
         <groupId>net.sf.supercsv</groupId>
         <artifactId>super-csv</artifactId>
-        <version>1.52</version>
+        <version>${supercsv.version}</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -361,22 +399,22 @@
             <dependency>
               <groupId>org.jvnet.jaxb2_commons</groupId>
               <artifactId>jaxb2-basics</artifactId>
-              <version>0.6.4</version>
+              <version>${jaxb2-basics.version}</version>
             </dependency>
             <dependency>
               <groupId>org.jvnet.jaxb2_commons</groupId>
               <artifactId>jaxb2-default-value</artifactId>
-              <version>1.1</version>
+              <version>${jaxb2-default-value.version}</version>
             </dependency>
             <dependency>
               <groupId>org.jvnet.jaxb2_commons</groupId>
               <artifactId>jaxb2-fluent-api</artifactId>
-              <version>3.0</version>
+              <version>${jaxb2-fluent-api.version}</version>
             </dependency>
             <dependency>
               <groupId>org.jvnet.jaxb2_commons</groupId>
               <artifactId>jaxb2-value-constructor</artifactId>
-              <version>3.0</version>
+              <version>${jaxb2-value-constructor.version}</version>
             </dependency>
           </dependencies>
         </plugin>
