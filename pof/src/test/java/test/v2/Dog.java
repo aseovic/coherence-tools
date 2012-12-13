@@ -60,7 +60,6 @@ public class Dog
 
     private void readExternal(PofReader in) throws IOException {
         if (in.getVersionId() >= 1) {
-            CacheFactory.log("reading attribute 0 (breed)", 7);
             breed = in.readString(0);
         }
         if (in.getVersionId() >= 2) {
