@@ -19,6 +19,9 @@ package com.seovic.loader;
 
 import com.seovic.core.Extractor;
 import com.seovic.core.Updater;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.util.Set;
 
 
@@ -29,6 +32,7 @@ import java.util.Set;
  */
 public abstract class AbstractLoader
         implements Loader {
+    private static final Logger LOG = LoggerFactory.getLogger(AbstractLoader.class);
 
     private MappingMode mode = MappingMode.AUTO;
 
@@ -49,9 +53,15 @@ public abstract class AbstractLoader
         for (Object sourceItem : source) {
             Object targetItem = target.createTargetInstance(source, sourceItem);
             for (String property : propertyNames) {
-                Extractor extractor = source.getExtractor(property);
-                Updater updater = target.getUpdater(property);
-                updater.update(targetItem, extractor.extract(sourceItem));
+                try {
+                    Extractor extractor = source.getExtractor(property);
+                    Updater updater = target.getUpdater(property);
+                    updater.update(targetItem, extractor.extract(sourceItem));
+                }
+                catch (RuntimeException e) {
+                    LOG.error("Mapping error for property '" + property + "': " + e.getMessage(), e);
+                    throw e;
+                }
             }
             target.importItem(targetItem);
         }
