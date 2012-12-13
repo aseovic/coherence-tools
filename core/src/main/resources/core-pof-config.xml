@@ -166,6 +166,10 @@
       <type-id>828</type-id>
       <class-name>com.seovic.core.extractor.XmlExtractor</class-name>
     </user-type>
+    <user-type>
+      <type-id>829</type-id>
+      <class-name>com.seovic.core.extractor.DynamicObjectExtractor</class-name>
+    </user-type>
 
     <!-- com.seovic.core.updater.* classes -->
   	<user-type>

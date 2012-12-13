@@ -18,9 +18,11 @@ package com.seovic.core.objects;
 
 
 import com.seovic.core.util.Convert;
+
 import com.tangosol.io.pof.PofReader;
 import com.tangosol.io.pof.PofWriter;
 import com.tangosol.io.pof.PortableObject;
+
 import java.beans.BeanInfo;
 import java.beans.Introspector;
 import java.beans.PropertyDescriptor;
@@ -37,14 +39,20 @@ import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+
 import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+
 import org.codehaus.jackson.JsonGenerator;
 import org.codehaus.jackson.map.JsonSerializable;
 import org.codehaus.jackson.map.SerializerProvider;
+
+import org.mvel2.integration.PropertyHandler;
+import org.mvel2.integration.VariableResolverFactory;
+
 import org.springframework.beans.BeanWrapper;
 import org.springframework.beans.BeanWrapperImpl;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
@@ -643,6 +651,23 @@ public class DynamicObject
             return result;
         }
     }
+
+
+    // ---- inner class: MvelPropertyHandler --------------------------------
+
+    public static class MvelPropertyHandler implements PropertyHandler {
+        @Override
+        public Object getProperty(String name, Object o, VariableResolverFactory variableResolverFactory) {
+            return ((DynamicObject) o).getValue(name);
+        }
+
+        @Override
+        public Object setProperty(String name, Object o, VariableResolverFactory variableResolverFactory, Object value) {
+            ((DynamicObject) o).setValue(name, value);
+            return value;
+        }
+    }
+
 
     // ---- data members ----------------------------------------------------
 

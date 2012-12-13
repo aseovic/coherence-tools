@@ -19,8 +19,9 @@ package com.seovic.core.expression;
 
 import com.seovic.core.Expression;
 
-import com.tangosol.coherence.mvel.MVEL;
-import com.tangosol.coherence.mvel.ParserContext;
+import org.mvel2.MVEL;
+import org.mvel2.ParserContext;
+
 import java.io.Serializable;
 import java.util.Map;
 
@@ -43,6 +44,9 @@ public class MvelExpression<T>
     // ---- static initializer ----------------------------------------------
 
     static {
+//        MVEL.COMPILER_OPT_ALLOW_OVERRIDE_ALL_PROPHANDLING = true;
+//        PropertyHandlerFactory.registerPropertyHandler(DynamicObject.class, new DynamicObject.MvelPropertyHandler());
+
         ParserContext parserContext = new ParserContext();
         parserContext.addPackageImport("java.util");
         PARSER_CONTEXT = parserContext;

@@ -18,7 +18,11 @@ package com.seovic.core.expression;
 
 
 import com.seovic.core.Expression;
+import com.seovic.core.objects.DynamicObject;
+import org.junit.Ignore;
+import org.junit.Test;
 
+import static org.junit.Assert.*;
 
 /**
  * MvelExpression tests.
@@ -26,15 +30,27 @@ import com.seovic.core.Expression;
  * @author Aleksandar Seovic  2009.09.20
  */
 public class MvelExpressionTest
-        extends AbstractExpressionTest
-    {
-    protected Expression createExpression(String expression)
-        {
-        return new MvelExpression(expression);
-        }
+        extends AbstractExpressionTest {
 
-    protected String getLanguage()
-        {
-        return "MVEL";
-        }
+    protected Expression createExpression(String expression) {
+        return new MvelExpression(expression);
     }
+
+    protected String getLanguage() {
+        return "MVEL";
+    }
+
+    @SuppressWarnings("unchecked")
+    @Ignore
+    @Test
+    public void testDynamicObjectEvaluation() {
+        DynamicObject o = new DynamicObject();
+        o.setInt("a", 1);
+
+        Expression<Boolean> exp1 = createExpression("a == 1");
+        Expression<Boolean> exp2 = createExpression("a == 0");
+
+        assertTrue(exp1.evaluate(o));
+        assertFalse(exp2.evaluate(o));
+    }
+}
