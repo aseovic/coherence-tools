@@ -105,7 +105,7 @@ public class CsvSource
     public Iterator iterator()
         {
         CsvPreference preferences =
-                new CsvPreference(m_quoteChar, m_delimiterChar, m_endOfLineSymbols);
+                new CsvPreference.Builder(m_quoteChar, m_delimiterChar, m_endOfLineSymbols).build();
         return new CsvIterator(new CsvListReader(m_reader, preferences), m_header);
         }
 
@@ -187,7 +187,7 @@ public class CsvSource
             try
                 {
                 m_reader = reader;
-                m_header = header != null ? header : reader.getCSVHeader(false);
+                m_header = header != null ? header : reader.getHeader(false);
                 }
             catch (IOException e)
                 {
@@ -252,7 +252,7 @@ public class CsvSource
             for (int i = 0, count = values.size(); i < count; i++)
                 {
                 String value = values.get(i);
-                mapValues.put(keys[i], value.length() > 0 ? value : null);
+                mapValues.put(keys[i], value != null && value.length() > 0 ? value : null);
                 }
             return mapValues;
             }

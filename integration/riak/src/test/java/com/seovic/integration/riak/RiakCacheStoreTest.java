@@ -72,7 +72,7 @@ public class RiakCacheStoreTest {
     @Test
     public void testRiakCacheStore()
             throws IOException {
-        NamedCache countries1 = CacheFactory.getCache("countries-1");
+        NamedCache countries1 = CacheFactory.getCache("riak-store-countries-1");
 
         Loader loader = new CsvToCoherence("countries.csv", countries1, Country.class);
         long start = System.currentTimeMillis();
@@ -86,7 +86,7 @@ public class RiakCacheStoreTest {
         duration = System.currentTimeMillis() - start;
         System.out.println("Retrieved " + keys.size() + " bucket keys in " + duration + " ms");
 
-        NamedCache countries2 = CacheFactory.getCache("countries-2");
+        NamedCache countries2 = CacheFactory.getCache("riak-store-countries-2");
         start = System.currentTimeMillis();
         countries2.invokeAll(keys, new PreloadRequest());
         duration = System.currentTimeMillis() - start;
