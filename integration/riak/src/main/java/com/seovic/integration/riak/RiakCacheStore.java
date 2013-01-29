@@ -51,19 +51,19 @@ public class RiakCacheStore extends AbstractBinaryEntryStore {
      */
     public RiakCacheStore(String bucket)
             throws IOException {
-        this(bucket, DEFAULT_HOST, DEFAULT_PORT);
+        this(DEFAULT_HOST, DEFAULT_PORT, bucket);
     }
 
     /**
      * Construct RiakCacheStore instance.
      *
-     * @param bucket  Riak bucket this instance should use
      * @param host    Riak host
      * @param port    Riak Protocol Buffers port
+     * @param bucket  Riak bucket this instance should use
      *
      * @throws IOException  if unable to connect to Riak node
      */
-    public RiakCacheStore(String bucket, String host, int port)
+    public RiakCacheStore(String host, int port, String bucket)
             throws IOException {
         this.bucket = ByteString.copyFromUtf8(bucket);
         this.client = new RiakClient(host, port);

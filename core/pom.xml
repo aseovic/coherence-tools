@@ -38,6 +38,11 @@
 
     <!-- optional dependencies -->
     <dependency>
+      <groupId>com.seovic.coherence</groupId>
+      <artifactId>agent</artifactId>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
       <groupId>com.sun.jersey</groupId>
       <artifactId>jersey-client</artifactId>
       <optional>true</optional>

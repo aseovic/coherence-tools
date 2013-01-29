@@ -40,7 +40,7 @@
       <groupId>com.seovic.coherence</groupId>
       <artifactId>core</artifactId>
       <type>test-jar</type>
-      <version>${core.version}</version>
+      <version>${coherence.tools.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>

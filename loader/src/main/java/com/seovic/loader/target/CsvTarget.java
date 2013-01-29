@@ -128,7 +128,7 @@ public class CsvTarget
                 m_writer = m_writerFactory.create();
                 }
             CsvPreference preferences =
-                    new CsvPreference(m_quoteChar, m_delimiterChar, m_endOfLineSymbols);
+                    new CsvPreference.Builder(m_quoteChar, m_delimiterChar, m_endOfLineSymbols).build();
             m_csvWriter = new CsvMapWriter(m_writer, preferences);
             m_csvWriter.writeHeader(m_propertyNames);
             }

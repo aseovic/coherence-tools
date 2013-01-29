@@ -18,29 +18,72 @@
 
 <cache-config xmlns="http://xmlns.oracle.com/coherence/coherence-cache-config">
 
+  <defaults>
+    <serializer>
+      <instance>
+        <class-name>com.tangosol.io.pof.ConfigurablePofContext</class-name>
+        <init-params>
+          <init-param>
+            <param-type>java.lang.String</param-type>
+            <param-value>test-loader-pof-config.xml</param-value>
+          </init-param>
+        </init-params>
+      </instance>
+    </serializer>
+  </defaults>
+
   <caching-scheme-mapping>
     <cache-mapping>
-      <cache-name>*</cache-name>
-      <scheme-name>default-partitioned</scheme-name>
+      <cache-name>riak-backed-*</cache-name>
+      <scheme-name>riak-backed-scheme</scheme-name>
+    </cache-mapping>
+    <cache-mapping>
+      <cache-name>riak-store-*</cache-name>
+      <scheme-name>riak-store-scheme</scheme-name>
     </cache-mapping>
   </caching-scheme-mapping>
 
   <caching-schemes>
 
     <distributed-scheme>
-      <scheme-name>default-partitioned</scheme-name>
+      <scheme-name>riak-backed-scheme</scheme-name>
+      <backing-map-scheme>
+        <external-scheme>
 
-      <serializer>
-        <instance>
-          <class-name>com.tangosol.io.pof.ConfigurablePofContext</class-name>
-          <init-params>
-            <init-param>
-              <param-type>java.lang.String</param-type>
-              <param-value>test-loader-pof-config.xml</param-value>
-            </init-param>
-          </init-params>
-        </instance>
-      </serializer>
+          <custom-store-manager>
+            <class-name>com.seovic.integration.riak.RiakBinaryStoreManager</class-name>
+            <init-params>
+              <init-param>
+                <param-name>bucket</param-name>
+                <param-value>{cache-name}</param-value>
+              </init-param>
+            </init-params>
+          </custom-store-manager>
+
+          <high-units>1m</high-units>
+          <unit-calculator>
+            <class-scheme>
+              <class-name>com.seovic.core.units.BinaryKeyCalculator</class-name>
+            </class-scheme>
+          </unit-calculator>
+
+          <listener>
+            <class-scheme>
+              <class-name>com.seovic.core.listener.LoggingBackingMapListener</class-name>
+              <init-params>
+                <init-param>
+                  <param-type>com.tangosol.net.BackingMapManagerContext</param-type>
+                  <param-value>{manager-context}</param-value>
+                </init-param>
+              </init-params>
+            </class-scheme>
+          </listener>
+        </external-scheme>
+      </backing-map-scheme>
+    </distributed-scheme>
+
+    <distributed-scheme>
+      <scheme-name>riak-store-scheme</scheme-name>
 
       <backing-map-scheme>
         <read-write-backing-map-scheme>
@@ -55,15 +98,15 @@
               <init-params>
                 <init-param>
                   <param-type>string</param-type>
-                  <param-value>test_bucket</param-value>
-                </init-param>
-                <init-param>
-                  <param-type>string</param-type>
                   <param-value>localhost</param-value>
                 </init-param>
                 <init-param>
                   <param-type>int</param-type>
                   <param-value>8087</param-value>
+                </init-param>
+                <init-param>
+                  <param-type>string</param-type>
+                  <param-value>test_bucket</param-value>
                 </init-param>
               </init-params>
             </class-scheme>
