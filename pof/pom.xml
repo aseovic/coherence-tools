@@ -4,7 +4,7 @@
   <parent>
     <artifactId>coherence-tools</artifactId>
     <groupId>com.seovic.coherence</groupId>
-    <version>0.5</version>
+    <version>0.6-SNAPSHOT</version>
   </parent>
 
   <artifactId>pof</artifactId>

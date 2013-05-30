@@ -26,7 +26,7 @@
 
     <groupId>com.seovic.coherence</groupId>
     <artifactId>coherence-tools</artifactId>
-    <version>0.5</version>
+    <version>0.6-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Coherence Tools</name>
@@ -516,7 +516,7 @@
         <url>https://github.com/aseovic/coherence-tools</url>
         <connection>scm:git:git@github.com:aseovic/coherence-tools.git</connection>
         <developerConnection>scm:git:git@github.com:aseovic/coherence-tools.git</developerConnection>
-      <tag>v0.5</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <issueManagement>
