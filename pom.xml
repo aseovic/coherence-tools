@@ -15,9 +15,7 @@
   ~ limitations under the License.
   -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
@@ -28,7 +26,7 @@
 
     <groupId>com.seovic.coherence</groupId>
     <artifactId>coherence-tools</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.5</version>
     <packaging>pom</packaging>
 
     <name>Coherence Tools</name>
@@ -38,8 +36,6 @@
     <url>http://aseovic.github.com/coherence-tools/</url>
 
     <properties>
-        <coherence.tools.version>${project.version}</coherence.tools.version>
-
         <coherence.version>[3.7.1.6,)</coherence.version>
         <commons-io.version>2.4</commons-io.version>
         <eclipselink.version>2.5.0</eclipselink.version>
@@ -118,32 +114,39 @@
             <dependency>
                 <groupId>com.seovic.coherence</groupId>
                 <artifactId>batch</artifactId>
-                <version>${coherence.tools.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.seovic.coherence</groupId>
                 <artifactId>core</artifactId>
-                <version>${coherence.tools.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.seovic.coherence</groupId>
                 <artifactId>identity</artifactId>
-                <version>${coherence.tools.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.seovic.coherence</groupId>
                 <artifactId>loader</artifactId>
-                <version>${coherence.tools.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.seovic.coherence</groupId>
                 <artifactId>pof</artifactId>
-                <version>${coherence.tools.version}</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.seovic.coherence</groupId>
                 <artifactId>scheduler</artifactId>
-                <version>${coherence.tools.version}</version>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.seovic.coherence</groupId>
+                <artifactId>core</artifactId>
+                <version>${project.version}</version>
+                <type>test-jar</type>
+                <scope>test</scope>
             </dependency>
 
             <!-- Maven -->
@@ -513,7 +516,8 @@
         <url>https://github.com/aseovic/coherence-tools</url>
         <connection>scm:git:git@github.com:aseovic/coherence-tools.git</connection>
         <developerConnection>scm:git:git@github.com:aseovic/coherence-tools.git</developerConnection>
-    </scm>
+      <tag>v0.5</tag>
+  </scm>
 
     <issueManagement>
         <url>https://github.com/aseovic/coherence-tools/issues</url>
