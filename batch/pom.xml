@@ -36,12 +36,6 @@
     </dependency>
     <dependency>
       <groupId>com.seovic.coherence</groupId>
-      <artifactId>core</artifactId>
-      <type>test-jar</type>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.seovic.coherence</groupId>
       <artifactId>loader</artifactId>
       <optional>true</optional>
     </dependency>
