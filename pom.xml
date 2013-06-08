@@ -36,7 +36,7 @@
     <url>http://aseovic.github.com/coherence-tools/</url>
 
     <properties>
-        <coherence.version>[3.7.1.6,)</coherence.version>
+        <coherence.version>[3.7.1.0,)</coherence.version>
         <commons-io.version>2.4</commons-io.version>
         <eclipselink.version>2.5.0</eclipselink.version>
         <groovy.version>2.0.0</groovy.version>
@@ -140,13 +140,6 @@
                 <groupId>com.seovic.coherence</groupId>
                 <artifactId>scheduler</artifactId>
                 <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.seovic.coherence</groupId>
-                <artifactId>core</artifactId>
-                <version>${project.version}</version>
-                <type>test-jar</type>
-                <scope>test</scope>
             </dependency>
 
             <!-- Maven -->

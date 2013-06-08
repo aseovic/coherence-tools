@@ -5,6 +5,7 @@ import com.tangosol.io.pof.SimplePofContext;
 import com.tangosol.util.Binary;
 import com.tangosol.util.ExternalizableHelper;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
@@ -12,7 +13,7 @@ import test.Person;
 
 public class PortableTypeMojoTest {
 
-    @Test
+    @Test @Ignore
     public void testInstrumentation() throws Exception {
         SimplePofContext ctx = new SimplePofContext();
         ctx.registerUserType(1, Person.class, new PortableTypeSerializer(1, Person.class));
