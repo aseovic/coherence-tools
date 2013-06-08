@@ -36,6 +36,8 @@
     <url>http://aseovic.github.com/coherence-tools/</url>
 
     <properties>
+        <github.global.server>github</github.global.server>
+
         <coherence.version>[3.7.1.0,)</coherence.version>
         <commons-io.version>2.4</commons-io.version>
         <eclipselink.version>2.5.0</eclipselink.version>
@@ -365,13 +367,13 @@
                 <artifactId>maven-site-plugin</artifactId>
                 <version>3.1</version>
                 <configuration>
-                    <skipDeploy>false</skipDeploy>
+                    <skipDeploy>true</skipDeploy>
                 </configuration>
                 <dependencies>
                     <dependency>
-                        <groupId>org.kohsuke</groupId>
+                        <groupId>org.apache.maven.doxia</groupId>
                         <artifactId>doxia-module-markdown</artifactId>
-                        <version>1.0</version>
+                        <version>1.3</version>
                     </dependency>
                 </dependencies>
             </plugin>
@@ -387,17 +389,20 @@
             <plugin>
                 <groupId>com.github.github</groupId>
                 <artifactId>site-maven-plugin</artifactId>
-                <version>0.6</version>
+                <version>0.7</version>
+                <configuration>
+                    <message>Creating site for ${project.artifactId}, ${project.version}</message>
+                    <!-- this does the trick to place every module in the correct subfolder -->
+                    <path>${project.distributionManagement.site.url}</path>
+                    <merge>true</merge>
+                </configuration>
                 <executions>
                     <execution>
+                        <id>github-site</id>
                         <goals>
                             <goal>site</goal>
                         </goals>
                         <phase>site-deploy</phase>
-                        <configuration>
-                            <message>Building site for ${project.version}</message>
-                            <merge>true</merge>
-                        </configuration>
                     </execution>
                 </executions>
             </plugin>
@@ -509,7 +514,6 @@
         <url>https://github.com/aseovic/coherence-tools</url>
         <connection>scm:git:git@github.com:aseovic/coherence-tools.git</connection>
         <developerConnection>scm:git:git@github.com:aseovic/coherence-tools.git</developerConnection>
-      <tag>HEAD</tag>
   </scm>
 
     <issueManagement>
@@ -518,9 +522,9 @@
 
     <distributionManagement>
         <site>
-            <id>dummy</id>
-            <url>file://dummy/location/</url>
+            <id>github-pages-site</id>
+            <name>Deployment through GitHub's site deployment plugin</name>
+            <url>site/${project.version}</url>
         </site>
     </distributionManagement>
-
 </project>
