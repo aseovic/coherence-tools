@@ -14,5 +14,16 @@
 
   <name>Metrics</name>
   <description>Coda Hale Metrics integration</description>
+  
+  <dependencies>
+    <dependency>
+      <groupId>com.codahale.metrics</groupId>
+      <artifactId>metrics-core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.oracle.coherence</groupId>
+      <artifactId>coherence</artifactId>
+    </dependency>
+  </dependencies>
 
 </project>
