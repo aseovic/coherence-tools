@@ -18,14 +18,13 @@ package com.seovic.core.extractor;
 
 
 import com.seovic.core.Extractor;
-import com.seovic.core.expression.GroovyExpression;
 import com.seovic.core.expression.MvelExpression;
 import com.seovic.core.expression.OgnlExpression;
 import com.seovic.core.expression.ScriptExpression;
 import com.seovic.core.expression.SpelExpression;
-import com.seovic.core.updater.MapUpdater;
 import com.seovic.test.objects.Address;
 import com.seovic.test.objects.Person;
+import com.tangosol.io.pof.PofContext;
 import com.tangosol.io.pof.PofReader;
 import com.tangosol.io.pof.PofWriter;
 import com.tangosol.io.pof.PortableObject;
@@ -52,6 +51,7 @@ public abstract class AbstractExtractorTest {
     protected abstract Extractor createExtractor(String expression);
 
     protected abstract String getName();
+    protected void registerUserTypes(SimplePofContext ctx, int startIndex) {}
 
     @Test(expected = RuntimeException.class)
     public void testWithBadProperty() {
@@ -108,7 +108,6 @@ public abstract class AbstractExtractorTest {
 
         SimplePofContext ctx = new SimplePofContext();
         ctx.registerUserType(1, expected.getClass(), new PortableObjectSerializer(1));
-        ctx.registerUserType(2, GroovyExpression.class, new PortableObjectSerializer(2));
         ctx.registerUserType(3, MvelExpression.class, new PortableObjectSerializer(3));
         ctx.registerUserType(4, OgnlExpression.class, new PortableObjectSerializer(4));
         ctx.registerUserType(5, ScriptExpression.class, new PortableObjectSerializer(5));
@@ -116,6 +115,7 @@ public abstract class AbstractExtractorTest {
         ctx.registerUserType(7, ExtractorAdapter.class, new PortableObjectSerializer(7));
         ctx.registerUserType(8, ReflectionExtractor.class, new PortableObjectSerializer(8));
         ctx.registerUserType(9, ChainedExtractor.class, new PortableObjectSerializer(9));
+        registerUserTypes(ctx, 10);
 
         Binary bin = ExternalizableHelper.toBinary(expected, ctx);
         Extractor actual = (Extractor) ExternalizableHelper.fromBinary(bin, ctx);

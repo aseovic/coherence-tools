@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.seovic.core.expression;
+package com.seovic.scripting.groovy;
 
 
 import com.seovic.core.Expression;
-
+import com.seovic.core.expression.AbstractExpression;
 import groovy.lang.Binding;
 import groovy.lang.GroovyShell;
 import groovy.lang.Script;

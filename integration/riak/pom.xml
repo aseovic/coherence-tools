@@ -6,7 +6,7 @@
   <parent>
     <groupId>com.seovic.coherence</groupId>
     <artifactId>integration</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.6-SNAPSHOT</version>
   </parent>
 
   <artifactId>riak</artifactId>
@@ -27,7 +27,7 @@
     <dependency>
       <groupId>com.seovic.coherence</groupId>
       <artifactId>loader</artifactId>
-      <version>${loader.version}</version>
+      <version>${project.parent.version}</version>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>

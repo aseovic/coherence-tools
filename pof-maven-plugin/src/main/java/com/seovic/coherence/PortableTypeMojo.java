@@ -18,11 +18,11 @@ package com.seovic.coherence;
 
 
 import com.seovic.pof.PortableTypeGenerator;
+
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
 
 import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 
 

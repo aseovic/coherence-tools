@@ -82,6 +82,10 @@
       <type-id>757</type-id>
       <class-name>com.seovic.core.processor.ConditionalGet</class-name>
     </user-type>
+    <user-type>
+      <type-id>758</type-id>
+      <class-name>com.seovic.core.processor.LocalCopyProcessor</class-name>
+    </user-type>
 
     <!-- com.seovic.core.collections.* classes -->
     <user-type>
@@ -109,10 +113,6 @@
 
     <!-- com.seovic.core.expression.* classes -->
     <user-type>
-      <type-id>810</type-id>
-      <class-name>com.seovic.core.expression.GroovyExpression</class-name>
-    </user-type>
-    <user-type>
       <type-id>811</type-id>
       <class-name>com.seovic.core.expression.MvelExpression</class-name>
     </user-type>
@@ -133,10 +133,6 @@
     <user-type>
       <type-id>820</type-id>
       <class-name>com.seovic.core.extractor.ExpressionExtractor</class-name>
-    </user-type>
-    <user-type>
-      <type-id>821</type-id>
-      <class-name>com.seovic.core.extractor.GroovyExtractor</class-name>
     </user-type>
     <user-type>
       <type-id>822</type-id>

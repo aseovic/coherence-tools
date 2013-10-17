@@ -14,10 +14,11 @@
  * limitations under the License.
  */
 
-package com.seovic.core.expression;
+package com.seovic.scripting.groovy;
 
 
 import com.seovic.core.Expression;
+import com.seovic.core.expression.AbstractExpressionTest;
 import java.io.ByteArrayInputStream;
 import org.junit.Test;
 

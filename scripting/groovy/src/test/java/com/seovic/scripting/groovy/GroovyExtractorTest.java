@@ -14,12 +14,14 @@
  * limitations under the License.
  */
 
-package com.seovic.core.extractor;
+package com.seovic.scripting.groovy;
 
 
-import com.seovic.core.Expression;
 import com.seovic.core.Extractor;
-import com.seovic.core.expression.GroovyExpression;
+import com.seovic.core.extractor.AbstractExtractorTest;
+import com.tangosol.io.pof.PofContext;
+import com.tangosol.io.pof.PortableObjectSerializer;
+import com.tangosol.io.pof.SimplePofContext;
 
 
 /**
@@ -28,11 +30,17 @@ import com.seovic.core.expression.GroovyExpression;
  * @author Aleksandar Seovic  2009.09.18
  */
 public class GroovyExtractorTest
-        extends AbstractExtractorTest {
+        extends AbstractExtractorTest
+    {
     @Override
     protected Extractor createExtractor(String expression) {
         return new GroovyExtractor(translateExpression(expression));
     }
+
+    protected void registerUserTypes(SimplePofContext ctx, int index)
+        {
+        ctx.registerUserType(index, GroovyExpression.class, new PortableObjectSerializer(index));
+        }
 
     @Override
     protected String getName() {

@@ -26,11 +26,16 @@ import com.tangosol.io.pof.PortableObject;
 import java.beans.BeanInfo;
 import java.beans.Introspector;
 import java.beans.PropertyDescriptor;
+
 import java.io.IOException;
 import java.io.Serializable;
+
 import java.lang.reflect.Method;
+
 import java.math.BigDecimal;
+
 import java.text.SimpleDateFormat;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
@@ -45,10 +50,6 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
-
-import org.codehaus.jackson.JsonGenerator;
-import org.codehaus.jackson.map.JsonSerializable;
-import org.codehaus.jackson.map.SerializerProvider;
 
 import org.mvel2.integration.PropertyHandler;
 import org.mvel2.integration.VariableResolverFactory;
@@ -67,7 +68,7 @@ import org.springframework.util.Assert;
 @SuppressWarnings({"unchecked", "deprecation"})
 @XmlRootElement(name = "object")
 public class DynamicObject
-        implements Serializable, PortableObject, JsonSerializable {
+        implements Serializable, PortableObject {
     // ---- constructors ----------------------------------------------------
 
     /**
@@ -550,15 +551,6 @@ public class DynamicObject
     public void writeExternal(PofWriter writer)
             throws IOException {
         writer.writeMap(0, m_properties);
-    }
-
-
-    // ---- JsonSerializable implementation ---------------------------------
-
-    @Override
-    public void serialize(JsonGenerator generator, SerializerProvider provider)
-            throws IOException {
-        generator.writeObject(m_properties);
     }
 
 

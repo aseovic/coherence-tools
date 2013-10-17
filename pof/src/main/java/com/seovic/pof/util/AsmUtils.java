@@ -17,11 +17,13 @@
 package com.seovic.pof.util;
 
 
-import com.tangosol.coherence.asm.ClassReader;
-import com.tangosol.coherence.asm.tree.AnnotationNode;
-import com.tangosol.coherence.asm.tree.ClassNode;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.tree.AnnotationNode;
+import org.objectweb.asm.tree.ClassNode;
+
 import java.io.IOException;
 import java.io.InputStream;
+
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;

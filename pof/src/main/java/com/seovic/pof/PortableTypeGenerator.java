@@ -18,6 +18,7 @@ package com.seovic.pof;
 
 
 import com.seovic.core.Factory;
+import com.seovic.core.io.JAXBMarshaller;
 import com.seovic.pof.annotations.Portable;
 import com.seovic.pof.annotations.PortableArray;
 import com.seovic.pof.annotations.PortableDate;
@@ -27,18 +28,22 @@ import com.seovic.pof.annotations.PortableSet;
 import com.seovic.pof.annotations.PortableType;
 import com.seovic.pof.annotations.internal.Instrumented;
 import com.seovic.pof.annotations.internal.PofIndex;
+import com.seovic.pof.internal.PofConfig;
+import com.seovic.pof.internal.SerializerType;
+import com.seovic.pof.internal.UserType;
+import com.seovic.pof.internal.UserTypeList;
 import com.seovic.pof.util.AsmUtils;
 
-import com.tangosol.coherence.asm.ClassReader;
-import com.tangosol.coherence.asm.ClassWriter;
-import com.tangosol.coherence.asm.Label;
-import com.tangosol.coherence.asm.Type;
-import com.tangosol.coherence.asm.commons.Method;
-import com.tangosol.coherence.asm.tree.AnnotationNode;
-import com.tangosol.coherence.asm.tree.ClassNode;
-import com.tangosol.coherence.asm.tree.FieldNode;
-import com.tangosol.coherence.asm.tree.MemberNode;
-import com.tangosol.coherence.asm.tree.MethodNode;
+import org.objectweb.asm.ClassReader;
+import org.objectweb.asm.ClassWriter;
+import org.objectweb.asm.Label;
+import org.objectweb.asm.Type;
+import org.objectweb.asm.commons.Method;
+import org.objectweb.asm.tree.AnnotationNode;
+import org.objectweb.asm.tree.ClassNode;
+import org.objectweb.asm.tree.FieldNode;
+import org.objectweb.asm.tree.MemberNode;
+import org.objectweb.asm.tree.MethodNode;
 import com.tangosol.util.Binary;
 
 import java.io.ByteArrayInputStream;
@@ -102,7 +107,7 @@ import java.util.concurrent.SynchronousQueue;
 import org.apache.maven.plugin.logging.Log;
 import org.slf4j.LoggerFactory;
 
-import static com.tangosol.coherence.asm.Opcodes.*;
+import static org.objectweb.asm.Opcodes.*;
 
 
 /**
@@ -158,7 +163,7 @@ public class PortableTypeGenerator {
         reader.accept(cn, 0);
     }
 
-    public void instrumentClass() {
+    public UserType instrumentClass() {
         if (isPortableType() && !isEnum() && !isInstrumented()) {
             LOG.info("Instrumenting portable type " + cn.name);
 
@@ -169,7 +174,14 @@ public class PortableTypeGenerator {
 
             // mark as instrumented
             cn.visibleAnnotations.add(new AnnotationNode(Type.getDescriptor(Instrumented.class)));
+            return new UserType(BigInteger.valueOf(getTypeId()), cn.name.replace("/", "."), null);
         }
+
+        return null;
+    }
+
+    private int getTypeId() {
+        return (Integer) getAnnotationAttribute(getAnnotation(cn, PortableType.class), "id");
     }
 
     public byte[] getClassBytes() {
@@ -793,6 +805,8 @@ public class PortableTypeGenerator {
 
         File[] files = classDir.listFiles();
         if (files != null) {
+            PofConfig cfg = null;
+
             for (File file : files) {
                 if (file.isDirectory()) {
                     instrumentClasses(file);
@@ -802,12 +816,27 @@ public class PortableTypeGenerator {
                     PortableTypeGenerator gen = new PortableTypeGenerator(in);
                     in.close();
 
-                    gen.instrumentClass();
+                    UserType type = gen.instrumentClass();
+                    if (type != null) {
+                        if (cfg == null) {
+                            cfg = new PofConfig();
+                            cfg.setUserTypeList(new UserTypeList());
+                            cfg.setDefaultSerializer(new SerializerType("com.seovic.pof.PortableTypeSerializer", null));
+                        }
+                        cfg.getUserTypeList().getUserTypeOrInclude().add(type);
+                    }
                     FileOutputStream out = new FileOutputStream(file);
                     gen.writeClass(out);
                     out.flush();
                     out.close();
                 }
+            }
+
+            if (cfg != null) {
+                File pofConfig = new File(classDir, "pof-config.xml");
+                JAXBMarshaller marshaller = new JAXBMarshaller(PofConfig.class, true);
+                marshaller.marshal(cfg, new FileOutputStream(pofConfig));
+                LOG.info("Created " + pofConfig.getAbsolutePath());
             }
         }
     }

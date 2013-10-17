@@ -19,7 +19,7 @@ package com.seovic.core.objects;
 
 import com.seovic.core.Extractor;
 import com.seovic.core.extractor.MvelExtractor;
-import com.tangosol.coherence.mvel.PropertyAccessException;
+import org.mvel2.PropertyAccessException;
 import com.tangosol.io.pof.PofReader;
 import com.tangosol.io.pof.PofWriter;
 import com.tangosol.io.pof.PortableObject;

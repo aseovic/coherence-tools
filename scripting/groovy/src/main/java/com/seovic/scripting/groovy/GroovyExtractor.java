@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.seovic.core.extractor;
+package com.seovic.scripting.groovy;
 
 
 import com.seovic.core.Extractor;
-import com.seovic.core.expression.GroovyExpression;
+import com.seovic.core.extractor.ExpressionExtractor;
 
 
 /**
- * An imlementation of {@link Extractor} that extracts value from a target
+ * An implementation of {@link Extractor} that extracts value from a target
  * object using {@link GroovyExpression}.
  *
  * @author Aleksandar Seovic  2009.11.07

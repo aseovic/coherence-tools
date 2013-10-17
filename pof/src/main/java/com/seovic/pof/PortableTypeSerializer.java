@@ -19,17 +19,16 @@ package com.seovic.pof;
 
 import com.seovic.pof.annotations.PortableType;
 
-import com.tangosol.io.WriteBuffer;
 import com.tangosol.io.pof.PofContext;
 import com.tangosol.io.pof.PofReader;
 import com.tangosol.io.pof.PofSerializer;
 import com.tangosol.io.pof.PofWriter;
 import com.tangosol.util.Binary;
-import com.tangosol.util.BinaryWriteBuffer;
 
 import java.io.IOException;
-import java.lang.reflect.Field;
+
 import java.lang.reflect.Method;
+
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
@@ -136,18 +135,6 @@ public class PortableTypeSerializer
                 if (cls != null) {
                     Method readExternal = getReadExternal(cls);
                     readExternal.invoke(o, reader);
-                }
-                else if (fEvolvable) {
-                    // fix for the incorrect offset calculation in nested UserTypeReader
-                    BinaryWriteBuffer tmp = new BinaryWriteBuffer(10);
-                    WriteBuffer.BufferOutput out = tmp.getBufferOutput();
-                    out.writePackedInt(this.typeId);
-                    out.writePackedInt(versionId);
-                    int len = out.getOffset();
-
-                    Field offset = reader.getClass().getDeclaredField("m_ofNextProp");
-                    offset.setAccessible(true);
-                    offset.set(reader, ((Integer) offset.get(reader)) + len);
                 }
 
                 Binary remainder = reader.readRemainder();

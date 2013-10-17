@@ -67,6 +67,9 @@ class TestBinaryEntry
         m_binValue = binValue;
     }
 
+    public void updateBinaryValue(Binary binary, boolean b) {
+    }
+
     public Object getKey() {
         return null;
     }
