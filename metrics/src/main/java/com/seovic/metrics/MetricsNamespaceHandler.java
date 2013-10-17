@@ -27,8 +27,6 @@ import java.io.File;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-import java.net.URI;
-
 import java.util.Iterator;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
@@ -73,11 +71,13 @@ import org.slf4j.LoggerFactory;
  *
  * @author Aleksandar Seovic  2013.10.17
  */
+@SuppressWarnings("UnusedDeclaration")
 public class MetricsNamespaceHandler
         extends AbstractNamespaceHandler
     {
     private static Logger LOG = LoggerFactory.getLogger(MetricsNamespaceHandler.class);
 
+    @SuppressWarnings("unchecked")
     @XmlSimpleName("registry")
     public static class RegistryProcessor
             implements ElementProcessor<Void>
@@ -89,14 +89,20 @@ public class MetricsNamespaceHandler
             LOG.info("Creating Metrics Registry");
             ctx.getResourceRegistry().registerResource(MetricRegistry.class, new MetricRegistry());
 
-            // process reporter definitions
-            ctx.processElementsOf(xml);
+            ReporterProcessor processor = new ReporterProcessor();
+
+            Iterator<XmlElement> it = xml.getElements("reporter");
+            while (it.hasNext())
+                {
+                XmlElement reporter = it.next();
+                processor.process(ctx, reporter);
+                }
 
             return null;
             }
         }
 
-    @XmlSimpleName("reporter")
+    @SuppressWarnings("unchecked")
     public static class ReporterProcessor
             implements ElementProcessor<Void>
         {
@@ -104,11 +110,16 @@ public class MetricsNamespaceHandler
         public Void process(ProcessingContext ctx, XmlElement xml)
                 throws ConfigurationException
             {
-            String       name         = ctx.getMandatoryProperty("name", String.class, xml);
-            TimeUnit     rateUnit     = ctx.getOptionalProperty("rateUnit", TimeUnit.class, TimeUnit.SECONDS, xml);
-            TimeUnit     durationUnit = ctx.getOptionalProperty("durationUnit", TimeUnit.class, TimeUnit.MILLISECONDS, xml);
-            Locale       locale       = ctx.getOptionalProperty("locale", Locale.class, Locale.getDefault(), xml);
-            int          frequency    = ctx.getOptionalProperty("frequency", Integer.class, 10, xml);
+            String       name         = xml.getElement("name").getString();
+            TimeUnit     rateUnit     = TimeUnit.valueOf(xml.getSafeElement(
+                    "rateUnit").getString("SECONDS").toUpperCase());
+            TimeUnit     durationUnit = TimeUnit.valueOf(xml.getSafeElement(
+                    "durationUnit").getString("MILLISECONDS").toUpperCase());
+            Locale       locale       = xml.getElement("locale") != null
+                                        ? Locale.forLanguageTag(xml.getElement("locale").getString())
+                                        : Locale.getDefault();
+            int          frequency    = xml.getSafeElement("frequency").getInt(
+                    10);
             MetricFilter filter       = MetricFilter.ALL;
 
             if (xml.getElement("filter") != null)
@@ -150,7 +161,7 @@ public class MetricsNamespaceHandler
             else
                 {
                 Class reporterClass = findReporterClass(name);
-                Object builder = null;
+                Object builder;
                 try
                     {
                     Method forRegistry = reporterClass.getDeclaredMethod("forRegistry", MetricRegistry.class);
