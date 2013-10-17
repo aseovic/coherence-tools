@@ -5,26 +5,34 @@ import com.codahale.metrics.CsvReporter;
 import com.codahale.metrics.JmxReporter;
 import com.codahale.metrics.MetricFilter;
 import com.codahale.metrics.MetricRegistry;
-
 import com.codahale.metrics.ScheduledReporter;
+
 import com.tangosol.coherence.config.builder.ParameterizedBuilder;
+
 import com.tangosol.config.ConfigurationException;
+
 import com.tangosol.config.xml.AbstractNamespaceHandler;
 import com.tangosol.config.xml.ElementProcessor;
 import com.tangosol.config.xml.ProcessingContext;
-
 import com.tangosol.config.xml.XmlSimpleName;
+
 import com.tangosol.run.xml.XmlElement;
 
 import com.tangosol.util.ResourceRegistry;
 
 import com.tangosol.util.extractor.ReflectionExtractor;
+
 import java.io.File;
+
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
+
 import java.net.URI;
+
+import java.util.Iterator;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -42,23 +50,24 @@ import org.slf4j.LoggerFactory;
  * To use the metrics namespace, it must be declared within a <cache-config>
  * element as follows:
  * <pre>
- *     &lt;cache-config cron:xmlns="class://com.seovic.metrics.MetricsNamespaceHandler">
+ *     &lt;cache-config xmlns:metrics="class://com.seovic.metrics.MetricsNamespaceHandler">
  * </pre>
  * <p>
  * Once defined, a single &lt;metrics:registry> element may be defined in the &lt;cache-config>,
- * with one or more &lt;metrics:reporter> child elements.
+ * with one or more &lt;reporter> child elements.
  * <p>
  * For Example:
  * <pre>
  *     &lt;metrics:registry>
- *         &lt;metrics:reporter>
+ *         &lt;reporter>
  *             &lt;name>console | csv:outputDirectory | jmx:domain | slf4j | className&lt;/name>
  *             &lt;rateUnit>DAYS | HOURS | MINUTES | SECONDS (default) | MILLISECONDS | MICROSECONDS | NANOSECONDS&lt;/rateUnit> (optional)
  *             &lt;durationUnit>DAYS | HOURS | MINUTES | SECONDS | MILLISECONDS (default) | MICROSECONDS | NANOSECONDS&lt;/durationUnit> (optional)
  *             &lt;locale>en-US&lt;/locale> (optional)
  *             &lt;frequency>reporting frequency in seconds, defaults to 10&lt;/locale> (optional)
  *             &lt;filter>class name of MetricFilter implementation, defaults to all&lt;/filter> (optional)
- *         &lt;/metrics:reporter>
+ *         &lt;/reporter>
+ *         ...
  *     &lt;/metrics:registry>
  * </pre>
  *
@@ -69,17 +78,30 @@ public class MetricsNamespaceHandler
     {
     private static Logger LOG = LoggerFactory.getLogger(MetricsNamespaceHandler.class);
 
-    public void onStartNamespace(ProcessingContext ctx, XmlElement element,
-                                 String prefix, URI uri)
+    @XmlSimpleName("registry")
+    public static class RegistryProcessor
+            implements ElementProcessor<Void>
         {
-        super.onStartNamespace(ctx, element, prefix, uri);
+        @Override
+        public Void process(ProcessingContext ctx, XmlElement xml)
+                throws ConfigurationException
+            {
+            LOG.info("Creating Metrics Registry");
+            ctx.getResourceRegistry().registerResource(MetricRegistry.class, new MetricRegistry());
 
-        LOG.info("Creating Metrics Registry");
-        ResourceRegistry resourceRegistry = ctx.getResourceRegistry();
-        resourceRegistry.registerResource(MetricRegistry.class, new MetricRegistry());
+            ReporterProcessor processor = new ReporterProcessor();
+
+            Iterator<XmlElement> it = xml.getElements("reporter");
+            while (it.hasNext())
+                {
+                XmlElement reporter = it.next();
+                processor.process(ctx, reporter);
+                }
+
+            return null;
+            }
         }
 
-    @XmlSimpleName("reporter")
     public static class ReporterProcessor
             implements ElementProcessor<Void>
         {
