@@ -21,6 +21,10 @@
       <artifactId>metrics-core</artifactId>
     </dependency>
     <dependency>
+      <groupId>com.codahale.metrics</groupId>
+      <artifactId>metrics-annotation</artifactId>
+    </dependency>
+    <dependency>
       <groupId>com.oracle.coherence</groupId>
       <artifactId>coherence</artifactId>
     </dependency>

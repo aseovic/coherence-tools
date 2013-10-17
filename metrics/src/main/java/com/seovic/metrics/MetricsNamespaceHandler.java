@@ -89,19 +89,14 @@ public class MetricsNamespaceHandler
             LOG.info("Creating Metrics Registry");
             ctx.getResourceRegistry().registerResource(MetricRegistry.class, new MetricRegistry());
 
-            ReporterProcessor processor = new ReporterProcessor();
-
-            Iterator<XmlElement> it = xml.getElements("reporter");
-            while (it.hasNext())
-                {
-                XmlElement reporter = it.next();
-                processor.process(ctx, reporter);
-                }
+            // process reporter definitions
+            ctx.processElementsOf(xml);
 
             return null;
             }
         }
 
+    @XmlSimpleName("reporter")
     public static class ReporterProcessor
             implements ElementProcessor<Void>
         {
@@ -109,13 +104,11 @@ public class MetricsNamespaceHandler
         public Void process(ProcessingContext ctx, XmlElement xml)
                 throws ConfigurationException
             {
-            String       name         = xml.getElement("name").getString();
-            TimeUnit     rateUnit     = TimeUnit.valueOf(xml.getSafeElement("rateUnit").getString("SECONDS").toUpperCase());
-            TimeUnit     durationUnit = TimeUnit.valueOf(xml.getSafeElement("durationUnit").getString("MILLISECONDS").toUpperCase());
-            Locale       locale       = xml.getElement("locale") != null
-                                        ? Locale.forLanguageTag(xml.getElement("locale").getString())
-                                        : Locale.getDefault();
-            int          frequency    = xml.getSafeElement("frequency").getInt(10);
+            String       name         = ctx.getMandatoryProperty("name", String.class, xml);
+            TimeUnit     rateUnit     = ctx.getOptionalProperty("rateUnit", TimeUnit.class, TimeUnit.SECONDS, xml);
+            TimeUnit     durationUnit = ctx.getOptionalProperty("durationUnit", TimeUnit.class, TimeUnit.MILLISECONDS, xml);
+            Locale       locale       = ctx.getOptionalProperty("locale", Locale.class, Locale.getDefault(), xml);
+            int          frequency    = ctx.getOptionalProperty("frequency", Integer.class, 10, xml);
             MetricFilter filter       = MetricFilter.ALL;
 
             if (xml.getElement("filter") != null)
