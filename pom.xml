@@ -45,6 +45,7 @@
     <commons-io.version>2.4</commons-io.version>
     <eclipselink.version>2.5.0</eclipselink.version>
     <groovy.version>2.1.8</groovy.version>
+    <guice.version>3.0</guice.version>
     <h2.version>1.3.168</h2.version>
     <httpclient.version>4.1</httpclient.version>
     <jackson.version>1.9.8</jackson.version>
@@ -77,6 +78,8 @@
     <module>pof-maven-plugin</module>
     <module>metrics</module>
     <module>scripting</module>
+    <module>di</module>
+    <module>pof-serializer</module>
   </modules>
 
   <dependencies>
@@ -150,6 +153,13 @@
         <artifactId>maven-plugin-api</artifactId>
         <version>${maven.version}</version>
         <optional>true</optional>
+      </dependency>
+
+      <!-- Guice -->
+      <dependency>
+        <groupId>com.google.inject</groupId>
+        <artifactId>guice</artifactId>
+        <version>${guice.version}</version>
       </dependency>
 
       <!-- Metrics -->

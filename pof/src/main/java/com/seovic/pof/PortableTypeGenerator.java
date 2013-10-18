@@ -34,6 +34,7 @@ import com.seovic.pof.internal.UserType;
 import com.seovic.pof.internal.UserTypeList;
 import com.seovic.pof.util.AsmUtils;
 
+import com.tangosol.io.pof.PofSerializer;
 import org.objectweb.asm.ClassReader;
 import org.objectweb.asm.ClassWriter;
 import org.objectweb.asm.Label;
@@ -174,7 +175,15 @@ public class PortableTypeGenerator {
 
             // mark as instrumented
             cn.visibleAnnotations.add(new AnnotationNode(Type.getDescriptor(Instrumented.class)));
-            return new UserType(BigInteger.valueOf(getTypeId()), cn.name.replace("/", "."), null);
+
+            Type serializerClass = getPofSerializer();
+            SerializerType serializerType = serializerClass.getClassName().equals(PortableTypeSerializer.class.getName())
+                                            ? null
+                                            : new SerializerType(serializerClass.getClassName(), null);
+
+            return new UserType(BigInteger.valueOf(getTypeId()),
+                                cn.name.replace("/", "."),
+                                serializerType);
         }
 
         return null;
@@ -182,6 +191,10 @@ public class PortableTypeGenerator {
 
     private int getTypeId() {
         return (Integer) getAnnotationAttribute(getAnnotation(cn, PortableType.class), "id");
+    }
+
+    private Type getPofSerializer() {
+        return (Type) getAnnotationAttribute(getAnnotation(cn, PortableType.class), "serializer");
     }
 
     public byte[] getClassBytes() {

@@ -111,15 +111,12 @@ public class MetricsNamespaceHandler
                 throws ConfigurationException
             {
             String       name         = xml.getElement("name").getString();
-            TimeUnit     rateUnit     = TimeUnit.valueOf(xml.getSafeElement(
-                    "rateUnit").getString("SECONDS").toUpperCase());
-            TimeUnit     durationUnit = TimeUnit.valueOf(xml.getSafeElement(
-                    "durationUnit").getString("MILLISECONDS").toUpperCase());
+            TimeUnit     rateUnit     = TimeUnit.valueOf(xml.getSafeElement("rateUnit").getString("SECONDS").toUpperCase());
+            TimeUnit     durationUnit = TimeUnit.valueOf(xml.getSafeElement("durationUnit").getString("MILLISECONDS").toUpperCase());
             Locale       locale       = xml.getElement("locale") != null
                                         ? Locale.forLanguageTag(xml.getElement("locale").getString())
                                         : Locale.getDefault();
-            int          frequency    = xml.getSafeElement("frequency").getInt(
-                    10);
+            int          frequency    = xml.getSafeElement("frequency").getInt(10);
             MetricFilter filter       = MetricFilter.ALL;
 
             if (xml.getElement("filter") != null)
