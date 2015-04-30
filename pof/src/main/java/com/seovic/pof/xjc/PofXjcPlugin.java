@@ -21,7 +21,10 @@ import com.seovic.pof.internal.PofConfig;
 import com.seovic.pof.internal.SerializerType;
 import com.seovic.pof.internal.UserType;
 import com.seovic.pof.internal.UserTypeList;
+
 import com.seovic.core.io.JAXBMarshaller;
+
+import com.seovic.pof.util.PofHelper;
 
 import com.sun.codemodel.JBlock;
 import com.sun.codemodel.JClass;
@@ -31,28 +34,33 @@ import com.sun.codemodel.JMethod;
 import com.sun.codemodel.JMod;
 import com.sun.codemodel.JType;
 import com.sun.codemodel.JVar;
+
 import com.sun.tools.xjc.BadCommandLineException;
 import com.sun.tools.xjc.Options;
 import com.sun.tools.xjc.Plugin;
+
 import com.sun.tools.xjc.outline.ClassOutline;
 import com.sun.tools.xjc.outline.EnumOutline;
 import com.sun.tools.xjc.outline.FieldOutline;
 import com.sun.tools.xjc.outline.Outline;
 
 import com.tangosol.io.pof.EnumPofSerializer;
-import com.tangosol.io.pof.PofHelper;
+
 import com.tangosol.io.pof.PofReader;
 import com.tangosol.io.pof.PofWriter;
 import com.tangosol.io.pof.PortableObject;
 import com.tangosol.io.pof.RawDate;
 import com.tangosol.io.pof.RawDateTime;
 import com.tangosol.io.pof.RawTime;
+
 import com.tangosol.io.pof.annotation.Portable;
 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+
 import java.math.BigInteger;
+
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
@@ -66,6 +74,8 @@ import static com.sun.codemodel.JExpr.*;
 
 
 /**
+ * XJC plugin that makes generated classes POF-serializable.
+ *
  * @author Aleksandar Seovic  2011.12.15
  */
 public class PofXjcPlugin
