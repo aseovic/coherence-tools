@@ -29,30 +29,39 @@ import org.slf4j.LoggerFactory;
 /**
  * Provides centralized access to configuration info.
  * <p/>
- * You can modify configuration settings by editing <tt>seovic-core.properties</tt>
+ * You can modify configuration settings by editing <tt>coherence-tools.properties</tt>
  * configuration file, which should be located in the classpath root.
  *
  * @author Aleksandar Seovic  2010.02.05
  */
-public final class Configuration {
-    // ---- constants -------------------------------------------------------
+public final class Configuration
+    {
+// ---- constants -------------------------------------------------------
 
     // configuration property keys
     private static final String EXPRESSION_TYPE = "expression.type";
+
     private static final String EXTRACTOR_TYPE = "extractor.type";
+
     private static final String UPDATER_TYPE = "updater.type";
+
     private static final String CONDITION_TYPE = "condition.type";
+
     private static final String SCRIPT_LANGUAGE = "script.language";
 
     // default values
     private static final String DEFAULT_EXPRESSION_TYPE =
             "com.seovic.core.expression.MvelExpression";
+
     private static final String DEFAULT_EXTRACTOR_TYPE =
             "com.seovic.core.extractor.ExpressionExtractor";
+
     private static final String DEFAULT_UPDATER_TYPE =
             "com.seovic.core.updater.ExpressionUpdater";
+
     private static final String DEFAULT_CONDITION_TYPE =
             "com.seovic.core.condition.ExpressionCondition";
+
     private static final String DEFAULT_SCRIPT_LANGUAGE = "javascript";
 
     // ---- data members ----------------------------------------------------
@@ -68,6 +77,11 @@ public final class Configuration {
     private static final Configuration INSTANCE = new Configuration();
 
     /**
+     * Configuration file name.
+     */
+    private static final String CONFIG_FILE_NAME = "coherence-tools.properties";
+
+    /**
      * Configuration settings.
      */
     private final Map<String, String> configuration;
@@ -77,7 +91,8 @@ public final class Configuration {
     /// <summary>
     /// Singleton constructor.
     /// </summary>
-    private Configuration() {
+    private Configuration()
+        {
         Map<String, String> props = new HashMap<String, String>();
         props.put(EXPRESSION_TYPE, DEFAULT_EXPRESSION_TYPE);
         props.put(EXTRACTOR_TYPE, DEFAULT_EXTRACTOR_TYPE);
@@ -85,23 +100,25 @@ public final class Configuration {
         props.put(CONDITION_TYPE, DEFAULT_CONDITION_TYPE);
         props.put(SCRIPT_LANGUAGE, DEFAULT_SCRIPT_LANGUAGE);
 
-        try {
+        try
+            {
             Properties config = new Properties();
             config.load(Configuration.class.getClassLoader()
-                                .getResourceAsStream(
-                                        "coherence-tools.properties"));
-            for (String propertyName : config.stringPropertyNames()) {
+                                .getResourceAsStream(CONFIG_FILE_NAME));
+            for (String propertyName : config.stringPropertyNames())
+                {
                 props.put(propertyName, config.getProperty(propertyName));
+                }
             }
-        }
-        catch (IOException e) {
+        catch (IOException e)
+            {
             // should never happen, as default file is embedded within JAR
-            LOG.warn("Configuration file com.seovic.core.properties"
+            LOG.warn("Configuration file " + CONFIG_FILE_NAME
                      + " is missing. Using hardcoded defaults: \n" + props);
-        }
+            }
 
         configuration = props;
-    }
+        }
 
     // ---- public methods --------------------------------------------------
 
@@ -113,9 +130,10 @@ public final class Configuration {
      * @throws ClassNotFoundException if specified class cannot be found
      */
     public static Class getDefaultExpressionType()
-            throws ClassNotFoundException {
+            throws ClassNotFoundException
+        {
         return Class.forName(INSTANCE.configuration.get(EXPRESSION_TYPE));
-    }
+        }
 
     /**
      * Get a default extractor type.
@@ -125,9 +143,10 @@ public final class Configuration {
      * @throws ClassNotFoundException if specified class cannot be found
      */
     public static Class getDefaultExtractorType()
-            throws ClassNotFoundException {
+            throws ClassNotFoundException
+        {
         return Class.forName(INSTANCE.configuration.get(EXTRACTOR_TYPE));
-    }
+        }
 
     /**
      * Get a default updater type.
@@ -137,9 +156,10 @@ public final class Configuration {
      * @throws ClassNotFoundException if specified class cannot be found
      */
     public static Class getDefaultUpdaterType()
-            throws ClassNotFoundException {
+            throws ClassNotFoundException
+        {
         return Class.forName(INSTANCE.configuration.get(UPDATER_TYPE));
-    }
+        }
 
     /**
      * Get a default condition type.
@@ -149,16 +169,18 @@ public final class Configuration {
      * @throws ClassNotFoundException if specified class cannot be found
      */
     public static Class getDefaultConditionType()
-            throws ClassNotFoundException {
+            throws ClassNotFoundException
+        {
         return Class.forName(INSTANCE.configuration.get(CONDITION_TYPE));
-    }
+        }
 
     /**
      * Get the name of the default script language.
      *
      * @return the name of the default script language
      */
-    public static String getDefaultScriptLanguage() {
+    public static String getDefaultScriptLanguage()
+        {
         return INSTANCE.configuration.get(SCRIPT_LANGUAGE);
+        }
     }
-}

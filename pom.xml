@@ -21,9 +21,9 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.sonatype.oss</groupId>
+    <groupId>com.seovic</groupId>
     <artifactId>oss-parent</artifactId>
-    <version>7</version>
+    <version>1</version>
   </parent>
 
   <groupId>com.seovic.coherence</groupId>
@@ -38,6 +38,10 @@
   <url>http://aseovic.github.com/coherence-tools/</url>
 
   <properties>
+    <!-- project encoding definition -->
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
     <github.global.server>github</github.global.server>
 
     <asm.version>3.3.1</asm.version>
@@ -416,14 +420,6 @@
           </dependency>
         </dependencies>
       </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-release-plugin</artifactId>
-        <version>2.4.1</version>
-        <configuration>
-          <tagNameFormat>v@{project.version}</tagNameFormat>
-        </configuration>
-      </plugin>
     </plugins>
 
     <pluginManagement>
@@ -505,34 +501,10 @@
     </plugins>
   </reporting>
 
-  <developers>
-    <developer>
-      <id>aseovic</id>
-      <name>Aleksandar Seovic</name>
-      <email>aleks@seovic.com</email>
-      <url>http://www.seovic.com</url>
-      <organization>Solutions for Human Capital, Inc.</organization>
-      <organizationUrl>http://www.s4hc.com</organizationUrl>
-      <roles>
-        <role>Project Founder</role>
-        <role>Lead</role>
-      </roles>
-    </developer>
-  </developers>
-
-  <licenses>
-    <license>
-      <name>The Apache Software License, Version 2.0</name>
-      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-      <distribution>repo</distribution>
-    </license>
-  </licenses>
-
   <scm>
     <url>https://github.com/aseovic/coherence-tools</url>
     <connection>scm:git:git@github.com:aseovic/coherence-tools.git</connection>
-    <developerConnection>scm:git:git@github.com:aseovic/coherence-tools.git
-    </developerConnection>
+    <developerConnection>scm:git:git@github.com:aseovic/coherence-tools.git</developerConnection>
   </scm>
 
   <issueManagement>

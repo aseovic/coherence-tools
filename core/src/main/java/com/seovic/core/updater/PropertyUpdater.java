@@ -34,7 +34,8 @@ import java.lang.reflect.Method;
  */
 @SuppressWarnings("unchecked")
 public class PropertyUpdater
-        implements Updater, Serializable, PortableObject {
+        implements Updater, Serializable, PortableObject
+    {
 
     private static final long serialVersionUID = 681827826766741360L;
 
@@ -57,8 +58,9 @@ public class PropertyUpdater
     /**
      * Deserialization constructor (for internal use only).
      */
-    public PropertyUpdater() {
-    }
+    public PropertyUpdater()
+        {
+        }
 
     /**
      * Construct a <tt>BeanExtractor</tt> instance.
@@ -66,9 +68,10 @@ public class PropertyUpdater
      * @param propertyName the name of the property to update, as defined by the
      *                     JavaBean specification
      */
-    public PropertyUpdater(String propertyName) {
+    public PropertyUpdater(String propertyName)
+        {
         this.propertyName = propertyName;
-    }
+        }
 
 
     // ---- Updater implementation ------------------------------------------
@@ -76,34 +79,41 @@ public class PropertyUpdater
     /**
      * {@inheritDoc}
      */
-    public void update(Object target, Object value) {
-        if (target == null) {
+    public void update(Object target, Object value)
+        {
+        if (target == null)
+            {
             throw new IllegalArgumentException("Updater target cannot be null");
-        }
+            }
 
         Class targetClass = target.getClass();
-        try {
+        try
+            {
             if (propertyMutator == null
-                || propertyMutator.getDeclaringClass() != targetClass) {
+                || propertyMutator.getDeclaringClass() != targetClass)
+                {
                 propertyMutator = findWriteMethod(propertyName,
                                                   target.getClass(),
                                                   value == null
-                                                    ? Object.class
-                                                    : value.getClass());
-            }
-            if (propertyMutator != null) {
+                                                  ? Object.class
+                                                  : value.getClass());
+                }
+            if (propertyMutator != null)
+                {
                 propertyMutator.invoke(target, value);
-            }
-            else {
+                }
+            else
+                {
                 throw new RuntimeException("Writeable property " + propertyName +
                                            " does not exist in the class "
                                            + targetClass);
+                }
+            }
+        catch (Exception e)
+            {
+            throw new RuntimeException(e);
             }
         }
-        catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
 
 
     // ---- helper methods --------------------------------------------------
@@ -119,22 +129,33 @@ public class PropertyUpdater
      * @param propertyType property type
      *
      * @return write method for the property, or <tt>null</tt> if the method
-     *         cannot be found
+     * cannot be found
      */
     protected Method findWriteMethod(String propertyName, Class cls,
-                                     Class propertyType) {
+                                     Class propertyType)
+        {
         String name = "set"
                       + Character.toUpperCase(propertyName.charAt(0))
                       + propertyName.substring(1);
 
-        try {
+        try
+            {
             return cls.getMethod(name, propertyType);
-        }
-        catch (NoSuchMethodException ignore) {
-        }
+            }
+        catch (NoSuchMethodException e)
+            {
+            for (Method m : cls.getMethods())
+                {
+                if (m.getName().equals(name) && m.getParameterTypes().length == 1)
+                    {
+                    // best match, might need type conversion
+                    return m;
+                    }
+                }
+            }
 
         return null;
-    }
+        }
 
 
     // ---- PortableObject implementation -----------------------------------
@@ -147,9 +168,10 @@ public class PropertyUpdater
      * @throws IOException if an error occurs during deserialization
      */
     public void readExternal(PofReader reader)
-            throws IOException {
+            throws IOException
+        {
         propertyName = reader.readString(0);
-    }
+        }
 
     /**
      * Serialize this object into a POF stream.
@@ -159,9 +181,10 @@ public class PropertyUpdater
      * @throws IOException if an error occurs during serialization
      */
     public void writeExternal(PofWriter writer)
-            throws IOException {
+            throws IOException
+        {
         writer.writeString(0, propertyName);
-    }
+        }
 
 
     // ---- Object methods --------------------------------------------------
@@ -172,20 +195,23 @@ public class PropertyUpdater
      * @param o object to compare this object with
      *
      * @return <tt>true</tt> if the specified object is equal to this object
-     *         <tt>false</tt> otherwise
+     * <tt>false</tt> otherwise
      */
     @Override
-    public boolean equals(Object o) {
-        if (this == o) {
+    public boolean equals(Object o)
+        {
+        if (this == o)
+            {
             return true;
-        }
-        if (o == null || getClass() != o.getClass()) {
+            }
+        if (o == null || getClass() != o.getClass())
+            {
             return false;
-        }
+            }
 
         PropertyUpdater that = (PropertyUpdater) o;
         return propertyName.equals(that.propertyName);
-    }
+        }
 
     /**
      * Return hash code for this object.
@@ -193,9 +219,10 @@ public class PropertyUpdater
      * @return this object's hash code
      */
     @Override
-    public int hashCode() {
+    public int hashCode()
+        {
         return propertyName.hashCode();
-    }
+        }
 
     /**
      * Return string representation of this object.
@@ -203,9 +230,10 @@ public class PropertyUpdater
      * @return string representation of this object
      */
     @Override
-    public String toString() {
+    public String toString()
+        {
         return "PropertyUpdater{" +
                "propertyName='" + propertyName + '\'' +
                '}';
+        }
     }
-}
